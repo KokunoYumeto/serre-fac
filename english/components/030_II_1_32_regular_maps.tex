@@ -1,0 +1,34 @@
+% FAC-EN-U0030
+% French source: fac_body.tex lines 1180--1192.
+% Authority: PDF physical p. 30; printed p. 225 (no. 32 complete).
+% Printed-source repair: FAC-FR-C0022.
+
+\medskip
+\phantomsection\label{fac:II:1:no:32}
+\textbf{32. Regular maps.}
+Let $U$ (respectively $V$) be a locally closed subspace of $K^r$ (respectively $K^s$). A map $\varphi:U\to V$ is said to be \textit{regular} on $U$ (or simply regular) if:
+
+\begin{enumerate}[label=(\alph*),leftmargin=2.5em]
+\item\phantomsection\label{fac:II:1:no:32:def:item:a} \textit{$\varphi$ is continuous;}
+\item\phantomsection\label{fac:II:1:no:32:def:item:b} \textit{if $x\in U$ and $f\in\mathcal{O}_{\varphi(x),V}$, then $f\circ\varphi\in\mathcal{O}_{x,U}$.}
+\end{enumerate}
+
+Denote the coordinates of the point $\varphi(x)$ by $\varphi_i(x)$, $1\leq i\leq s$. We then have:
+
+\phantomsection\label{fac:II:1:no:32:prop:5}
+\textsc{Proposition 5.} \textit{The map $\varphi:U\to V$ is regular on $U$ if and only if the functions $\varphi_i:U\to K$ are regular on $U$ for every $i$, $1\leq i\leq s$.}
+
+Since the coordinate functions are regular on $V$, the condition is necessary. Conversely, suppose that
+\[
+\varphi_i\in\Gamma(U,\mathcal{O}_U)
+\qquad(1\leq i\leq s).
+\]
+If $P(X_1,\ldots,X_s)$ is a polynomial, then $P(\varphi_1,\ldots,\varphi_s)$ belongs to $\Gamma(U,\mathcal{O}_U)$, since $\Gamma(U,\mathcal{O}_U)$ is a ring. It follows that this is a continuous function on $U$, so its zero locus is closed; this proves the continuity of $\varphi$.
+
+If $x\in U$ and $f\in\mathcal{O}_{\varphi(x),V}$, then locally we may write $f=P/Q$, where $P$ and $Q$ are polynomials and $Q(\varphi(x))\neq0$. In a neighborhood of $x$ we then have
+\[
+f\circ\varphi=\frac{P\circ\varphi}{Q\circ\varphi}.
+\]
+By what we have just seen, $P\circ\varphi$ and $Q\circ\varphi$ are regular near $x$. Since $(Q\circ\varphi)(x)\neq0$, it follows that $f\circ\varphi$ is regular near $x$, as required.
+
+The \textit{composite} of two regular maps is regular. A bijection $\varphi:U\to V$ is called a \textit{biregular isomorphism} (or simply an isomorphism) if both $\varphi$ and $\varphi^{-1}$ are regular maps. Equivalently, $\varphi$ is a homeomorphism from $U$ onto $V$ which carries the sheaf $\mathcal{O}_U$ to the sheaf $\mathcal{O}_V$.

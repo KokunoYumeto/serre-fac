@@ -1,0 +1,168 @@
+% FAC-EN-U0075
+% Source: fac_body.tex lines 3060--3147.
+% Authority: PDF physical pp. 76--78; printed pp. 271--273
+% (Chapter III no. 77 complete; hard stop before no. 78).
+% French control: no new transcription repair or printed-source correction.
+
+\medskip
+\phantomsection\label{fac:III:5:no:77}
+\textbf{77. Homological characterization of varieties that are
+$k$-fold of the first kind.}
+
+Let $M$ be a finitely generated graded $S$-module. By an argument
+identical to that of \hyperref[fac:III:5:no:74:lemma:1]{Lemma~1}, one
+proves:
+
+\phantomsection\label{fac:III:5:no:77:lemma:3}
+\textsc{Lemma 3.} \textit{In order that $\dim M\leq k$, it is necessary
+and sufficient that $\operatorname{Ext}_S^q(M,S)=0$ for $q>k$.}
+
+Since $M$ is graded, one has
+\phantomsection\label{fac:III:5:no:77:formula:Ext-twist}
+\[
+\operatorname{Ext}_S^q(M,\Omega)
+=\operatorname{Ext}_S^q(M,S)(-r-1),
+\]
+so the \hyperref[fac:III:5:no:77:lemma:3]{preceding condition} is equivalent to
+$\operatorname{Ext}_S^q(M,\Omega)=0$ for $q>k$. Taking
+\hyperref[fac:III:4:no:72:thm:1]{Theorem~1 of no.~72} into account, one
+concludes:
+
+\phantomsection\label{fac:III:5:no:77:prop:2}
+\textsc{Proposition 2.}
+
+\phantomsection\label{fac:III:5:no:77:prop:2:a}
+(a) \textit{In order that $\dim M\leq r$, it is
+necessary and sufficient that
+$\alpha:M_n\to H^0(M(n))$ be injective for every $n\in\mathbf Z$.}
+
+\phantomsection\label{fac:III:5:no:77:prop:2:b}
+(b) \textit{If $k$ is an integer $\geq1$, in order that
+$\dim M\leq r-k$, it is necessary and sufficient that
+$\alpha:M_n\to H^0(M(n))$ be bijective for every $n\in\mathbf Z$, and
+that $H^q(M(n))=0$ for $0<q<k$ and every $n\in\mathbf Z$.}
+
+Let $V$ be a closed subvariety of $\mathbf P_r(K)$, and let $I(V)$ be
+the ideal of homogeneous polynomials vanishing on $V$. Put
+$S(V)=S/I(V)$; this is a graded $S$-module whose associated sheaf is
+precisely $\mathcal O_V$.
+\phantomsection\label{fac:III:5:no:77:def:k-fold-first-kind}
+We shall say\footnote{Cf. P.~Dubreil,
+\textit{Sur la dimension des id\'eaux de polyn\^omes}, J. Math. Pures
+Appl., 15 (1936), pp.~271--283. See also W.~Gr\"obner,
+\textit{Moderne Algebraische Geometrie}, \S5.} that $V$ is a
+subvariety ``$k$-fold of the first kind'' in $\mathbf P_r(K)$ if the
+dimension of the $S$-module $S(V)$ is $\leq r-k$. It is immediate that
+$\alpha:S(V)_n\to H^0(V,\mathcal O_V(n))$ is injective for every
+$n\in\mathbf Z$, so every variety is $0$-fold of the first kind.
+Applying the \hyperref[fac:III:5:no:77:prop:2]{preceding proposition} to $M=S(V)$ gives:
+
+\phantomsection\label{fac:III:5:no:77:prop:3}
+\textsc{Proposition 3.} \textit{Let $k$ be an integer $\geq1$. In order
+that the subvariety $V$ be $k$-fold of the first kind, it is necessary
+and sufficient that the following conditions hold for every
+$n\in\mathbf Z$:}
+
+\phantomsection\label{fac:III:5:no:77:prop:3:i}
+(i) \textit{$\alpha:S(V)_n\to H^0(V,\mathcal O_V(n))$ is bijective.}
+
+\phantomsection\label{fac:III:5:no:77:prop:3:ii}
+(ii) \textit{$H^q(V,\mathcal O_V(n))=0$ for $0<q<k$.}
+
+(\hyperref[fac:III:5:no:77:prop:3:i]{Condition (i)} can also be expressed by saying that the linear series
+cut out on $V$ by the forms of degree $n$ is complete, as is well
+known.)
+
+Comparing this with \hyperref[fac:III:5:no:74:thm:2]{Theorem~2} (or
+arguing directly), one obtains:
+
+\phantomsection\label{fac:III:5:no:77:cor:local}
+\textsc{Corollary.} \textit{If $V$ is $k$-fold of the first kind, then
+$H^q(V,\mathcal O_V)=0$ for $0<q<k$, and, for every $x\in V$, the
+dimension of the $\mathcal O_x$-module $\mathcal O_{x,V}$ is
+$\leq r-k$.}
+
+If $m$ is an integer $\geq1$, denote by $\varphi_m$ the embedding of
+$\mathbf P_r(K)$ in a projective space of suitable dimension given by
+the monomials of degree $m$ (cf. [8], Chapter~XVI, \S6, or
+\hyperref[fac:III:1:lemma:2]{no.~52, proof of Lemma~2}). The
+\hyperref[fac:III:5:no:77:cor:local]{preceding
+corollary} then has the following converse:
+
+\phantomsection\label{fac:III:5:no:77:prop:4}
+\textsc{Proposition 4.} \textit{Let $k$ be an integer $\geq1$, and let
+$V$ be a connected closed subvariety of $\mathbf P_r(K)$. Suppose that
+$H^q(V,\mathcal O_V)=0$ for $0<q<k$, and that, for every $x\in V$, the
+dimension of the $\mathcal O_x$-module $\mathcal O_{x,V}$ is
+$\leq r-k$.}
+
+\textit{Then, for every sufficiently large $m$, $\varphi_m(V)$ is a
+subvariety $k$-fold of the first kind.}
+
+Because $V$ is connected, one has $H^0(V,\mathcal O_V)=K$. Indeed, if
+$V$ is irreducible, this is clear (otherwise
+$H^0(V,\mathcal O_V)$ would contain a polynomial algebra and would not
+be finite-dimensional over $K$); if $V$ is reducible, every element
+$f\in H^0(V,\mathcal O_V)$ induces a constant on each irreducible
+component of $V$, and these constants are the same by the connectedness
+of $V$.
+
+Since $\dim\mathcal O_{x,V}\leq r-1$, the algebraic dimension of every
+irreducible component of $V$ is at least $1$. It follows that
+\phantomsection\label{fac:III:5:no:77:formula:H0-negative}
+\[
+H^0(V,\mathcal O_V(-n))=0
+\]
+for $n>0$ (for if $f\in H^0(V,\mathcal O_V(-n))$ and $f\neq0$, the
+$f^k g$, with $g\in S(V)_{nk}$, would form a vector subspace of
+$H^0(V,\mathcal O_V)$ of dimension $>1$).
+
+With this established, denote by $V_m$ the subvariety
+$\varphi_m(V)$; one plainly has
+\phantomsection\label{fac:III:5:no:77:formula:Veronese-twist}
+\[
+\mathcal O_{V_m}(n)=\mathcal O_V(nm).
+\]
+For sufficiently large $m$, the following conditions hold:
+
+\phantomsection\label{fac:III:5:no:77:prop:4:condition:a}
+(a) \textit{$\alpha:S(V)_{nm}\to H^0(V,\mathcal O_V(nm))$ is
+bijective for every $n\geq1$.}
+
+This follows from
+\hyperref[fac:III:3:no:65:prop:5]{Proposition~5 of no.~65}.
+
+\phantomsection\label{fac:III:5:no:77:prop:4:condition:b}
+(b) \textit{$H^q(V,\mathcal O_V(nm))=0$ for $0<q<k$ and every
+$n\geq1$.}
+
+This follows from
+\hyperref[fac:III:3:no:65:prop:7]{Proposition~7 of no.~65}.
+
+\phantomsection\label{fac:III:5:no:77:prop:4:condition:c}
+(c) \textit{$H^q(V,\mathcal O_V(nm))=0$ for $0<q<k$ and every
+$n\leq-1$.}
+
+This follows from
+\hyperref[fac:III:5:no:74:thm:2]{Theorem~2 of no.~74} and the hypothesis
+on the $\mathcal O_{x,V}$.
+
+On the other hand, one has $H^0(V,\mathcal O_V)=K$,
+$H^0(V,\mathcal O_V(nm))=0$ for every $n\leq-1$, and
+$H^q(V,\mathcal O_V)=0$ for $0<q<k$, by hypothesis. It follows that
+$V_m$ satisfies all the hypotheses of
+\hyperref[fac:III:5:no:77:prop:3]{Proposition~3}, q.e.d.
+
+\phantomsection\label{fac:III:5:no:77:cor:embedding}
+\textsc{Corollary.} \textit{Let $k$ be an integer $\geq1$, and let $V$
+be a nonsingular projective variety of dimension $\geq k$. In order
+that $V$ be biregularly isomorphic to a subvariety $k$-fold of the
+first kind in a suitable projective space, it is necessary and
+sufficient that $V$ be connected and that
+$H^q(V,\mathcal O_V)=0$ for $0<q<k$.}
+
+Necessity is clear from
+\hyperref[fac:III:5:no:77:prop:3]{Proposition~3}. To prove sufficiency, it is
+enough to observe that $\mathcal O_{x,V}$ then has dimension
+$\leq r-k$ (cf. \hyperref[fac:III:5:no:75]{no.~75}) and to apply the
+\hyperref[fac:III:5:no:77:prop:4]{preceding proposition}.

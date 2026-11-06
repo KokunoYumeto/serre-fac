@@ -1,0 +1,123 @@
+% FAC-EN-U0059
+% Source: fac_body.tex lines 2133--2193.
+% Authority: PDF physical pp. 58--59; printed pp. 253--254
+% (Chapter III section 3 opening and no. 61 complete).
+% French controls: T0034 repairs three inherited epsilon commands to the
+% printed membership sign. C0036 preserves printed i_i diplomatically and
+% restores the type-consistent terminal index i_q in corrected French/English.
+
+\phantomsection\label{fac:III:3}
+\section*{\S3. Cohomology of projective space with values in a coherent
+algebraic sheaf}
+\addcontentsline{toc}{section}{Chapter III, \S3. Cohomology of projective
+space with values in a coherent algebraic sheaf}
+
+\phantomsection\label{fac:III:3:no:61}
+\textbf{61. The complexes $C_k(M)$ and $C(M)$.}
+We retain the notation of \hyperref[fac:III:1:no:51]{nos.~51} and
+\hyperref[fac:III:2:no:56]{56}. In particular, $I$ will denote the
+interval $\{0,1,\ldots,r\}$, and $S$ will denote the graded algebra
+$K[t_0,\ldots,t_r]$.
+
+Let $M$ be a graded $S$-module, and let $k$ and $q$ be two integers
+$\geq0$. We shall define a group $C^q_k(M)$. An element of $C^q_k(M)$ is
+a mapping
+\phantomsection\label{fac:III:3:no:61:formula:cochain-value}
+\[
+(i_0,\ldots,i_q)\longmapsto m\langle i_0\cdots i_q\rangle
+\]
+that assigns to every sequence $(i_0,\ldots,i_q)$ of $q+1$ elements of
+$I$ a homogeneous element of $M$ of degree $k(q+1)$ and is alternating
+in $i_0,\ldots,i_q$. In particular,
+$m\langle i_0\cdots i_q\rangle=0$ if two of the indices
+$i_0,\ldots,i_q$ are equal. Addition in $C^q_k(M)$ and multiplication by
+an element $\lambda\in K$ are defined in the evident way, and $C^q_k(M)$
+is a \textit{vector space over $K$}.
+
+If $m$ is an element of $C^q_k(M)$, define $dm\in C^{q+1}_k(M)$ by
+\phantomsection\label{fac:III:3:no:61:formula:differential}
+\[
+(dm)\langle i_0\cdots i_{q+1}\rangle
+=\sum_{j=0}^{j=q+1}(-1)^j t_{i_j}^k.
+  m\langle i_0\cdots\widehat{\imath}_j\cdots i_{q+1}\rangle.
+\]
+\phantomsection\label{fac:III:3:no:61:formula:complex-Ck}
+A direct calculation shows that $d\circ d=0$. Hence the direct sum
+$C_k(M)=\sum_{q=0}^{q=r}C^q_k(M)$, equipped with the coboundary operator
+$d$, is a \textit{complex}; its $q$-th cohomology group will be denoted
+by $H^q_k(M)$.
+
+(Following [11], let us mention another interpretation of the elements
+of $C^q_k(M)$. Introduce $r+1$ differential symbols
+$dx_0,\ldots,dx_r$, and associate with every $m\in C^q_k(M)$ the
+``differential form'' of degree $q+1$
+\phantomsection\label{fac:III:3:no:61:formula:omega-m}
+\[
+\omega_m=\sum_{i_0<\cdots<i_q}
+m\langle i_0\cdots i_q\rangle\,
+dx_{i_0}\wedge\cdots\wedge dx_{i_q}.
+\]
+\phantomsection\label{fac:III:3:no:61:formula:alpha-k}
+If $\alpha_k=\sum_{i=0}^{i=r}t_i^k\,dx_i$, then
+\phantomsection\label{fac:III:3:no:61:formula:omega-dm}
+\[
+\omega_{dm}=\alpha_k\wedge\omega_m;
+\]
+in other words, the coboundary operation becomes exterior
+multiplication by the form $\alpha_k$.)
+
+If $h$ is an integer $\geq k$, let
+$\rho^h_k:C^q_k(M)\to C^q_h(M)$ be the homomorphism defined by
+\phantomsection\label{fac:III:3:no:61:formula:rho}
+\[
+\rho^h_k(m)\langle i_0\cdots i_q\rangle
+=(t_{i_0}\cdots t_{i_q})^{h-k}
+m\langle i_0\cdots i_q\rangle.
+\]
+We have $\rho^h_k\circ d=d\circ\rho^h_k$, and
+$\rho^l_h\circ\rho^h_k=\rho^l_k$ if $k\leq h\leq l$. We may therefore
+\phantomsection\label{fac:III:3:no:61:formula:direct-limit-complex}
+define the complex $C(M)$, the direct limit of the system
+$(C_k(M),\rho^h_k)$ as $k\to+\infty$.
+The cohomology groups of this complex will be denoted by $H^q(M)$.
+Since cohomology commutes with direct limits (cf. [6], Chapter V,
+Proposition~9.3*),
+\phantomsection\label{fac:III:3:no:61:formula:direct-limit-cohomology}
+\[
+H^q(M)=\varinjlim_{k\to\infty}H^q_k(M).
+\]
+
+Every homomorphism $\varphi:M\to M'$ defines a homomorphism
+\phantomsection\label{fac:III:3:no:61:formula:functorial-chain-map}
+\[
+\varphi:C_k(M)\longrightarrow C_k(M')
+\]
+by the formula
+$\varphi(m)\langle i_0\cdots i_q\rangle
+=\varphi(m\langle i_0\cdots i_q\rangle)$, and hence, by passage to the
+limit, a homomorphism $\varphi:C(M)\to C(M')$. Moreover, these
+homomorphisms commute with the coboundary and therefore define
+homomorphisms
+\phantomsection\label{fac:III:3:no:61:formula:functorial-cohomology}
+\[
+\varphi:H^q_k(M)\longrightarrow H^q_k(M')
+\qquad\text{and}\qquad
+\varphi:H^q(M)\longrightarrow H^q(M').
+\]
+If
+$0\to M\to M'\to M''\to0$ is exact, then so is the sequence of
+complexes
+$0\to C_k(M)\to C_k(M')\to C_k(M'')\to0$, and hence there is an exact
+cohomology sequence
+\phantomsection\label{fac:III:3:no:61:formula:long-exact-sequence}
+\[
+\cdots\longrightarrow H^q_k(M')\longrightarrow H^q_k(M'')
+\longrightarrow H^{q+1}_k(M)\longrightarrow H^{q+1}_k(M')
+\longrightarrow\cdots.
+\]
+The same results hold for $C(M)$ and the $H^q(M)$.
+
+\phantomsection\label{fac:III:3:no:61:remark:no:69}
+\textsc{Remark.} We shall see later
+(cf. \hyperref[fac:III:4:no:69]{no.~69}) that the $H^q_k(M)$
+can be expressed in terms of the $\operatorname{Ext}^q_S$.

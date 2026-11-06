@@ -1,0 +1,46 @@
+% FAC-EN-U0040
+% French source: fac_body.tex lines 1401--1441.
+% Authority: PDF physical pp. 38--39; printed pp. 233--234 (no. 42 complete).
+
+\bigskip
+\phantomsection\label{fac:II:3}
+\textbf{\S3. Coherent algebraic sheaves on affine varieties}
+
+\medskip
+\phantomsection\label{fac:II:3:no:42}
+\textbf{42. Affine varieties.}
+\phantomsection\label{fac:II:3:no:42:def:affine-variety}
+An algebraic variety $V$ is said to be \textit{affine} if it is isomorphic to a closed subvariety of an affine space. The product of two affine varieties is an affine variety, and every closed subvariety of an affine variety is an affine variety.
+
+\phantomsection\label{fac:II:3:no:42:def:affine-open-subset}
+An open subset $U$ of an algebraic variety $X$ is said to be \textit{affine} if, when endowed with the algebraic-variety structure induced by that of $X$, it is an affine variety.
+
+\phantomsection\label{fac:II:3:no:42:prop:1}
+\textsc{Proposition 1.} \textit{Let $U$ and $V$ be two open subsets of an algebraic variety $X$. If $U$ and $V$ are affine, then $U\cap V$ is affine.}
+
+Let $\Delta$ be the diagonal of $X\times X$. By \hyperref[fac:II:1:no:35]{no.~35}, the map $x\mapsto(x,x)$ is a biregular isomorphism from $X$ onto $\Delta$; its restriction to $U\cap V$ is therefore a biregular isomorphism from $U\cap V$ onto $\Delta\cap(U\times V)$. Since $U$ and $V$ are affine varieties, $U\times V$ is also an affine variety. Moreover, $\Delta$ is closed in $X\times X$ by axiom $(\mathrm{VA}_{II})$, so $\Delta\cap(U\times V)$ is closed in $U\times V$ and is indeed an affine variety, as required.
+
+(It is easy to see that this proposition fails for prealgebraic varieties: axiom $(\mathrm{VA}_{II})$ plays an essential role.)
+
+\phantomsection\label{fac:II:3:no:42:notation:V-f}
+We now introduce notation that will be used throughout the rest of this section. If $V$ is an algebraic variety and $f$ is a regular function on $V$, we denote by $V_f$ the open subset of $V$ consisting of the points $x\in V$ such that $f(x)\neq0$.
+
+\phantomsection\label{fac:II:3:no:42:prop:2}
+\textsc{Proposition 2.} \textit{If $V$ is an affine algebraic variety and $f$ is a regular function on $V$, then the open subset $V_f$ is affine.}
+
+Let $W$ be the subset of $V\times K$ consisting of the pairs $(x,\lambda)$ such that $\lambda f(x)=1$. Plainly $W$ is closed in $V\times K$, and hence is an affine variety. For every $(x,\lambda)\in W$, set $\pi(x,\lambda)=x$; the map $\pi$ is a regular map from $W$ to $V_f$. Conversely, for every $x\in V_f$, set $\omega(x)=(x,1/f(x))$. The map $\omega:V_f\to W$ is regular, and $\pi\circ\omega=1$ and $\omega\circ\pi=1$. Thus $V_f$ and $W$ are isomorphic.
+
+\phantomsection\label{fac:II:3:no:42:prop:3}
+\textsc{Proposition 3.} \textit{Let $V$ be a closed subvariety of $K^r$, let $F$ be a closed subset of $V$, and let $U=V-F$. As $P$ ranges over the polynomials vanishing on $F$, the open subsets $V_P$ form a basis for the topology of $U$.}
+
+Let $U'=V-F'$ be an open subset of $U$, and let $x\in U'$. We must show that there is a polynomial $P$ such that $V_P\subset U'$ and $x\in V_P$. In other words, $P$ must vanish on $F'$ and be nonzero at $x$. The existence of such a polynomial follows immediately from the definition of the topology of $K^r$.
+
+\phantomsection\label{fac:II:3:no:42:thm:1}
+\textsc{Theorem 1.} \textit{The affine open subsets of an algebraic variety $X$ form a basis of open subsets for the topology of $X$.}
+
+Since the question is local, we may suppose that $X$ is a locally closed subvariety of an affine space $K^r$; the theorem then follows immediately from \hyperref[fac:II:3:no:42:prop:2]{Propositions~2} and~\hyperref[fac:II:3:no:42:prop:3]{3}.
+
+\phantomsection\label{fac:II:3:no:42:thm:1:cor}
+\textsc{Corollary.} \textit{Coverings of $X$ by affine open subsets are arbitrarily fine.}
+
+Note that if $\mathfrak{U}=\{U_i\}_{i\in I}$ is such a covering, then all the $U_{i_0\ldots i_p}$ are affine open subsets, by \hyperref[fac:II:3:no:42:prop:1]{Proposition~1}.

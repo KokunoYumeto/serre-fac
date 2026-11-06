@@ -1,0 +1,99 @@
+% FAC-EN-U0049
+% French source: fac_body.tex lines 1767--1796.
+% Authority: PDF physical pp. 48--49; printed pp. 243--244 (Chapter III,
+% section 1 opening and no. 51 complete).
+% French controls: T0028 repairs inherited "espacc" to the printed "espace";
+% C0030 preserves printed "coincide" diplomatically and restores "coïncide"
+% only in corrected French.
+
+\phantomsection\label{fac:III}
+\begin{center}
+{\Large\textsc{Chapter III. Coherent Algebraic Sheaves on Projective Varieties}}
+\end{center}
+
+\phantomsection\label{fac:III:1}
+\section*{\S1. Projective varieties}
+\addcontentsline{toc}{section}{Chapter III, \S1. Projective varieties}
+
+\phantomsection\label{fac:III:1:no:51}
+\textbf{51. Notation.}
+(The notation introduced below will be used without further reference
+throughout the remainder of this chapter.)
+
+Let $r$ be an integer $\geq0$, and let
+$Y=K^{r+1}\setminus\{0\}$. The multiplicative group $K^*$ of the nonzero
+elements of $K$ acts on $Y$ by the formula
+\phantomsection\label{fac:III:1:no:51:formula:scalar-action}
+\[
+\lambda(\mu_0,\ldots,\mu_r)
+  =(\lambda\mu_0,\ldots,\lambda\mu_r).
+\]
+\phantomsection\label{fac:III:1:no:51:def:projective-space}
+Two points $y$ and $y'$ are said to be equivalent if there exists
+$\lambda\in K^*$ such that $y'=\lambda y$. The quotient space of $Y$ by
+this equivalence relation is denoted by $\mathbf{P}_r(K)$, or simply by $X$;
+it is the \textit{projective space of dimension $r$ over $K$}. The canonical
+projection of $Y$ onto $X$ is denoted by $\pi$.
+
+Let $I=\{0,1,\ldots,r\}$. For every $i\in I$, let $t_i$ denote the $i$th
+coordinate function on $K^{r+1}$, defined by
+\phantomsection\label{fac:III:1:no:51:formula:coordinate}
+\[
+t_i(\mu_0,\ldots,\mu_r)=\mu_i.
+\]
+\phantomsection\label{fac:III:1:no:51:cover}
+Let $V_i$ denote the open subset of $K^{r+1}$ consisting of the points at
+which $t_i\neq0$, and let $U_i$ be the image of $V_i$ under $\pi$. The
+$\{U_i\}_{i\in I}$ form a covering $\mathfrak{U}$ of $X$. If $i,j\in I$,
+the function $t_j/t_i$ is regular on $V_i$ and invariant under $K^*$; it
+therefore defines a function on $U_i$, which we again denote by $t_j/t_i$.
+For fixed $i$, the functions $t_j/t_i$, $j\neq i$, define a bijection
+\phantomsection\label{fac:III:1:no:51:map:affine-chart}
+\[
+\psi_i:U_i\longrightarrow K^r.
+\]
+
+\phantomsection\label{fac:III:1:no:51:construction:structure-sheaf}
+We equip $K^{r+1}$ with its algebraic-variety structure and $Y$ with the
+induced structure. We also equip $X$ with the quotient topology of that on
+$Y$: a closed subset of $X$ is therefore the image under $\pi$ of a closed
+cone in $K^{r+1}$. If $U$ is open in $X$, put
+\[
+A_U=\Gamma\bigl(\pi^{-1}(U),\mathcal{O}_Y\bigr);
+\]
+this is the ring of regular functions on $\pi^{-1}(U)$. Let $A_U^0$ be the
+subring of $A_U$ consisting of the elements invariant under $K^*$ (that is,
+the homogeneous functions of degree $0$). When $V\supset U$, there is a
+restriction homomorphism
+\[
+\varphi_U^V:A_V^0\longrightarrow A_U^0,
+\]
+and the system $(A_U^0,\varphi_U^V)$ defines a sheaf $\mathcal{O}_X$, which
+may be regarded as a subsheaf of the sheaf $\mathfrak{F}(X)$ of germs of
+functions on $X$. A function $f$ defined in a neighbourhood of $x$ belongs
+to $\mathcal{O}_{x,X}$ if and only if it coincides locally with a function of
+the form $P/Q$, where $P$ and $Q$ are homogeneous polynomials of the same
+degree in $t_0,\ldots,t_r$, with $Q(y)\neq0$ for
+$y\in\pi^{-1}(x)$ (which we shall write more briefly as $Q(x)\neq0$).
+
+\phantomsection\label{fac:III:1:prop:1}
+\textsc{Proposition 1.}
+\textit{The projective space $X=\mathbf{P}_r(K)$, equipped with the preceding
+topology and sheaf, is an algebraic variety.}
+
+The $U_i$, $i\in I$, are open subsets of $X$, and it is immediate that the
+bijections $\psi_i:U_i\to K^r$ defined above are biregular isomorphisms; this
+shows that axiom $(\mathrm{VA}_I)$ is satisfied. To prove that
+$(\mathrm{VA}_{II})$ is also satisfied, one must see that the subset of
+$K^r\times K^r$ formed by the pairs
+$(\psi_i(x),\psi_j(x))$, where $x\in U_i\cap U_j$, is closed; this presents
+no difficulty.
+
+\phantomsection\label{fac:III:1:no:51:def:projective-variety}
+In what follows, $X$ will always be equipped with the algebraic-variety
+structure just defined, and the sheaf $\mathcal{O}_X$ will simply be denoted
+by $\mathcal{O}$. An algebraic variety $V$ is said to be
+\textit{projective} if it is isomorphic to a closed subvariety of a
+projective space. The study of coherent algebraic sheaves on projective
+varieties may be reduced to the study of coherent algebraic sheaves on the
+$\mathbf{P}_r(K)$; cf. \hyperref[fac:II:2:no:39]{no.~39}.

@@ -1,0 +1,56 @@
+% FAC-EN-U0012
+% French source: fac_body.tex lines 427--458.
+% Authority: PDF physical pp. 14--15; printed pp. 209--210 (no. 14 complete).
+
+\medskip
+\phantomsection\label{fac:I:2:no:14}
+\textbf{14. Operations on coherent sheaves.}
+
+We have just seen that the direct sum of finitely many coherent sheaves is coherent. We shall now prove analogous results for the functors $\otimes$ and $\operatorname{Hom}$.
+
+\phantomsection\label{fac:I:2:no:14:prop:4}
+\textsc{Proposition 4.} \textit{If $\mathcal{F}$ and $\mathcal{G}$ are two coherent sheaves, then $\mathcal{F}\otimes_{\mathcal{A}}\mathcal{G}$ is coherent.}
+
+By \hyperref[fac:I:2:no:12:prop:2]{Proposition~2}, $\mathcal{F}$ is locally isomorphic to the cokernel of a homomorphism $\varphi:\mathcal{A}^q\to\mathcal{A}^p$. Thus $\mathcal{F}\otimes_{\mathcal{A}}\mathcal{G}$ is locally isomorphic to the cokernel of
+\[
+\varphi:\mathcal{A}^q\otimes_{\mathcal{A}}\mathcal{G}
+\longrightarrow
+\mathcal{A}^p\otimes_{\mathcal{A}}\mathcal{G}.
+\]
+But $\mathcal{A}^q\otimes_{\mathcal{A}}\mathcal{G}$ and $\mathcal{A}^p\otimes_{\mathcal{A}}\mathcal{G}$ are respectively isomorphic to $\mathcal{G}^q$ and $\mathcal{G}^p$, which are coherent by the \hyperref[fac:I:2:no:13:thm:1:cor]{corollary to Theorem~1}. Hence $\mathcal{F}\otimes_{\mathcal{A}}\mathcal{G}$ is coherent by \hyperref[fac:I:2:no:13:thm:2]{Theorem~2}.
+
+\phantomsection\label{fac:I:2:no:14:prop:5}
+\textsc{Proposition 5.} \textit{Let $\mathcal{F}$ and $\mathcal{G}$ be two sheaves, with $\mathcal{F}$ coherent. For every $x\in X$, the stalk $\operatorname{Hom}_{\mathcal{A}}(\mathcal{F},\mathcal{G})_x$ is isomorphic to $\operatorname{Hom}_{\mathcal{A}_x}(\mathcal{F}_x,\mathcal{G}_x)$.}
+
+More precisely, we shall show that the homomorphism
+\[
+\rho:\operatorname{Hom}_{\mathcal{A}}(\mathcal{F},\mathcal{G})_x
+\longrightarrow
+\operatorname{Hom}_{\mathcal{A}_x}(\mathcal{F}_x,\mathcal{G}_x),
+\]
+defined in \hyperref[fac:I:1:no:11]{no.~11}, is bijective. First let $\psi:\mathcal{F}\to\mathcal{G}$ be a homomorphism defined near $x$ which vanishes on $\mathcal{F}_x$. Since $\mathcal{F}$ is of finite type, it follows at once that $\psi$ vanishes in a neighborhood of $x$; thus $\rho$ is injective.
+
+To prove that $\rho$ is surjective, let $\varphi:\mathcal{F}_x\to\mathcal{G}_x$ be an $\mathcal{A}_x$-homomorphism. We must find a homomorphism $\psi:\mathcal{F}\to\mathcal{G}$ defined near $x$ such that $\psi_x=\varphi$. Let $m_1,\ldots,m_p$ be finitely many sections of $\mathcal{F}$ near $x$ which generate $\mathcal{F}_y$ for every $y$ sufficiently close to $x$, and let $f_j^i$ ($1\leq i\leq p$, $1\leq j\leq q$) be sections of $\mathcal{A}^p$ generating $\mathcal{R}(m_1,\ldots,m_p)$ near $x$. There are local sections $n_1,\ldots,n_p$ of $\mathcal{G}$ such that $n_i(x)=\varphi(m_i(x))$. Put
+\[
+p_j=\sum_{i=1}^{p}f_j^i n_i,\qquad 1\leq j\leq q.
+\]
+The $p_j$ are local sections of $\mathcal{G}$ which vanish at $x$, and hence at every point of some neighborhood $U$ of $x$. It follows that, for $y\in U$, a relation $\sum_i f_i m_i(y)=0$ with $f_i\in\mathcal{A}_y$ implies $\sum_i f_i n_i(y)=0$. Consequently, for every element $m=\sum_i f_i m_i(y)\in\mathcal{F}_y$, we may set
+\[
+\psi_y(m)=\sum_{i=1}^{p}f_i n_i(y)\in\mathcal{G}_y,
+\]
+and this formula defines $\psi_y(m)$ unambiguously. The collection of the $\psi_y$, $y\in U$, is a homomorphism $\psi:\mathcal{F}\to\mathcal{G}$ over $U$ with $\psi_x=\varphi$. This completes the proof.
+
+\phantomsection\label{fac:I:2:no:14:prop:6}
+\textsc{Proposition 6.} \textit{If $\mathcal{F}$ and $\mathcal{G}$ are coherent sheaves, then $\operatorname{Hom}_{\mathcal{A}}(\mathcal{F},\mathcal{G})$ is coherent.}
+
+The question being local, \hyperref[fac:I:2:no:12:prop:2]{Proposition~2} allows us to suppose that there is an exact sequence
+\[
+\mathcal{A}^q\longrightarrow\mathcal{A}^p\longrightarrow\mathcal{F}\longrightarrow 0.
+\]
+It follows from the \hyperref[fac:I:2:no:14:prop:5]{preceding proposition} that the sequence
+\[
+0\longrightarrow\operatorname{Hom}_{\mathcal{A}}(\mathcal{F},\mathcal{G})
+\longrightarrow\operatorname{Hom}_{\mathcal{A}}(\mathcal{A}^p,\mathcal{G})
+\longrightarrow\operatorname{Hom}_{\mathcal{A}}(\mathcal{A}^q,\mathcal{G})
+\]
+is exact. Now $\operatorname{Hom}_{\mathcal{A}}(\mathcal{A}^p,\mathcal{G})$ is isomorphic to $\mathcal{G}^p$ and hence is coherent, and the same holds for $\operatorname{Hom}_{\mathcal{A}}(\mathcal{A}^q,\mathcal{G})$. \hyperref[fac:I:2:no:13:thm:2]{Theorem~2} therefore shows that $\operatorname{Hom}_{\mathcal{A}}(\mathcal{F},\mathcal{G})$ is coherent.

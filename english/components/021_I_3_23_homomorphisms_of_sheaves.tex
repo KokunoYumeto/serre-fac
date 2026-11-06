@@ -1,0 +1,34 @@
+% FAC-EN-U0021
+% French source: fac_body.tex lines 686--707, with the source footnote moved to no. 22.
+% Authority: PDF physical pp. 20--21; printed pp. 215--216 (no. 23 complete).
+
+\medskip
+\phantomsection\label{fac:I:3:no:23}
+\textbf{23. Homomorphisms of sheaves.}
+
+Let $\varphi$ be a homomorphism from a sheaf $\mathcal{F}$ to a sheaf $\mathcal{G}$. If $\mathfrak{U}$ is a covering of $X$, associate to every $f\in C^q(\mathfrak{U},\mathcal{F})$ the element $\varphi f\in C^q(\mathfrak{U},\mathcal{G})$ defined by $(\varphi f)_s=\varphi(f_s)$. The map $f\mapsto\varphi f$ is a homomorphism from $C(\mathfrak{U},\mathcal{F})$ to $C(\mathfrak{U},\mathcal{G})$ which commutes with the coboundary, and hence induces homomorphisms
+\[
+\varphi^*:H^q(\mathfrak{U},\mathcal{F})
+\longrightarrow H^q(\mathfrak{U},\mathcal{G}).
+\]
+We have
+\[
+\varphi^*\circ\sigma(\mathfrak{U},\mathfrak{V})
+=\sigma(\mathfrak{U},\mathfrak{V})\circ\varphi^*,
+\]
+and passage to the limit therefore gives homomorphisms
+\[
+\varphi^*:H^q(X,\mathcal{F})\longrightarrow H^q(X,\mathcal{G}).
+\]
+
+When $q=0$, $\varphi^*$ coincides with the homomorphism from $\Gamma(X,\mathcal{F})$ to $\Gamma(X,\mathcal{G})$ naturally defined by $\varphi$.
+
+In general, the homomorphisms $\varphi^*$ have the usual formal properties:
+\[
+(\varphi+\psi)^*=\varphi^*+\psi^*,\qquad
+(\varphi\circ\psi)^*=\varphi^*\circ\psi^*,\qquad
+1^*=1.
+\]
+In other words, for every $q\geq0$, $H^q(X,\mathcal{F})$ is a covariant additive functor of $\mathcal{F}$. In particular, if $\mathcal{F}$ is the direct sum of two sheaves $\mathcal{G}_1$ and $\mathcal{G}_2$, then $H^q(X,\mathcal{F})$ is the direct sum of $H^q(X,\mathcal{G}_1)$ and $H^q(X,\mathcal{G}_2)$.
+
+Suppose that $\mathcal{F}$ is a sheaf of $\mathcal{A}$-modules. Every global section of the sheaf $\mathcal{A}$ defines an endomorphism of $\mathcal{F}$, and hence of each $H^q(X,\mathcal{F})$. It follows that the $H^q(X,\mathcal{F})$ are modules over the ring $\Gamma(X,\mathcal{A})$.

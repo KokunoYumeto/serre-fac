@@ -1,0 +1,31 @@
+% FAC-EN-U0037
+% French source: fac_body.tex lines 1353--1375.
+% Authority: PDF physical pp. 36--37; printed pp. 231--232 (no. 39 complete).
+
+\medskip
+\phantomsection\label{fac:II:2:no:39}
+\textbf{39. Ideal sheaf defined by a closed subvariety.}
+\phantomsection\label{fac:II:2:no:39:def:ideal-sheaf}
+Let $W$ be a closed subvariety of an algebraic variety $V$. For every $x\in V$, let $\mathcal{J}_x(W)$ be the ideal of $\mathcal{O}_{x,V}$ consisting of the elements $f$ whose restriction to $W$ is zero in a neighborhood of $x$, and let $\mathcal{J}(W)$ be the subsheaf of $\mathcal{O}_V$ formed by the $\mathcal{J}_x(W)$. We have the \hyperref[fac:II:2:no:39:prop:2]{following proposition}, which generalizes \hyperref[fac:II:2:no:37:lemma:2]{Lemma~2}.
+
+\phantomsection\label{fac:II:2:no:39:prop:2}
+\textsc{Proposition 2.} \textit{The sheaf $\mathcal{J}(W)$ is a coherent algebraic sheaf.}
+
+The question is local, so we may suppose that $V$, and hence also $W$, is a closed subvariety of affine space $K^r$. It then follows from \hyperref[fac:II:2:no:37:lemma:2]{Lemma~2}, applied to $W$, that the ideal sheaf defined by $W$ in $K^r$ is of finite type. Consequently $\mathcal{J}(W)$, which is its image under the canonical homomorphism $\mathcal{O}\to\mathcal{O}_V$, is also of finite type, and is therefore coherent by \hyperref[fac:I:2:no:15:prop:8]{Proposition~8 of no.~15} and \hyperref[fac:II:2:no:37:prop:1]{Proposition~1 of no.~37}.
+
+Let $\mathcal{O}_W$ be the sheaf of local rings of $W$, and let $\mathcal{O}_W^V$ be the sheaf on $V$ obtained by extending $\mathcal{O}_W$ by zero outside $W$ (cf. \hyperref[fac:I:1:no:5]{no.~5}). This sheaf is canonically isomorphic to $\mathcal{O}_V/\mathcal{J}(W)$; in other words, there is an exact sequence
+\[
+0\longrightarrow\mathcal{J}(W)\longrightarrow\mathcal{O}_V
+ \longrightarrow\mathcal{O}_W^V\longrightarrow0.
+\]
+Now let $\mathcal{F}$ be an algebraic sheaf on $W$, and let $\mathcal{F}^V$ be the sheaf obtained by extending $\mathcal{F}$ by zero outside $W$. We may regard $\mathcal{F}^V$ as a sheaf of $\mathcal{O}_W^V$-modules, and hence also as a sheaf of $\mathcal{O}_V$-modules whose annihilator contains $\mathcal{J}(W)$. We have:
+
+\phantomsection\label{fac:II:2:no:39:prop:3}
+\textsc{Proposition 3.} \textit{If $\mathcal{F}$ is a coherent algebraic sheaf on $W$, then $\mathcal{F}^V$ is a coherent algebraic sheaf on $V$. Conversely, if $\mathcal{G}$ is a coherent algebraic sheaf on $V$ whose annihilator contains $\mathcal{J}(W)$, then the restriction of $\mathcal{G}$ to $W$ is a coherent algebraic sheaf on $W$.}
+
+If $\mathcal{F}$ is a coherent algebraic sheaf on $W$, then $\mathcal{F}^V$ is a coherent sheaf of $\mathcal{O}_W^V$-modules (\hyperref[fac:I:2:no:17:prop:11]{no.~17, Proposition~11}), and hence a coherent sheaf of $\mathcal{O}_V$-modules (\hyperref[fac:I:2:no:16:thm:3]{no.~16, Theorem~3}). Conversely, if $\mathcal{G}$ is a coherent algebraic sheaf on $V$ whose annihilator contains $\mathcal{J}(W)$, then $\mathcal{G}$ may be regarded as a sheaf of $\mathcal{O}_V/\mathcal{J}(W)$-modules, and it is coherent (\hyperref[fac:I:2:no:16:thm:3]{no.~16, Theorem~3}); the restriction of $\mathcal{G}$ to $W$ is therefore a coherent sheaf of $\mathcal{O}_W$-modules (\hyperref[fac:I:2:no:17:prop:11]{no.~17, Proposition~11}).
+
+Thus every coherent algebraic sheaf on $W$ may be identified with a coherent algebraic sheaf on $V$; by \hyperref[fac:I:3:no:26:prop:8]{Proposition~8 of no.~26}, this identification does not change the cohomology groups. In particular, every coherent algebraic sheaf on an affine variety, respectively a projective variety, may be regarded as a coherent algebraic sheaf on affine space, respectively projective space. We shall frequently use this possibility below.
+
+\phantomsection\label{fac:II:2:no:39:remark}
+\textsc{Remark.} Let $\mathcal{G}$ be a coherent algebraic sheaf on $V$ that is zero outside $W$. The annihilator of $\mathcal{G}$ \textit{need not contain} $\mathcal{J}(W)$; in other words, $\mathcal{G}$ cannot always be regarded as a coherent algebraic sheaf on $W$. All that can be asserted is that its annihilator contains a \textit{power} of $\mathcal{J}(W)$.

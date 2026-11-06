@@ -1,0 +1,83 @@
+% FAC-EN-U0023
+% French source: fac_body.tex lines 817--871.
+% Authority: PDF physical pp. 22--23; printed pp. 217--218 (no. 25 complete).
+% Transcription repair: FAC-FR-T0019.
+% Printed-source repairs: FAC-FR-C0008 and FAC-FR-C0009.
+
+\medskip
+\phantomsection\label{fac:I:3:no:25}
+\textbf{25. Exact sequence of sheaves: the case where $X$ is paracompact.}
+Recall that a space $X$ is called paracompact if it is Hausdorff and every covering of $X$ admits a finer locally finite covering. For such a space, \hyperref[fac:I:3:no:24:prop:6]{Proposition~6} may be extended to every value of $q$ (I do not know whether such an extension is possible for non-Hausdorff spaces):
+
+\phantomsection\label{fac:I:3:no:25:prop:7}
+\textsc{Proposition 7.} \textit{If $X$ is paracompact, the canonical homomorphism}
+\[
+H_0^q(X,\mathcal{C})\longrightarrow H^q(X,\mathcal{C})
+\]
+\textit{is bijective for every $q\geq0$.}
+
+The \hyperref[fac:I:3:no:25:prop:7]{proposition} is an immediate consequence of the \hyperref[fac:I:3:no:25:lemma:2]{following lemma}, analogous to \hyperref[fac:I:3:no:24:lemma:1]{Lemma~1}:
+
+\phantomsection\label{fac:I:3:no:25:lemma:2}
+\textsc{Lemma 2.} \textit{Let $\mathfrak{V}=\{V_j\}_{j\in J}$ be a covering, and let
+$f=(f_{j_0\ldots j_q})$ be an element of $C^q(\mathfrak{V},\mathcal{C})$. There exist a covering
+$\mathfrak{U}=\{U_i\}_{i\in I}$ and a map $\tau:I\to J$ such that $U_i\subset V_{\tau i}$ and
+$\tau f\in C_0^q(\mathfrak{U},\mathcal{C})$.}
+
+Since $X$ is paracompact, we may suppose that $\mathfrak{V}$ is locally finite. There is then a covering $\{W_j\}_{j\in J}$ such that $\overline{W}_j\subset V_j$. For every $x\in X$, choose an open neighborhood $U_x$ of $x$ such that:
+
+\begin{enumerate}[label=(\alph*),leftmargin=2.5em]
+\item\label{fac:I:3:no:25:lemma:2:item:a} if $x\in V_j$ (respectively, $x\in\overline{W}_j$), then $U_x\subset V_j$ (respectively, $U_x\subset W_j$);
+\item\label{fac:I:3:no:25:lemma:2:item:b} if $U_x\cap W_j\neq\varnothing$, then $U_x\subset V_j$;
+\item\label{fac:I:3:no:25:lemma:2:item:c} if $x\in V_{j_0\ldots j_q}$, there is a section $b$ of $\mathcal{B}$ over $U_x$ such that
+\[
+\beta(b)=f_{j_0\ldots j_q}\quad\text{over }U_x.
+\]
+\end{enumerate}
+
+Condition \hyperref[fac:I:3:no:25:lemma:2:item:c]{(c)} can be achieved by the definition of a quotient sheaf and the fact that $x$ belongs to only finitely many of the sets $V_{j_0\ldots j_q}$. Once \hyperref[fac:I:3:no:25:lemma:2:item:c]{(c)} has been obtained, it is enough to shrink $U_x$ suitably to satisfy \hyperref[fac:I:3:no:25:lemma:2:item:a]{(a)} and \hyperref[fac:I:3:no:25:lemma:2:item:b]{(b)}.
+
+The family $\{U_x\}_{x\in X}$ forms a covering $\mathfrak{U}$; for every $x\in X$, choose $\tau x\in J$ such that $x\in W_{\tau x}$. We now verify that
+$\tau f\in C_0^q(\mathfrak{U},\mathcal{C})$,\footnote{The printed source has the unadorned $U$ here. The covering introduced in the lemma is $\mathfrak{U}$; plain $U$ denotes the individual neighborhoods $U_x$.}
+that is, that $f_{\tau x_0\ldots\tau x_q}$ is the image under $\beta$ of a section of $\mathcal{B}$ over
+\[
+U_{x_0}\cap\cdots\cap U_{x_q}.
+\]
+If this intersection is empty, the assertion is clear. Otherwise,
+$U_{x_0}\cap U_{x_k}\neq\varnothing$ for $0\leq k\leq q$; since
+$U_{x_k}\subset W_{\tau x_k}$, we have
+$U_{x_0}\cap W_{\tau x_k}\neq\varnothing$. By \hyperref[fac:I:3:no:25:lemma:2:item:b]{(b)}, it follows that
+$U_{x_0}\subset V_{\tau x_k}$, and hence
+$x_0\in V_{\tau x_0\ldots\tau x_q}$. Applying \hyperref[fac:I:3:no:25:lemma:2:item:c]{(c)}, we see that there is a section $b$ of $\mathcal{B}$ over $U_{x_0}$ such that\footnote{The printed source writes $\beta(b)_x$ although no point $x$ is defined in this assertion and the equality is asserted over the whole open set $U_{x_0}$.}
+\[
+\beta(b)=f_{\tau x_0\ldots\tau x_q}\quad\text{over }U_{x_0},
+\]
+and therefore, a fortiori, over $U_{x_0}\cap\cdots\cap U_{x_q}$. This completes the proof.
+
+\phantomsection\label{fac:I:3:no:25:prop:7:cor}
+\textsc{Corollary.} \textit{If $X$ is paracompact, there is an exact sequence}
+\[
+\cdots\longrightarrow H^q(X,\mathcal{B})
+\xrightarrow{\beta^*}H^q(X,\mathcal{C})
+\xrightarrow{d}H^{q+1}(X,\mathcal{A})
+\xrightarrow{\alpha^*}H^{q+1}(X,\mathcal{B})
+\longrightarrow\cdots.
+\]
+
+Here $d$ is the composite of the inverse of the isomorphism
+$H_0^q(X,\mathcal{C})\to H^q(X,\mathcal{C})$ with
+$d:H_0^q(X,\mathcal{C})\to H^{q+1}(X,\mathcal{A})$; thus
+\[
+H^q(X,\mathcal{C})
+\xrightarrow{\sim}
+H_0^q(X,\mathcal{C})
+\xrightarrow{d}H^{q+1}(X,\mathcal{A}).
+\]
+
+The \hyperref[fac:I:3:no:25:prop:7:cor]{preceding exact sequence} is called the \textit{cohomology exact sequence} defined by the given exact sequence of sheaves
+\[
+0\longrightarrow\mathcal{A}\longrightarrow\mathcal{B}
+\longrightarrow\mathcal{C}\longrightarrow0.
+\]
+More generally, it holds whenever one can prove that
+$H_0^q(X,\mathcal{C})\to H^q(X,\mathcal{C})$ is bijective. We shall see in \hyperref[fac:II:3:no:47]{no.~47} that this is the case when $X$ is an algebraic variety and $\mathcal{A}$ is a coherent algebraic sheaf.

@@ -1,0 +1,121 @@
+% FAC-EN-U0052
+% French source: fac_body.tex lines 1860--1886.
+% Authority: PDF physical pp. 51--52; printed pp. 246--247 (section 2 opening
+% and no. 54 complete).
+% FAC-FR-C0031 corrects printed "élement" only in corrected French.
+% FAC-FR-C0032 corrects the printed f_j/f_i index conflict in corrected
+% French and English; diplomatic French preserves the printed j.
+
+\phantomsection\label{fac:III:2}
+\section*{\S2. Graded modules and coherent algebraic sheaves on projective space}
+\addcontentsline{toc}{section}{Chapter III, \S2. Graded modules and coherent algebraic sheaves on projective space}
+
+\phantomsection\label{fac:III:2:no:54}
+\textbf{54. The operation $\mathcal{F}(n)$.}
+\phantomsection\label{fac:III:2:no:54:construction:twist}
+Let $\mathcal{F}$ be an algebraic sheaf on $X=\mathbf{P}_r(K)$, and let
+$\mathcal{F}_i=\mathcal{F}(U_i)$ be the restriction of $\mathcal{F}$ to
+$U_i$ (cf. \hyperref[fac:III:1:no:51]{no.~51}). For any integer $n$, let
+\phantomsection\label{fac:III:2:no:54:theta}
+\[
+\theta_{ij}(n):\mathcal{F}_j(U_i\cap U_j)
+  \longrightarrow\mathcal{F}_i(U_i\cap U_j)
+\]
+be the isomorphism defined by multiplication by the function
+$t_j^n/t_i^n$. This makes sense because $t_j/t_i$ is a regular function on
+$U_i\cap U_j$ with values in $K^*$. At every point of
+$U_i\cap U_j\cap U_k$ we have
+\[
+\theta_{ij}(n)\circ\theta_{jk}(n)=\theta_{ik}(n).
+\]
+We may therefore apply \hyperref[fac:I:1:no:4:prop:4]{Proposition~4 of no.~4} and obtain an algebraic sheaf,
+denoted $\mathcal{F}(n)$, by gluing the sheaves
+$\mathcal{F}_i=\mathcal{F}(U_i)$ by means of the isomorphisms
+$\theta_{ij}(n)$.
+
+There are canonical isomorphisms
+\phantomsection\label{fac:III:2:no:54:formula:canonical-isomorphisms}
+\[
+\mathcal{F}(0)\simeq\mathcal{F},
+\qquad
+\mathcal{F}(n)(m)\simeq\mathcal{F}(n+m).
+\]
+Moreover, $\mathcal{F}(n)$ is locally isomorphic to $\mathcal{F}$, and is
+therefore coherent if $\mathcal{F}$ is. It also follows that every exact
+sequence
+\[
+\mathcal{F}\longrightarrow\mathcal{F}'\longrightarrow\mathcal{F}''
+\]
+of algebraic sheaves gives rise, for every $n\in\mathbf{Z}$, to an exact
+sequence
+\[
+\mathcal{F}(n)\longrightarrow\mathcal{F}'(n)
+  \longrightarrow\mathcal{F}''(n).
+\]
+
+Applying the \hyperref[fac:III:2:no:54:construction:twist]{preceding construction} to $\mathcal{F}=\mathcal{O}$ gives the
+sheaves $\mathcal{O}(n)$, $n\in\mathbf{Z}$. We now give another description
+of these sheaves. If $U$ is open in $X$, let $A_U^n$ be the subset of
+\[
+A_U=\Gamma(\pi^{-1}(U),\mathcal{O}_Y)
+\]
+formed by the homogeneous functions of degree $n$, that is, the functions
+satisfying
+\phantomsection\label{fac:III:2:no:54:formula:homogeneous-function}
+\[
+f(\lambda y)=\lambda^n f(y)
+\qquad(\lambda\in K^*,\ y\in\pi^{-1}(U)).
+\]
+The $A_U^n$ are $A_U^0$-modules and hence give rise to an algebraic sheaf,
+which we denote by $\mathcal{O}'(n)$. An element of
+$\mathcal{O}'(n)_x$, $x\in X$, may therefore be identified with a rational
+fraction $P/Q$, where $P$ and $Q$ are homogeneous polynomials such that
+$Q(x)\neq0$ and
+\[
+\deg P-\deg Q=n.
+\]
+
+\phantomsection\label{fac:III:2:prop:1}
+\textsc{Proposition 1.}
+\textit{The sheaves $\mathcal{O}(n)$ and $\mathcal{O}'(n)$ are canonically
+isomorphic.}
+
+By definition, a section of $\mathcal{O}(n)$ over an open subset $U\subset X$
+is a system $(f_i)$ of sections of $\mathcal{O}$ over the $U\cap U_i$ such
+that
+\[
+f_i=(t_j^n/t_i^n)f_j
+\qquad\text{on }U\cap U_i\cap U_j.
+\]
+The $f_i$ may be identified with regular homogeneous functions of degree
+$0$ on the $\pi^{-1}(U)\cap\pi^{-1}(U_i)$. Put $g_i=t_i^n f_i$. Then
+$g_i=g_j$ at every point of
+$\pi^{-1}(U)\cap\pi^{-1}(U_i)\cap\pi^{-1}(U_j)$, and hence the $g_i$ are
+the restrictions of a unique regular function $g$ on $\pi^{-1}(U)$,
+homogeneous of degree $n$. Conversely, such a function $g$ defines a system
+$(f_i)$ by $f_i=g/t_i^n$. Thus the map $(f_i)\mapsto g$ is an isomorphism
+from $\mathcal{O}(n)$ onto $\mathcal{O}'(n)$.
+
+In what follows we shall most often identify $\mathcal{O}(n)$ and
+$\mathcal{O}'(n)$ by means of the \hyperref[fac:III:2:prop:1]{preceding isomorphism}. A section of
+$\mathcal{O}'(n)$ over $X$ is simply a regular function on $Y$ homogeneous
+of degree $n$. If $r\geq1$, such a function is identically zero for $n<0$,
+and is a homogeneous \textit{polynomial} of degree $n$ for $n\geq0$.
+
+\phantomsection\label{fac:III:2:prop:2}
+\textsc{Proposition 2.}
+\textit{For every algebraic sheaf $\mathcal{F}$, the sheaves
+$\mathcal{F}(n)$ and
+$\mathcal{F}\otimes_{\mathcal{O}}\mathcal{O}(n)$ are canonically
+isomorphic.}
+
+Since $\mathcal{O}(n)$ is obtained from the $\mathcal{O}_i$ by gluing with
+the $\theta_{ij}(n)$, the sheaf
+$\mathcal{F}\otimes\mathcal{O}(n)$ is obtained from the
+$\mathcal{F}_i\otimes\mathcal{O}_i$ by gluing with the isomorphisms
+$1\otimes\theta_{ij}(n)$. On identifying
+$\mathcal{F}_i\otimes\mathcal{O}_i$ with $\mathcal{F}_i$, we recover exactly
+the definition of $\mathcal{F}(n)$.
+
+In what follows we shall likewise identify $\mathcal{F}(n)$ with
+$\mathcal{F}\otimes\mathcal{O}(n)$.

@@ -1,0 +1,104 @@
+% FAC-EN-U0028
+% French source: fac_body.tex lines 1104--1150.
+% Authority: PDF physical pp. 27--29; printed pp. 222--224 (Chapter II opening and no. 30 complete).
+% Printed-source repair: FAC-FR-C0018 (French agreement only; English is naturally grammatical).
+
+\phantomsection\label{fac:II}
+\begin{center}
+{\Large\textsc{Chapter II. Algebraic Varieties---Coherent Algebraic Sheaves}}\\
+{\Large\textsc{on Affine Varieties}}
+\end{center}
+
+Throughout the remainder of this article, $K$ denotes a commutative algebraically closed field of arbitrary characteristic.
+
+\clearpage
+\phantomsection\label{fac:II:1}
+\section*{\S1. Algebraic varieties}
+\addcontentsline{toc}{section}{Chapter II, \S1. Algebraic varieties}
+
+\phantomsection\label{fac:II:1:no:30}
+\textbf{30. Spaces satisfying condition (A).}
+Let $X$ be a topological space. Condition \hyperref[fac:II:1:no:30:condition:A]{(A)} is the following:
+
+\medskip
+\phantomsection\label{fac:II:1:no:30:condition:A}
+\noindent(A)---\textit{Every decreasing sequence of closed subsets of $X$ is stationary.}
+\medskip
+
+In other words, if
+\[
+F_1\supset F_2\supset F_3\supset\cdots,
+\]
+where the $F_i$ are closed in $X$, there is an integer $n$ such that $F_m=F_n$ for $m\geq n$. Equivalently:
+
+\medskip
+\phantomsection\label{fac:II:1:no:30:condition:A-prime}
+\noindent(A$'$)---\textit{The set of closed subsets of $X$, ordered by inclusion, satisfies the minimum condition.}
+\medskip
+
+\textsc{Examples.}
+Equip a set $X$ with the topology whose closed subsets are the finite subsets of $X$ and $X$ itself; condition \hyperref[fac:II:1:no:30:condition:A]{(A)} is then satisfied. More generally, every algebraic variety equipped with the Zariski topology satisfies \hyperref[fac:II:1:no:30:condition:A]{(A)} (cf. \hyperref[fac:II:1:no:34]{no.~34}).
+
+\phantomsection\label{fac:II:1:no:30:prop:1}
+\textsc{Proposition 1.}
+\begin{enumerate}[label=(\alph*),leftmargin=2.5em]
+\item\phantomsection\label{fac:II:1:no:30:prop:1:item:a} \textit{If $X$ satisfies condition \hyperref[fac:II:1:no:30:condition:A]{(A)}, then $X$ is quasi-compact.}
+\item\phantomsection\label{fac:II:1:no:30:prop:1:item:b} \textit{If $X$ satisfies condition \hyperref[fac:II:1:no:30:condition:A]{(A)}, then every subspace of $X$ also satisfies it.}
+\item\phantomsection\label{fac:II:1:no:30:prop:1:item:c} \textit{If $X$ is the union of a finite family of subspaces $Y_i$ satisfying condition \hyperref[fac:II:1:no:30:condition:A]{(A)}, then $X$ also satisfies condition \hyperref[fac:II:1:no:30:condition:A]{(A)}.}
+\end{enumerate}
+
+Let $(F_i)$ be a downward directed family of closed subsets of $X$. If $X$ satisfies \hyperref[fac:II:1:no:30:condition:A-prime]{(A$'$)}, one of the $F_i$ is contained in all the others; hence, if $\bigcap_i F_i=\varnothing$, there is an $i$ such that $F_i=\varnothing$. This proves \hyperref[fac:II:1:no:30:prop:1:item:a]{(a)}.
+
+Let
+\[
+G_1\supset G_2\supset G_3\supset\cdots
+\]
+be a decreasing sequence of closed subsets of a subspace $Y$ of $X$. If $X$ satisfies \hyperref[fac:II:1:no:30:condition:A]{(A)}, there is an $n$ such that $\overline{G}_m=\overline{G}_n$ for $m\geq n$, whence
+\[
+G_m=Y\cap\overline{G}_m=Y\cap\overline{G}_n=G_n.
+\]
+This proves \hyperref[fac:II:1:no:30:prop:1:item:b]{(b)}.
+
+Let
+\[
+F_1\supset F_2\supset F_3\supset\cdots
+\]
+be a decreasing sequence of closed subsets of a space $X$ satisfying the hypotheses of \hyperref[fac:II:1:no:30:prop:1:item:c]{(c)}. Since the $Y_i$ satisfy \hyperref[fac:II:1:no:30:condition:A]{(A)}, for each $i$ there is an $n_i$ such that
+\[
+F_m\cap Y_i=F_{n_i}\cap Y_i
+\qquad(m\geq n_i).
+\]
+If $n=\sup_i n_i$, then $F_m=F_n$ for $m\geq n$. This proves \hyperref[fac:II:1:no:30:prop:1:item:c]{(c)}.
+
+\phantomsection\label{fac:II:1:no:30:irreducible-open-properties}
+A space $X$ is said to be \textit{irreducible} if it is not the union of two closed subsets distinct from $X$ itself; equivalently, any two nonempty open subsets of $X$ have nonempty intersection. It follows that every finite family of nonempty open subsets of $X$ has nonempty intersection, and every open subset of $X$ is likewise irreducible.
+
+\phantomsection\label{fac:II:1:no:30:prop:2}
+\textsc{Proposition 2.} \textit{Every space $X$ satisfying condition \hyperref[fac:II:1:no:30:condition:A]{(A)} is the union of finitely many irreducible closed subspaces $Y_i$. If no $Y_i$ is contained in $Y_j$ for any pair $(i,j)$ with $i\neq j$, the set of the $Y_i$ is uniquely determined by $X$; the $Y_i$ are then called the irreducible components of $X$.}
+
+The existence of a decomposition $X=\bigcup_iY_i$ follows immediately from \hyperref[fac:II:1:no:30:condition:A]{(A)}. If $X=\bigcup_kZ_k$ is another such decomposition, then
+\[
+Y_i=\bigcup_k(Y_i\cap Z_k).
+\]
+Since $Y_i$ is irreducible, there is an index $k$ such that $Z_k\supset Y_i$. Interchanging the roles of $Y_i$ and $Z_k$, we similarly obtain an index $i'$ such that $Y_{i'}\supset Z_k$. Thus
+\[
+Y_i\subset Z_k\subset Y_{i'}.
+\]
+The hypothesis on the $Y_i$ gives $i=i'$ and $Y_i=Z_k$, and the uniqueness of the decomposition follows at once.
+
+\phantomsection\label{fac:II:1:no:30:prop:3}
+\textsc{Proposition 3.} \textit{Let $X$ be a topological space which is the union of a finite family of nonempty open subsets $V_i$. Then $X$ is irreducible if and only if the $V_i$ are irreducible and $V_i\cap V_j\neq\varnothing$ for every pair $(i,j)$.}
+
+The necessity of these conditions was \hyperref[fac:II:1:no:30:irreducible-open-properties]{noted above}; let us prove their sufficiency. Suppose that $X=Y\cup Z$, where $Y$ and $Z$ are closed. Then
+\[
+V_i=(V_i\cap Y)\cup(V_i\cap Z),
+\]
+so every $V_i$ is contained either in $Y$ or in $Z$. Suppose that both $Y$ and $Z$ are distinct from $X$. We can then find indices $i,j$ such that $V_i$ is not contained in $Y$ and $V_j$ is not contained in $Z$. By what precedes, $V_i\subset Z$ and $V_j\subset Y$. Put
+\[
+T=V_j-(V_i\cap V_j).
+\]
+The set $T$ is closed in $V_j$, and
+\[
+V_j=T\cup(Z\cap V_j).
+\]
+Since $V_j$ is irreducible, either $T=V_j$, which means $V_i\cap V_j=\varnothing$, or $Z\cap V_j=V_j$, which means $V_j\subset Z$. Both alternatives are contradictions, and the proof is complete.

@@ -1,0 +1,107 @@
+% FAC-EN-U0076
+% Source: fac_body.tex lines 3149--3196.
+% Authority: PDF physical pp. 78--79; printed pp. 273--274
+% (Chapter III no. 78 complete; hard stop before section 6/no. 79).
+% French control: FAC-FR-C0041 corrects the printed basis-degree index.
+
+\medskip
+\phantomsection\label{fac:III:5:no:78}
+\textbf{78. Complete intersections.}
+
+\phantomsection\label{fac:III:5:no:78:def:complete-intersection}
+A subvariety $V$ of dimension $p$ in the projective space
+$\mathbf P_r(K)$ is a \textit{complete intersection} if the ideal
+$I(V)$ of polynomials vanishing on $V$ has a system of $r-p$ generators
+\phantomsection\label{fac:III:5:no:78:external-citation:Macaulay-theorem}
+$P_1,\ldots,P_{r-p}$; in that case, all the irreducible components of
+$V$ have dimension $p$, by Macaulay's theorem (cf. [9], no.~17). It is
+well known that such a variety is $p$-fold of the first kind, which
+already implies that $H^q(V,\mathcal O_V(n))=0$ for $0<q<p$, as we have
+\hyperref[fac:III:5:no:77:prop:3:ii]{just seen}. We shall determine $H^p(V,\mathcal O_V(n))$ in terms of the
+degrees $m_1,\ldots,m_{r-p}$ of the homogeneous polynomials
+$P_1,\ldots,P_{r-p}$.
+
+Let $S(V)=S/I(V)$ be the projective coordinate ring of $V$. By
+\hyperref[fac:III:4:no:72:thm:1]{Theorem~1 of no.~72}, everything
+reduces to determining the $S$-module
+$\operatorname{Ext}_S^{r-p}(S(V),\Omega)$. There is a resolution
+analogous to that of
+\hyperref[fac:III:5:no:75:formula:resolution]{no.~75}: take for $L^q$
+the free graded $S$-module having as basis the elements
+$e\langle i_1\cdots i_q\rangle$ corresponding to the sequences
+$(i_1,\ldots,i_q)$ such that
+$1\leq i_1<i_2<\cdots<i_q\leq r-p$, and having degrees
+\phantomsection\label{fac:III:5:no:78:def:Lq}
+$\sum_{j=1}^{j=q}m_{i_j}$;\footnote{The printed French has
+$\sum_{j=1}^{j=q}m_j$. The basis element depends on the selected indices
+$i_1,\ldots,i_q$, the differential below uses $P_{i_j}$, and the next
+paragraph explicitly gives degree
+$m_{i_1}+\cdots+m_{i_q}+n-r-1$. Corrected French and English therefore
+restore the missing $i_j$ in the subscript; diplomatic French preserves
+the print.} for $L^0$, take $S$. Set
+\phantomsection\label{fac:III:5:no:78:formula:differential}
+\[
+d(e\langle i_1\cdots i_q\rangle)
+=\sum_{j=1}^{j=q}(-1)^jP_{i_j}\cdot
+e\langle i_1\cdots\widehat{\imath}_j\cdots i_q\rangle,
+\qquad
+d(e\langle i\rangle)=P_i.
+\]
+
+The sequence
+\phantomsection\label{fac:III:5:no:78:formula:resolution}
+\[
+0\longrightarrow L^{r-p}\overset d\longrightarrow\cdots
+\overset d\longrightarrow L^0\longrightarrow S(V)\longrightarrow0
+\]
+is exact ([6], Chapter~VIII, Proposition~4.3). It follows that the
+$\operatorname{Ext}_S^q(S(V),\Omega)$ are the cohomology groups of the
+complex formed by the $\operatorname{Hom}_S(L^q,\Omega)$. An element of
+$\operatorname{Hom}_S(L^q,\Omega)_n$ may be identified with a system
+$f\langle i_1\cdots i_q\rangle$, where the
+$f\langle i_1\cdots i_q\rangle$ are homogeneous polynomials of degrees
+$m_{i_1}+\cdots+m_{i_q}+n-r-1$. Under this identification, the
+coboundary operator is given by the usual formula
+\phantomsection\label{fac:III:5:no:78:formula:coboundary}
+\[
+(df)\langle i_1\cdots i_{q+1}\rangle
+=\sum_{j=1}^{j=q+1}(-1)^jP_{i_j}\cdot
+f\langle i_1\cdots\widehat{\imath}_j\cdots i_{q+1}\rangle.
+\]
+
+Macaulay's theorem \hyperref[fac:III:5:no:78:external-citation:Macaulay-theorem]{cited above} shows that the conditions of [11] are
+satisfied, and one recovers the fact that
+\phantomsection\label{fac:III:5:no:78:formula:Ext-concentration}
+$\operatorname{Ext}_S^q(S(V),\Omega)=0$ for $q\neq r-p$. On the other
+hand, $\operatorname{Ext}_S^{r-p}(S(V),\Omega)_n$ is isomorphic to the
+subspace of $S(V)$ formed by the homogeneous elements of degree $N+n$,
+where
+\phantomsection\label{fac:III:5:no:78:def:N}
+\[
+N=\sum_{i=1}^{i=r-p}m_i-r-1.
+\]
+Taking \hyperref[fac:III:4:no:72:thm:1]{Theorem~1 of no.~72} into
+account, one obtains:
+
+\phantomsection\label{fac:III:5:no:78:prop:5}
+\textsc{Proposition 5.} \textit{Let $V$ be a complete intersection
+defined by homogeneous polynomials $P_1,\ldots,P_{r-p}$ of degrees
+$m_1,\ldots,m_{r-p}$.}
+
+\phantomsection\label{fac:III:5:no:78:prop:5:a}
+(a) \textit{The map
+$\alpha:S(V)_n\to H^0(V,\mathcal O_V(n))$ is bijective for every
+$n\in\mathbf Z$.}
+
+\phantomsection\label{fac:III:5:no:78:prop:5:b}
+(b) \textit{$H^q(V,\mathcal O_V(n))=0$ for $0<q<p$ and every
+$n\in\mathbf Z$.}
+
+\phantomsection\label{fac:III:5:no:78:prop:5:c}
+(c) \textit{$H^p(V,\mathcal O_V(n))$ is isomorphic to the dual vector
+space of $H^0(V,\mathcal O_V(N-n))$, where
+$N=\sum_{i=1}^{i=r-p}m_i-r-1$.}
+
+\phantomsection\label{fac:III:5:no:78:remark}
+In particular, one should note that $H^p(V,\mathcal O_V)$ can vanish
+only if $N<0$.

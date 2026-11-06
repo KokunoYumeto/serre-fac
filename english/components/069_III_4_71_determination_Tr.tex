@@ -1,0 +1,190 @@
+% FAC-EN-U0069
+% Source: fac_body.tex lines 2624--2696.
+% Authority: PDF physical pp. 69--70; printed pp. 264--265
+% (Chapter III no. 71 complete).
+% French control: T0042 repairs three inherited epsilon commands to the
+% printed membership sign. No printed-source correction is admitted here.
+
+\phantomsection\label{fac:III:4:no:71}
+\textbf{71. Determination of $T^r(M)$.}
+(In this number, as in the following one, we shall assume that $r\geq1$;
+the case $r=0$ leads to somewhat different, though trivial, statements.)
+
+\phantomsection\label{fac:III:4:no:71:def:Omega}
+We shall denote by $\Omega$ the graded $S$-module $S(-r-1)$; it is a
+free module with a basis element of degree $r+1$. We saw in
+\hyperref[fac:III:3:no:62]{no.~62} that $H^r(\Omega)=H_k^r(\Omega)$ for
+all sufficiently large $k$, and that $H_k^r(\Omega)$ has over $K$ the
+basis consisting of the single element
+\phantomsection\label{fac:III:4:no:71:formula:xi-basis}
+\[
+\frac{(t_0\cdots t_r)^k}{t_0\cdots t_r}.
+\]
+The image of this element in $H^r(\Omega)$ will be denoted by $\xi$;
+thus $\xi$ is a basis of $H^r(\Omega)$.
+
+We shall now define a scalar product $\langle h,\varphi\rangle$ between
+elements
+\[
+h\in B^r(M)_{-n}
+\qquad\text{and}\qquad
+\varphi\in\operatorname{Hom}_S(M,\Omega)_n,
+\]
+where $M$ is an arbitrary graded $S$-module. The element $\varphi$ can
+be identified with an element of
+$\operatorname{Hom}_S(M(-n),\Omega)_0$, that is, with a homomorphism
+from $M(-n)$ to $\Omega$. Passing to cohomology groups, it therefore
+defines a homomorphism
+\[
+H^r(M(-n))=B^r(M)_{-n}\longrightarrow H^r(\Omega),
+\]
+which we shall again denote by $\varphi$. The image of $h$ under this
+homomorphism is a scalar multiple of $\xi$, and we define
+$\langle h,\varphi\rangle$ by the formula
+\phantomsection\label{fac:III:4:no:71:formula:pairing}
+\[
+\varphi(h)=\langle h,\varphi\rangle\,\xi.
+\]
+
+For every $\varphi\in\operatorname{Hom}_S(M,\Omega)_n$, the function
+$h\mapsto\langle h,\varphi\rangle$ is a linear form on
+$B^r(M)_{-n}$, and hence can be identified with an element
+$\nu(\varphi)$ of the dual of $B^r(M)_{-n}$, which is precisely
+$T^r(M)_n$. We have thus defined a homogeneous map of degree zero
+\phantomsection\label{fac:III:4:no:71:map:nu}
+\[
+\nu:\operatorname{Hom}_S(M,\Omega)\longrightarrow T^r(M),
+\]
+and the formula
+\phantomsection\label{fac:III:4:no:71:formula:S-linearity}
+\[
+\langle Ph,\varphi\rangle=\langle h,P\varphi\rangle
+\]
+shows that $\nu$ is an $S$-homomorphism.
+
+\phantomsection\label{fac:III:4:no:71:prop:2}
+\textsc{Proposition 2.} \textit{The homomorphism
+$\nu:\operatorname{Hom}_S(M,\Omega)\longrightarrow T^r(M)$ is
+bijective.}
+
+\phantomsection\label{fac:III:4:no:71:proof:free-case}
+We first prove \hyperref[fac:III:4:no:71:prop:2]{the proposition} when $M$
+is a \textit{free} module. If
+$M$ is a direct sum of homogeneous submodules $M^\alpha$, then
+\phantomsection\label{fac:III:4:no:71:formula:direct-products}
+\[
+\operatorname{Hom}_S(M,\Omega)_n
+=\prod_\alpha\operatorname{Hom}_S(M^\alpha,\Omega)_n,
+\qquad
+T^r(M)_n=\prod_\alpha T^r(M^\alpha)_n.
+\]
+Thus, if \hyperref[fac:III:4:no:71:prop:2]{the proposition} is true for the
+$M^\alpha$, it is true for
+$M$. This reduces the case of free modules to that of a free module on
+one generator, that is, to the case $M=S(m)$.
+
+We can then identify $\operatorname{Hom}_S(M,\Omega)_n$ with
+$\operatorname{Hom}_S(S,S(n-m-r-1))_0$, that is, with the vector space
+of homogeneous polynomials of degree $n-m-r-1$. Hence
+$\operatorname{Hom}_S(M,\Omega)_n$ has as a basis the monomials
+\phantomsection\label{fac:III:4:no:71:formula:polynomial-basis}
+\[
+t_0^{\gamma_0}\cdots t_r^{\gamma_r},
+\qquad
+\gamma_i\geq0,
+\qquad
+\sum_{i=0}^{i=r}\gamma_i=n-m-r-1.
+\]
+On the other hand, we saw in \hyperref[fac:III:3:no:62]{no.~62} that
+$H_k^r(S(m-n))$ has as a
+basis, for all sufficiently large $k$, the monomials
+\[
+\frac{(t_0\cdots t_r)^k}
+     {t_0^{\beta_0}\cdots t_r^{\beta_r}},
+\qquad
+\beta_i>0,
+\qquad
+\sum_{i=0}^{i=r}\beta_i=n-m.
+\]
+Putting $\beta_i=\gamma_i'+1$, these monomials can be written as
+\phantomsection\label{fac:III:4:no:71:formula:cohomology-basis}
+\[
+\frac{(t_0\cdots t_r)^{k-1}}
+     {t_0^{\gamma_0'}\cdots t_r^{\gamma_r'}},
+\qquad
+\gamma_i'\geq0,
+\qquad
+\sum_{i=0}^{i=r}\gamma_i'=n-m-r-1.
+\]
+Returning to
+\hyperref[fac:III:4:no:71:formula:pairing]{the definition of
+$\langle h,\varphi\rangle$}, we find
+that the scalar product
+\phantomsection\label{fac:III:4:no:71:formula:dual-basis-pairing}
+\[
+\left\langle
+ \frac{(t_0\cdots t_r)^{k-1}}
+      {t_0^{\gamma_0'}\cdots t_r^{\gamma_r'}},
+ t_0^{\gamma_0}\cdots t_r^{\gamma_r}
+\right\rangle
+\]
+is always zero unless $\gamma_i=\gamma_i'$ for every $i$, in which
+case it is equal to $1$. This means that $\nu$ sends the basis of the
+$t_0^{\gamma_0}\cdots t_r^{\gamma_r}$ to the basis dual to the basis
+of the
+$(t_0\cdots t_r)^{k-1}/(t_0^{\gamma_0}\cdots t_r^{\gamma_r})$.
+Consequently $\nu$ is bijective, which proves
+\hyperref[fac:III:4:no:71:prop:2]{the proposition} when $M$ is free.
+
+\phantomsection\label{fac:III:4:no:71:proof:general-case}
+We now pass to the general case. Choose an exact sequence
+\phantomsection\label{fac:III:4:no:71:formula:free-presentation}
+\[
+L^1\longrightarrow L^0\longrightarrow M\longrightarrow0
+\]
+in which $L^0$ and $L^1$ are free. Consider the following commutative
+diagram:
+\phantomsection\label{fac:III:4:no:71:diagram:nu}
+\begin{center}
+\begin{tikzcd}
+0 \arrow[r] \arrow[d,"\nu"']
+  & \operatorname{Hom}_S(M,\Omega) \arrow[r] \arrow[d,"\nu"']
+  & \operatorname{Hom}_S(L^0,\Omega) \arrow[r] \arrow[d,"\nu"']
+  & \operatorname{Hom}_S(L^1,\Omega) \arrow[d,"\nu"'] \\
+0 \arrow[r]
+  & T^r(M) \arrow[r]
+  & T^r(L^0) \arrow[r]
+  & T^r(L^1).
+\end{tikzcd}
+\end{center}
+
+The first row of \hyperref[fac:III:4:no:71:diagram:nu]{this diagram} is exact
+by \hyperref[fac:III:4:no:68:properties]{the general properties of the
+functor $\operatorname{Hom}_S$}; the second row is also exact,
+because it is dual to the sequence
+\phantomsection\label{fac:III:4:no:71:formula:B-exact}
+\[
+B^r(L^1)\longrightarrow B^r(L^0)\longrightarrow B^r(M)
+\longrightarrow0,
+\]
+which is itself exact by
+\hyperref[fac:III:4:no:70:formula:long-exact-B]{the exact cohomology
+sequence for the $B^q$} and
+\hyperref[fac:III:4:no:70:property:B-vanishing]{the fact that
+$B^{r+1}(M)=0$} for every graded $S$-module $M$.
+Moreover, the two vertical homomorphisms
+\phantomsection\label{fac:III:4:no:71:formula:free-nu}
+\[
+\nu:\operatorname{Hom}_S(L^0,\Omega)\longrightarrow T^r(L^0)
+\quad\text{and}\quad
+\nu:\operatorname{Hom}_S(L^1,\Omega)\longrightarrow T^r(L^1)
+\]
+are bijective,
+\hyperref[fac:III:4:no:71:proof:free-case]{as we have just seen}. It follows
+that
+\phantomsection\label{fac:III:4:no:71:formula:general-nu}
+\[
+\nu:\operatorname{Hom}_S(M,\Omega)\longrightarrow T^r(M)
+\]
+is also bijective, which completes
+\hyperref[fac:III:4:no:71:prop:2]{the proof}.

@@ -1,0 +1,113 @@
+% FAC-EN-U0047
+% French source: fac_body.tex lines 1682--1734.
+% Authority: PDF physical pp. 46--47; printed pp. 241--242 (no. 49 complete).
+% The diagram is native TeX and follows the authority's 2x4 node / 10-arrow structure.
+
+\medskip
+\phantomsection\label{fac:II:4:no:49}
+\textbf{49. Module associated with an algebraic sheaf.}
+\phantomsection\label{fac:II:4:no:49:def:global-sections-module}
+Let $\mathcal{F}$ be an algebraic sheaf on $V$, and put
+$\Gamma(\mathcal{F})=\Gamma(V,\mathcal{F})$. Since $\mathcal{F}$ is a sheaf
+of $\mathcal{O}$-modules, $\Gamma(\mathcal{F})$ has a natural structure of
+an $A$-module. Every algebraic homomorphism
+$\varphi:\mathcal{F}\to\mathcal{G}$ defines an $A$-homomorphism
+\[
+\Gamma(\varphi):\Gamma(\mathcal{F})\longrightarrow\Gamma(\mathcal{G}).
+\]
+If
+\[
+\mathcal{F}\longrightarrow\mathcal{G}\longrightarrow\mathcal{H}
+\]
+is an exact sequence of coherent algebraic sheaves, the sequence
+\[
+\Gamma(\mathcal{F})\longrightarrow\Gamma(\mathcal{G})
+\longrightarrow\Gamma(\mathcal{H})
+\]
+is exact (\hyperref[fac:II:3:no:45]{no.~45}). Applying this to an exact sequence
+$\mathcal{O}^p\to\mathcal{F}\to0$, we see that $\Gamma(\mathcal{F})$ is a
+finitely generated $A$-module if $\mathcal{F}$ is coherent.
+
+The functors $M\mapsto\mathcal{A}(M)$ and
+$\mathcal{F}\mapsto\Gamma(\mathcal{F})$ are ``inverse'' to one another:
+
+\phantomsection\label{fac:II:4:thm:1}
+\textsc{Theorem 1.}
+\phantomsection\label{fac:II:4:thm:1:a}
+(a) \textit{If $M$ is a finitely generated $A$-module,
+$\Gamma(\mathcal{A}(M))$ is canonically isomorphic to $M$.}
+
+\phantomsection\label{fac:II:4:thm:1:b}
+(b) \textit{If $\mathcal{F}$ is a coherent algebraic sheaf on $V$,
+$\mathcal{A}(\Gamma(\mathcal{F}))$ is canonically isomorphic to
+$\mathcal{F}$.}
+
+\phantomsection\label{fac:II:4:thm:1:a:proof}
+We first prove \hyperref[fac:II:4:thm:1:a]{(a)}. Every element $m\in M$ defines a section $\alpha(m)$ of
+$\mathcal{A}(M)$ by the formula
+\[
+\alpha(m)(x)=1\otimes m\in\mathcal{O}_x\otimes_A M;
+\]
+hence there is a homomorphism
+\[
+\alpha:M\longrightarrow\Gamma\bigl(\mathcal{A}(M)\bigr).
+\]
+When $M$ is a finitely generated free module, $\alpha$ is bijective (it is
+enough to verify this for $M=A$, in which case it is evident). If $M$ is an
+arbitrary finitely generated module, there is an exact sequence
+\[
+L^1\longrightarrow L^0\longrightarrow M\longrightarrow0,
+\]
+where $L^0$ and $L^1$ are finitely generated free modules. The sequence
+\[
+\mathcal{A}(L^1)\longrightarrow\mathcal{A}(L^0)
+\longrightarrow\mathcal{A}(M)\longrightarrow0
+\]
+is exact, and therefore so is
+\[
+\Gamma(\mathcal{A}(L^1))\longrightarrow\Gamma(\mathcal{A}(L^0))
+\longrightarrow\Gamma(\mathcal{A}(M))\longrightarrow0.
+\]
+The commutative diagram
+\phantomsection\label{fac:II:4:diagram:1}
+\begin{center}
+\begin{tikzcd}[row sep=large,column sep=large]
+L^1 \arrow[r] \arrow[d,"\alpha"']
+  & L^0 \arrow[r] \arrow[d,"\alpha"']
+  & M \arrow[r] \arrow[d,"\alpha"']
+  & 0 \arrow[d,"\alpha"'] \\
+\Gamma(\mathcal{A}(L^1)) \arrow[r]
+  & \Gamma(\mathcal{A}(L^0)) \arrow[r]
+  & \Gamma(\mathcal{A}(M)) \arrow[r]
+  & 0
+\end{tikzcd}
+\end{center}
+then shows that
+$\alpha:M\to\Gamma(\mathcal{A}(M))$ is bijective, which proves \hyperref[fac:II:4:thm:1:a]{(a)}.
+
+Now let $\mathcal{F}$ be a coherent algebraic sheaf on $V$. Associating to
+each $s\in\Gamma(\mathcal{F})$ the element $s(x)\in\mathcal{F}_x$ gives an
+$A$-homomorphism
+\[
+\Gamma(\mathcal{F})\longrightarrow\mathcal{F}_x,
+\]
+which extends to an $\mathcal{O}_x$-homomorphism
+\[
+\beta_x:\mathcal{O}_x\otimes_A\Gamma(\mathcal{F})
+\longrightarrow\mathcal{F}_x.
+\]
+It is readily verified that the $\beta_x$ form a homomorphism of sheaves
+\[
+\beta:\mathcal{A}(\Gamma(\mathcal{F}))\longrightarrow\mathcal{F}.
+\]
+When $\mathcal{F}=\mathcal{O}^p$, the homomorphism $\beta$ is bijective. By
+\hyperref[fac:II:4:thm:1:a:proof]{the same argument as above}, it follows that $\beta$ is bijective for every
+coherent algebraic sheaf $\mathcal{F}$, which proves \hyperref[fac:II:4:thm:1:b]{(b)}.
+
+\phantomsection\label{fac:II:4:no:49:remark:1}
+\textsc{Remarks.} (1) One may also deduce \hyperref[fac:II:4:thm:1:b]{(b)} from \hyperref[fac:II:4:thm:1:a]{(a)}; cf. \hyperref[fac:III:3:no:65:prop:6]{no.~65, proof of
+Proposition~6}.
+
+\phantomsection\label{fac:II:4:no:49:remark:2}
+(2) We shall see in \hyperref[fac:III]{Chapter III} how the preceding correspondence must be
+modified when coherent sheaves on projective space are studied.

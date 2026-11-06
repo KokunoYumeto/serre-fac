@@ -1,0 +1,21 @@
+% FAC-EN-U0003
+% French source: fac_body.tex lines 163--179.
+% Authority: PDF physical pp. 6--7; printed pp. 201--202 (no. 4 complete).
+
+\medskip
+\phantomsection\label{fac:I:1:no:4}
+\textbf{4. Gluing of sheaves.}
+
+Let $\mathfrak{F}$ be a sheaf on $X$, and let $U$ be a subset of $X$. The set $\pi^{-1}(U)\subset\mathfrak{F}$, endowed with the topology induced from that of $\mathfrak{F}$, forms a sheaf on $U$, called the sheaf \textit{induced} by $\mathfrak{F}$ on $U$ and denoted by $\mathfrak{F}(U)$ (or simply $\mathfrak{F}$ when no confusion can arise).
+
+We shall now see that, conversely, a sheaf on $X$ can be defined from sheaves on open sets which cover $X$.
+
+\medskip
+\phantomsection\label{fac:I:1:no:4:prop:4}
+\textsc{Proposition 4.} \textit{Let $\mathfrak{U}=\{U_i\}_{i\in I}$ be an open covering of $X$, and, for each $i\in I$, let $\mathfrak{F}_i$ be a sheaf on $U_i$. For every pair $(i,j)$, let $\theta_{ij}$ be an isomorphism from $\mathfrak{F}_j(U_i\cap U_j)$ onto $\mathfrak{F}_i(U_i\cap U_j)$. Suppose that $\theta_{ij}\circ\theta_{jk}=\theta_{ik}$ at every point of $U_i\cap U_j\cap U_k$, for every triple $(i,j,k)$.}
+
+\textit{Then there exist a sheaf $\mathfrak{F}$ and, for each $i\in I$, an isomorphism $\eta_i$ from $\mathfrak{F}(U_i)$ onto $\mathfrak{F}_i$ such that $\theta_{ij}=\eta_i\circ\eta_j^{-1}$ at every point of $U_i\cap U_j$. Moreover, $\mathfrak{F}$ and the $\eta_i$ are determined up to isomorphism by the preceding condition.}
+
+The uniqueness of $\{\mathfrak{F},\eta_i\}$ is clear. To prove existence, one could define $\mathfrak{F}$ as the quotient space of the disjoint union of the $\mathfrak{F}_i$. We shall instead use the procedure of no.~\hyperref[fac:I:1:no:3]{3}. If $U$ is open in $X$, let $\mathfrak{F}_U$ be the group whose elements are the families $\{s_k\}_{k\in I}$ with $s_k\in\Gamma(U\cap U_k,\mathfrak{F}_k)$ and $s_k=\theta_{kj}(s_j)$ on $U\cap U_j\cap U_k$. If $U\subset V$, define $\varphi_U^V$ in the evident way. The sheaf defined by the system $(\mathfrak{F}_U,\varphi_U^V)$ is the required sheaf $\mathfrak{F}$. Furthermore, if $U\subset U_i$, the map which sends a family $\{s_k\}\in\mathfrak{F}_U$ to the element $s_i\in\Gamma(U,\mathfrak{F}_i)$\footnote{The printed French has $\Gamma(U_i,\mathfrak{F}_i)$ here. Since the family is defined over the fixed open set $U\subset U_i$, and the codomain stated immediately afterward is $\Gamma(U,\mathfrak{F}_i)$, the subscript $U_i$ is a source typo.} is an isomorphism from $\mathfrak{F}_U$ onto $\Gamma(U,\mathfrak{F}_i)$ by the transitivity condition. This gives an isomorphism $\eta_i:\mathfrak{F}(U_i)\to\mathfrak{F}_i$ which plainly satisfies the required condition.
+
+The sheaf $\mathfrak{F}$ is said to be obtained by \textit{gluing} the sheaves $\mathfrak{F}_i$ by means of the isomorphisms $\theta_{ij}$.

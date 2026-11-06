@@ -1,0 +1,30 @@
+% FAC-EN-U0016
+% French source: fac_body.tex lines 517--534.
+% Authority: PDF physical p. 17; printed p. 212 (section 3 opening and no. 18 complete).
+
+\phantomsection\label{fac:I:3}
+\section*{\S3. Cohomology of a space with coefficients in a sheaf}
+
+In this section, $X$ denotes a topological space, whether Hausdorff or not. By a \textit{covering} of $X$ we shall always mean an open covering.
+
+\medskip
+\phantomsection\label{fac:I:3:no:18}
+\textbf{18. Cochains of a covering.}
+
+Let $\mathfrak{U}=\{U_i\}_{i\in I}$ be a covering of $X$. If $s=(i_0,\ldots,i_p)$ is a finite sequence of elements of $I$, put
+\[
+U_s=U_{i_0\cdots i_p}=U_{i_0}\cap\cdots\cap U_{i_p}.
+\]
+Let $\mathcal{F}$ be a sheaf of abelian groups on $X$. If $p$ is an integer $\geq0$, a \textit{$p$-cochain of $\mathfrak{U}$ with values in $\mathcal{F}$} is a function $f$ which assigns to every sequence $s=(i_0,\ldots,i_p)$ of $p+1$ elements of $I$ a section $f_s=f_{i_0\cdots i_p}$ of $\mathcal{F}$ over $U_{i_0\cdots i_p}$. The $p$-cochains form an abelian group, denoted $C^p(\mathfrak{U},\mathcal{F})$; it is the product group
+\[
+\prod_s\Gamma(U_s,\mathcal{F}),
+\]
+where the product ranges over all sequences $s$ of $p+1$ elements of $I$. The family of the $C^p(\mathfrak{U},\mathcal{F})$, $p=0,1,\ldots$, is denoted $C(\mathfrak{U},\mathcal{F})$. A $p$-cochain is also called a cochain of degree $p$.
+
+A $p$-cochain $f$ is said to be \textit{alternating} if:
+
+\phantomsection\label{fac:I:3:no:18:alternating:item:a}(a) $f_{i_0\cdots i_p}=0$ whenever two of the indices $i_0,\ldots,i_p$ are equal;
+
+\phantomsection\label{fac:I:3:no:18:alternating:item:b}(b) $f_{i_{\sigma0}\cdots i_{\sigma p}}=\varepsilon_\sigma f_{i_0\cdots i_p}$ if $\sigma$ is a permutation of $\{0,\ldots,p\}$, where $\varepsilon_\sigma$ denotes the sign of $\sigma$.
+
+The alternating $p$-cochains form a subgroup $C^{\prime p}(\mathfrak{U},\mathcal{F})$ of $C^p(\mathfrak{U},\mathcal{F})$; the family of the $C^{\prime p}(\mathfrak{U},\mathcal{F})$ is denoted $C'(\mathfrak{U},\mathcal{F})$.

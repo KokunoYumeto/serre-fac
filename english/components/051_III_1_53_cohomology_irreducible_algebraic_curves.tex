@@ -1,0 +1,73 @@
+% FAC-EN-U0051
+% French source: fac_body.tex lines 1830--1857.
+% Authority: PDF physical pp. 50--51; printed pp. 245--246 (no. 53 complete).
+
+\medskip
+\phantomsection\label{fac:III:1:no:53}
+\textbf{53. Cohomology of irreducible algebraic curves.}
+If $V$ is an irreducible algebraic variety of dimension $1$, the closed
+subsets of $V$ distinct from $V$ are precisely the \textit{finite} subsets.
+If $F$ is a finite subset of $V$ and $x$ is a point of $F$, put
+\[
+V_x^F=(V\setminus F)\cup\{x\}.
+\]
+The sets $V_x^F$, $x\in F$, form a finite open covering
+\phantomsection\label{fac:III:1:no:53:cover:B-F}
+$\mathfrak{B}^F$ of $V$.
+
+\phantomsection\label{fac:III:1:lemma:3}
+\textsc{Lemma 3.}
+\textit{The coverings $\mathfrak{B}^F$ of the preceding type are
+arbitrarily fine.}
+
+Let $\mathfrak{U}=\{U_i\}_{i\in I}$ be an open covering of $V$. We may
+suppose it finite, since $V$ is quasi-compact, and we may also suppose that
+$U_i\neq\varnothing$ for every $i\in I$. Put $F_i=V\setminus U_i$. Each
+$F_i$ is finite, and so is
+\[
+F=\bigcup_{i\in I}F_i.
+\]
+We show that $\mathfrak{B}^F<\mathfrak{U}$, which will prove the lemma. Let
+$x\in F$. Since the $U_i$ cover $V$, there is an $i\in I$ such that
+$x\notin F_i$. As $F\supset F_i$, we then have
+$F\setminus\{x\}\supset F_i$; equivalently, $V_x^F\subset U_i$. Thus
+$\mathfrak{B}^F<\mathfrak{U}$, as required.
+
+\phantomsection\label{fac:III:1:lemma:4}
+\textsc{Lemma 4.}
+\textit{Let $\mathcal{F}$ be a sheaf on $V$, and let $F$ be a finite subset
+of $V$. Then
+\[
+H^n(\mathfrak{B}^F,\mathcal{F})=0
+\]
+for $n\geq2$.}
+
+Put $W=V\setminus F$. If $x_0,\ldots,x_n$ are distinct and $n\geq1$, then
+\[
+V_{x_0}^F\cap\cdots\cap V_{x_n}^F=W.
+\]
+Consequently, if $G=\Gamma(W,\mathcal{F})$, the alternating complex
+$C'(\mathfrak{B}^F,\mathcal{F})$ is isomorphic, in dimensions $\geq1$, to
+$C'(S(F),G)$, where $S(F)$ denotes the simplex whose vertex set is $F$.
+It follows that
+\phantomsection\label{fac:III:1:no:53:formula:simplex-cohomology}
+\[
+H^n(\mathfrak{B}^F,\mathcal{F})=H^n(S(F),G)=0
+\qquad\text{for }n\geq2,
+\]
+since the cohomology of a simplex is trivial.
+
+\hyperref[fac:III:1:lemma:3]{Lemmas~3} \hyperref[fac:III:1:lemma:4]{and~4} plainly imply:
+
+\phantomsection\label{fac:III:1:prop:4}
+\textsc{Proposition 4.}
+\textit{If $V$ is an irreducible algebraic curve and $\mathcal{F}$ is any
+sheaf on $V$, then
+\[
+H^n(V,\mathcal{F})=0\qquad\text{for }n\geq2.
+\]}
+
+\phantomsection\label{fac:III:1:no:53:remark}
+\textsc{Remark.}
+I do not know whether a result analogous to the \hyperref[fac:III:1:prop:4]{preceding one} is valid for
+varieties of arbitrary dimension.

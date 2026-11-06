@@ -1,0 +1,118 @@
+% FAC-EN-U0077
+% Source: fac_body.tex lines 3198--3293.
+% Authority: PDF physical pp. 79--80; printed pp. 274--275
+% (Chapter III section 6 heading and no. 79 complete; hard stop before no. 80).
+
+\medskip
+\phantomsection\label{fac:III:6}
+\begin{center}
+\textbf{\S6. Characteristic function and arithmetic genus}
+\end{center}
+
+\phantomsection\label{fac:III:6:no:79}
+\textbf{79. Euler--Poincaré characteristic.}
+Let $V$ be a projective variety, and let $\mathfrak F$ be a coherent
+algebraic sheaf on $V$. Set
+\phantomsection\label{fac:III:6:no:79:def:hq}
+\[
+h^q(V,\mathfrak F)=\dim_K H^q(V,\mathfrak F).
+\]
+We saw in \hyperref[fac:III:3:no:66:theorem:1]{Theorem~1 of no.~66}
+that the $h^q(V,\mathfrak F)$ are finite for every integer $q$, and
+zero for $q>\dim V$. We may therefore define an integer
+\phantomsection\label{fac:III:6:no:79:def:chi}
+\[
+\chi(V,\mathfrak F)=\sum_{q=0}^{\infty}(-1)^q h^q(V,\mathfrak F).
+\]
+This is the \textit{Euler--Poincaré characteristic} of $V$ with values
+in $\mathfrak F$.
+
+\phantomsection\label{fac:III:6:no:79:lemma:1}
+\textsc{Lemma 1.} \textit{Let
+$0\longrightarrow L_1\longrightarrow\cdots\longrightarrow
+L_p\longrightarrow0$ be an exact sequence, where the $L_i$ are
+finite-dimensional vector spaces over $K$ and the homomorphisms
+$L_i\to L_{i+1}$ are $K$-linear. Then}
+\phantomsection\label{fac:III:6:no:79:lemma:1:formula}
+\[
+\sum_{q=1}^{q=p}(-1)^q\dim_K L_q=0.
+\]
+
+We argue by induction on $p$, the lemma being obvious if $p\leq3$.
+If $L'_{p-1}$ denotes the kernel of $L_{p-1}\to L_p$, we have the two
+exact sequences
+\phantomsection\label{fac:III:6:no:79:lemma:1:sequences}
+\[
+0\longrightarrow L_1\longrightarrow\cdots\longrightarrow
+L'_{p-1}\longrightarrow0
+\]
+and
+\[
+0\longrightarrow L'_{p-1}\longrightarrow L_{p-1}
+\longrightarrow L_p\longrightarrow0.
+\]
+Applying the induction hypothesis to each of these sequences, we see
+that
+\[
+\sum_{q=1}^{q=p-2}(-1)^q\dim L_q
+ +(-1)^{p-1}\dim L'_{p-1}=0,
+\]
+and
+\[
+\dim L'_{p-1}-\dim L_{p-1}+\dim L_p=0,
+\]
+which immediately proves \hyperref[fac:III:6:no:79:lemma:1]{the lemma}.
+
+\phantomsection\label{fac:III:6:no:79:prop:1}
+\textsc{Proposition 1.} \textit{Let
+$0\longrightarrow\mathfrak A\longrightarrow\mathfrak B
+\longrightarrow\mathfrak C\longrightarrow0$ be an exact sequence of
+coherent algebraic sheaves on a projective variety $V$, where the
+homomorphisms $\mathfrak A\to\mathfrak B$ and
+$\mathfrak B\to\mathfrak C$ are $K$-linear. Then}
+\phantomsection\label{fac:III:6:no:79:prop:1:formula}
+\[
+\chi(V,\mathfrak B)=\chi(V,\mathfrak A)+\chi(V,\mathfrak C).
+\]
+
+By \hyperref[fac:II:3:thm:5:cor:2]{Corollary~2 to Theorem~5 of
+no.~47}, there is an exact cohomology sequence
+\phantomsection\label{fac:III:6:no:79:prop:1:cohomology-sequence}
+\[
+\cdots\longrightarrow H^q(V,\mathfrak B)
+\longrightarrow H^q(V,\mathfrak C)
+\longrightarrow H^{q+1}(V,\mathfrak A)
+\longrightarrow H^{q+1}(V,\mathfrak B)\longrightarrow\cdots .
+\]
+Applying \hyperref[fac:III:6:no:79:lemma:1]{Lemma~1} to this exact sequence of vector spaces gives the
+\hyperref[fac:III:6:no:79:prop:1]{proposition}.
+
+\phantomsection\label{fac:III:6:no:79:prop:2}
+\textsc{Proposition 2.} \textit{Let
+$0\longrightarrow\mathfrak F_1\longrightarrow\cdots
+\longrightarrow\mathfrak F_p\longrightarrow0$ be an exact sequence
+of coherent algebraic sheaves on a projective variety $V$, where the
+homomorphisms $\mathfrak F_i\to\mathfrak F_{i+1}$ are algebraic. Then}
+\phantomsection\label{fac:III:6:no:79:prop:2:formula}
+\[
+\sum_{q=1}^{q=p}(-1)^q\chi(V,\mathfrak F_q)=0.
+\]
+
+We argue by induction on $p$, the proposition being a special case of
+\hyperref[fac:III:6:no:79:prop:1]{Proposition~1} if $p\leq3$. If $\mathfrak F'_{p-1}$ denotes the kernel
+of $\mathfrak F_{p-1}\to\mathfrak F_p$, then
+$\mathfrak F'_{p-1}$ is coherent algebraic because
+$\mathfrak F_{p-1}\to\mathfrak F_p$ is an algebraic homomorphism. We
+may therefore apply the induction hypothesis to the two exact
+sequences
+\phantomsection\label{fac:III:6:no:79:prop:2:sequences}
+\[
+0\longrightarrow\mathfrak F_1\longrightarrow\cdots
+\longrightarrow\mathfrak F'_{p-1}\longrightarrow0
+\]
+and
+\[
+0\longrightarrow\mathfrak F'_{p-1}\longrightarrow
+\mathfrak F_{p-1}\longrightarrow\mathfrak F_p\longrightarrow0,
+\]
+and the \hyperref[fac:III:6:no:79:prop:2]{proposition} follows immediately.

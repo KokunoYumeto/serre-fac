@@ -1,0 +1,150 @@
+% FAC-EN-U0027
+% French source: fac_body.tex lines 1017--1102.
+% Authority: PDF physical pp. 26--27; printed pp. 221--222 (no. 29 complete).
+% Printed-source repairs: FAC-FR-C0014--FAC-FR-C0017.
+
+\medskip
+\phantomsection\label{fac:I:4:no:29}
+\textbf{29. Applications.}
+With the notation of the \hyperref[fac:I:4:no:28]{preceding number}, we have:
+
+\phantomsection\label{fac:I:4:no:29:prop:3}
+\textsc{Proposition 3.} \textit{Suppose that}
+\[
+H^p(\mathfrak{U}_{s'},\mathcal{F})=0
+\]
+\textit{for every $s'$ and every $p>0$. Then the homomorphism}
+\[
+H^n(\mathfrak{V},\mathcal{F})
+\longrightarrow H^n(\mathfrak{U},\mathfrak{V};\mathcal{F})
+\]
+\textit{defined by $\iota''$ is bijective for every $n\geq0$.}
+
+This is an immediate consequence of \hyperref[fac:I:4:no:27:prop:1]{Propositions~1} \hyperref[fac:I:4:no:28:prop:2]{and~2}.
+
+Before stating \hyperref[fac:I:4:no:29:prop:4]{Proposition~4}, let us prove a \hyperref[fac:I:4:no:29:lemma:1]{lemma}.
+
+\phantomsection\label{fac:I:4:no:29:lemma:1}
+\textsc{Lemma 1.} \textit{Let $\mathfrak{W}=\{W_i\}_{i\in I}$ be a covering of a space $Y$, and let $\mathcal{F}$ be a sheaf on $Y$. If there is an $i\in I$ such that $W_i=Y$, then}
+\[
+H^p(\mathfrak{W},\mathcal{F})=0
+\]
+\textit{for every $p>0$.}
+
+Let $\mathfrak{W}'$ be the covering of $Y$ consisting of the single open set $Y$. Clearly $\mathfrak{W}<\mathfrak{W}'$, while the hypothesis on $\mathfrak{W}$ means that $\mathfrak{W}'<\mathfrak{W}$. It follows from \hyperref[fac:I:3:no:22]{no.~22} that
+\[
+H^p(\mathfrak{W},\mathcal{F})
+=H^p(\mathfrak{W}',\mathcal{F})=0
+\qquad(p>0).
+\]
+
+\phantomsection\label{fac:I:4:no:29:prop:4}
+\textsc{Proposition 4.} \textit{Suppose that the covering $\mathfrak{V}$ is finer than the covering $\mathfrak{U}$. Then}
+\[
+\iota'':H^n(\mathfrak{V},\mathcal{F})
+\longrightarrow H^n(\mathfrak{U},\mathfrak{V};\mathcal{F})
+\]
+\textit{is bijective for every $n\geq0$. Moreover, the homomorphism}\footnote{The printed source writes $\iota'\circ\iota''^{-1}$, which is not type-correct for the displayed map under the article's usual right-to-left composition convention. The map from $H^n(\mathfrak U,\mathcal F)$ to $H^n(\mathfrak V,\mathcal F)$ is $\iota''^{-1}\circ\iota'$.}
+\[
+\iota''^{-1}\circ\iota':
+H^n(\mathfrak{U},\mathcal{F})
+\longrightarrow H^n(\mathfrak{V},\mathcal{F})
+\]
+\textit{coincides with the homomorphism $\sigma(\mathfrak{V},\mathfrak{U})$ of \hyperref[fac:I:3:no:21]{no.~21}.}
+
+Applying \hyperref[fac:I:4:no:29:lemma:1]{Lemma~1} to $\mathfrak{W}=\mathfrak{U}_{s'}$ and $Y=V_{s'}$, we see that
+\[
+H^p(\mathfrak{U}_{s'},\mathcal{F})=0
+\qquad(p>0),
+\]
+and \hyperref[fac:I:4:no:29:prop:3]{Proposition~3} then shows that
+\[
+\iota'':H^n(\mathfrak{V},\mathcal{F})
+\longrightarrow H^n(\mathfrak{U},\mathfrak{V};\mathcal{F})
+\]
+is bijective for every $n\geq0$.
+
+Let $\tau:J\to I$ be a map such that $V_j\subset U_{\tau j}$. To prove the second part of the \hyperref[fac:I:4:no:29:prop:4]{proposition}, we must show that, if $f$ is an $n$-cocycle of $C(\mathfrak{U},\mathcal{F})$, the cocycles $\iota'(f)$ and $\iota''(\tau f)$ are cohomologous in $C(\mathfrak{U},\mathfrak{V};\mathcal{F})$.
+
+For every integer $p$ with $0\leq p\leq n-1$, define
+\[
+g^p\in C^{p,n-p-1}(\mathfrak{U},\mathfrak{V};\mathcal{F})
+\]
+by
+\[
+g^p_{i_0\ldots i_p,j_0\ldots j_{n-p-1}}
+=\rho_p\bigl(f_{i_0\ldots i_p\,\tau j_0\ldots\tau j_{n-p-1}}\bigr).
+\]
+\footnote{The printed formula ends with the undefined extra index $\tau j_{n-p}$. The left side and the following inclusion both stop at $j_{n-p-1}$; that terminal index also gives the required $n+1$ arguments of the $n$-cochain $f$.}
+Here $\rho_p$ denotes the restriction homomorphism defined by the inclusion of
+\[
+U_{i_0\ldots i_p}\cap V_{j_0\ldots j_{n-p-1}}
+\quad\text{in}\quad
+U_{i_0\ldots i_p\,\tau j_0\ldots\tau j_{n-p-1}}.
+\]
+A direct calculation, taking into account that $f$ is a cocycle, gives
+\[
+d''(g^0)=\iota''(\tau f),\quad\ldots,\quad
+d''(g^p)=d'(g^{p-1}),\quad\ldots,\quad
+d'(g^{n-1})=(-1)^n\iota'(f).
+\]
+It follows that
+\[
+d\bigl(g^0-g^1+\cdots+(-1)^{n-1}g^{n-1}\bigr)
+=\iota''(\tau f)-\iota'(f),
+\]
+which proves that $\iota''(\tau f)$ and $\iota'(f)$ are cohomologous.
+
+\phantomsection\label{fac:I:4:no:29:prop:5}
+\textsc{Proposition 5.} \textit{Suppose that $\mathfrak{V}$ is finer than $\mathfrak{U}$ and that}
+\[
+H^q(\mathfrak{V}_s,\mathcal{F})=0
+\]
+\textit{for every $s$ and every $q>0$. Then the homomorphism}
+\[
+\sigma(\mathfrak{V},\mathfrak{U}):
+H^n(\mathfrak{U},\mathcal{F})
+\longrightarrow H^n(\mathfrak{V},\mathcal{F})
+\]
+\textit{is bijective for every $n\geq0$.}
+
+Applying \hyperref[fac:I:4:no:29:prop:3]{Proposition~3} with the roles of $\mathfrak{U}$ and $\mathfrak{V}$ interchanged, we see that\footnote{The printed source gives the domain of $\iota'$ as $H^n(\mathfrak V,\mathcal F)$. But $\iota'$ was defined on $C(\mathfrak U,\mathcal F)$, and the swapped application of \hyperref[fac:I:4:no:29:prop:3]{Proposition~3} therefore has domain $H^n(\mathfrak U,\mathcal F)$.}
+\[
+\iota':H^n(\mathfrak{U},\mathcal{F})
+\longrightarrow H^n(\mathfrak{U},\mathfrak{V};\mathcal{F})
+\]
+is bijective. The \hyperref[fac:I:4:no:29:prop:5]{proposition} now follows directly from \hyperref[fac:I:4:no:29:prop:4]{Proposition~4}.
+
+\phantomsection\label{fac:I:4:no:29:thm:1}
+\textsc{Theorem 1.} \textit{Let $X$ be a topological space, let $\mathfrak{U}=\{U_i\}_{i\in I}$ be a covering of $X$, and let $\mathcal{F}$ be a sheaf on $X$. Suppose that there is a family of coverings $\mathfrak{V}^{\alpha}$, $\alpha\in A$, of $X$ satisfying the following two conditions:}
+
+\begin{enumerate}[label=(\alph*),leftmargin=2.5em]
+\item\phantomsection\label{fac:I:4:no:29:thm:1:item:a} \textit{For every covering $\mathfrak{W}$ of $X$, there is an $\alpha\in A$ such that $\mathfrak{V}^{\alpha}<\mathfrak{W}$.}
+\item\phantomsection\label{fac:I:4:no:29:thm:1:item:b} \textit{$H^q(\mathfrak{V}^{\alpha}_s,\mathcal{F})=0$ for every $\alpha\in A$, every simplex $s$ of $S(I)$, and every $q>0$.}
+\end{enumerate}
+
+\textit{Then}
+\[
+\sigma(\mathfrak{U}):H^n(\mathfrak{U},\mathcal{F})
+\longrightarrow H^n(X,\mathcal{F})
+\]
+\textit{is bijective for every $n\geq0$.}
+
+Since the $\mathfrak{V}^{\alpha}$ are arbitrarily fine, we may suppose that they are finer than $\mathfrak{U}$. In that case, \hyperref[fac:I:4:no:29:prop:5]{Proposition~5} shows that
+\[
+\sigma(\mathfrak{V}^{\alpha},\mathfrak{U}):
+H^n(\mathfrak{U},\mathcal{F})
+\longrightarrow H^n(\mathfrak{V}^{\alpha},\mathcal{F})
+\]
+is bijective for every $n\geq0$. Since the $\mathfrak{V}^{\alpha}$ are arbitrarily fine, $H^n(X,\mathcal{F})$ is the direct limit of the groups $H^n(\mathfrak{V}^{\alpha},\mathcal{F})$, and the \hyperref[fac:I:4:no:29:thm:1]{theorem} follows immediately.
+
+\phantomsection\label{fac:I:4:no:29:remarks}
+\textsc{Remarks.}
+\begin{enumerate}[label=(\arabic*),leftmargin=2.5em]
+\item\phantomsection\label{fac:I:4:no:29:remark:1} It is probable that \hyperref[fac:I:4:no:29:thm:1]{Theorem~1} remains valid if \hyperref[fac:I:4:no:29:thm:1:item:b]{condition (b)} is replaced by the following weaker condition:
+\[
+\lim_{\alpha}H^q(\mathfrak{V}^{\alpha}_s,\mathcal{F})=0
+\]
+for every simplex $s$ of $S(I)$ and every $q>0$.
+\item\phantomsection\label{fac:I:4:no:29:remark:2} \hyperref[fac:I:4:no:29:thm:1]{Theorem~1} is analogous to a theorem of Leray on acyclic coverings. Cf. [10], as well as [4], Exposé~XVII-7.
+\end{enumerate}

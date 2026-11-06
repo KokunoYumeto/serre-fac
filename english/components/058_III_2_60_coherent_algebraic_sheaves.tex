@@ -1,0 +1,88 @@
+% FAC-EN-U0058
+% Source: fac_body.tex lines 2079--2130.
+% Authority: PDF physical pp. 57--58; printed pp. 252--253 (no. 60 complete).
+% English source-first translation; printed upper-row L symbols corrected and logged.
+
+\phantomsection\label{fac:III:2:no:60}
+\textbf{60. The case of coherent algebraic sheaves.}
+
+Let us first prove a preliminary result.
+
+\phantomsection\label{fac:III:2:no:60:prop:9}
+\textsc{Proposition 9.} \textit{Let $\mathcal{L}$ be an algebraic sheaf
+on $X$ that is a direct sum of finitely many sheaves $\mathcal{O}(n_i)$.
+Then $\Gamma(\mathcal{L})$
+\hyperref[fac:III:2:no:56:def:TF]{satisfies condition (TF)}, and
+$\hyperref[fac:III:2:no:59:def:beta]{\beta}:
+\mathcal{A}(\Gamma(\mathcal{L}))\to\mathcal{L}$ is bijective.}
+
+We reduce at once to $\mathcal{L}=\mathcal{O}(n)$, and then to
+$\mathcal{L}=\mathcal{O}$. In this case we know that
+$\Gamma(\mathcal{O}(p))=S_p$ for $p\geq0$, and hence
+$S\subset\Gamma(\mathcal{O})$, with the quotient belonging to
+$\mathcal{C}$. It follows first that $\Gamma(\mathcal{O})$
+\hyperref[fac:III:2:no:56:def:TF]{satisfies (TF)}, and then that
+\[
+\mathcal{A}(\Gamma(\mathcal{O}))=
+\mathcal{A}(S)=\mathcal{O},
+\]
+which proves the proposition.
+
+(Observe that $\Gamma(\mathcal{O})=S$ if $r\geq1$; if $r=0$, however,
+$\Gamma(\mathcal{O})$ is not even a finitely generated $S$-module.)
+
+\phantomsection\label{fac:III:2:no:60:theorem:2}
+\textsc{Theorem 2.} \textit{For every coherent algebraic sheaf
+$\mathcal{F}$ on $X$, there is a graded $S$-module $M$
+\hyperref[fac:III:2:no:56:def:TF]{satisfying condition (TF)} such that
+$\mathcal{A}(M)$ is isomorphic to
+$\mathcal{F}$.}
+
+By the \hyperref[fac:III:2:no:55:corollary]{corollary to Theorem~1},
+there is an exact sequence of algebraic sheaves
+\phantomsection\label{fac:III:2:no:60:formula:sheaf-presentation}
+\[
+\mathcal{L}^1\xrightarrow{\varphi}\mathcal{L}^0
+\longrightarrow\mathcal{F}\longrightarrow0,
+\]
+where $\mathcal{L}^1$ and $\mathcal{L}^0$ satisfy the hypotheses of the
+\hyperref[fac:III:2:no:60:prop:9]{preceding proposition}. Let $M$ be the
+cokernel of the homomorphism
+\phantomsection\label{fac:III:2:no:60:formula:Gamma-phi}
+\[
+\Gamma(\varphi):\Gamma(\mathcal{L}^1)
+\longrightarrow\Gamma(\mathcal{L}^0).
+\]
+By \hyperref[fac:III:2:no:60:prop:9]{Proposition~9}, $M$
+\hyperref[fac:III:2:no:56:def:TF]{satisfies condition (TF)}. Applying the
+functor $\mathcal{A}$ to the exact sequence
+\phantomsection\label{fac:III:2:no:60:formula:module-cokernel}
+\[
+\Gamma(\mathcal{L}^1)\longrightarrow
+\Gamma(\mathcal{L}^0)\longrightarrow M\longrightarrow0,
+\]
+we obtain the exact sequence
+\phantomsection\label{fac:III:2:no:60:formula:sheafified-cokernel}
+\[
+\mathcal{A}(\Gamma(\mathcal{L}^1))\longrightarrow
+\mathcal{A}(\Gamma(\mathcal{L}^0))\longrightarrow
+\mathcal{A}(M)\longrightarrow0.
+\]
+Consider the following commutative diagram:
+
+\phantomsection\label{fac:III:2:no:60:diagram:theorem2}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+\mathcal{A}(\Gamma(\mathcal{L}^1))
+  \arrow[r] \arrow[d,"\beta"'] &
+\mathcal{A}(\Gamma(\mathcal{L}^0))
+  \arrow[r] \arrow[d,"\beta"'] &
+\mathcal{A}(M) \arrow[r] & 0 \\
+\mathcal{L}^1 \arrow[r] &
+\mathcal{L}^0 \arrow[r] &
+\mathcal{F} \arrow[r] & 0.
+\end{tikzcd}
+\]
+By \hyperref[fac:III:2:no:60:prop:9]{Proposition~9}, the two vertical
+homomorphisms are bijective. It follows that $\mathcal{A}(M)$ is
+isomorphic to $\mathcal{F}$, as required.

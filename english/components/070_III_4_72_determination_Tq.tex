@@ -1,0 +1,160 @@
+% FAC-EN-U0070
+% Source: fac_body.tex lines 2698--2804.
+% Authority: PDF physical pp. 70--72; printed pp. 265--267
+% (Chapter III no. 72 complete; hard stop before section 5 / no. 73).
+% French control: T0043 repairs three inherited epsilon commands to the
+% printed membership sign. C0039 restores the omitted exceptional index
+% r+1 in the theorem's direct-isomorphism clause.
+
+\phantomsection\label{fac:III:4:no:72}
+\textbf{72. Determination of the modules $T^q(M)$.}
+We shall prove the \hyperref[fac:III:4:no:72:thm:1]{following theorem}, which generalizes
+\hyperref[fac:III:4:no:71:prop:2]{Proposition~2}.
+
+\phantomsection\label{fac:III:4:no:72:thm:1}
+\textsc{Theorem 1.} \textit{Let $M$ be a graded $S$-module. For
+$q\neq r,r+1$,\footnote{The printed statement says only $q\neq r$.
+ The immediately \hyperref[fac:III:4:no:72:def:Eq]{following definition} treats both $q=r$ and $q=r+1$
+separately, with $E^{r+1}(M)=\operatorname{Coker}(\alpha^*)$, and the
+displayed exact sequence identifies that cokernel with
+$\operatorname{Ext}_S^{r+1}(M,\Omega)$. Thus $r+1$ is necessarily also
+excluded from the direct $T^{r-q}$ isomorphism. Corrected French and
+English restore the omitted exception; diplomatic French preserves the
+print.} the graded $S$-modules $T^{r-q}(M)$ and
+$\operatorname{Ext}_S^q(M,\Omega)$ are isomorphic. Moreover, there is
+an exact sequence}
+\phantomsection\label{fac:III:4:no:72:formula:theorem-exact}
+\[
+0\longrightarrow\operatorname{Ext}_S^r(M,\Omega)
+\longrightarrow T^0(M)\xrightarrow{\ \alpha^*\ }M^*
+\longrightarrow\operatorname{Ext}_S^{r+1}(M,\Omega)
+\longrightarrow0.
+\]
+
+We shall use the axiomatic characterization of derived functors given
+in [6], Chapter~III, \S5. To this end, first define new functors
+$E^q(M)$ as follows:
+\phantomsection\label{fac:III:4:no:72:def:Eq}
+\[
+\begin{array}{ll}
+\text{For }q\neq r,r+1, & E^q(M)=T^{r-q}(M),\\[4pt]
+\text{For }q=r, & E^r(M)=\operatorname{Ker}(\alpha^*),\\[4pt]
+\text{For }q=r+1, & E^{r+1}(M)=\operatorname{Coker}(\alpha^*).
+\end{array}
+\]
+\phantomsection\label{fac:III:4:no:72:properties}
+The $E^q(M)$ are additive contravariant functors of $M$ with the
+following properties.
+
+\phantomsection\label{fac:III:4:no:72:property:i}
+\textit{(i) $E^0(M)$ is isomorphic to
+$\operatorname{Hom}_S(M,\Omega)$.}
+
+This is the assertion of
+\hyperref[fac:III:4:no:71:prop:2]{Proposition~2}.
+
+\phantomsection\label{fac:III:4:no:72:property:ii}
+\textit{(ii) If $L$ is free, $E^q(L)=0$ for every $q>0$.}
+
+It suffices to verify this for $L=S(n)$, in which case it follows from
+\hyperref[fac:III:3:no:62]{no.~62}.
+
+\phantomsection\label{fac:III:4:no:72:property:iii}
+\textit{(iii) With every exact sequence
+$0\longrightarrow M\longrightarrow N\longrightarrow P\longrightarrow0$
+there is associated a sequence of coboundary operators
+$d^q:E^q(M)\longrightarrow E^{q+1}(P)$, and the sequence}
+\phantomsection\label{fac:III:4:no:72:formula:E-long-exact}
+\[
+\cdots\longrightarrow E^q(P)\longrightarrow E^q(N)
+\longrightarrow E^q(M)\xrightarrow{\ d^q\ }E^{q+1}(P)
+\longrightarrow\cdots
+\]
+\textit{is exact.}
+
+The definition of $d^q$ is evident if $q\neq r-1,r$: it is the
+homomorphism from $T^{r-q}(M)$ to $T^{r-q-1}(P)$ defined in
+\hyperref[fac:III:4:no:70]{no.~70}. For $q=r-1$ or $r$, use the
+following commutative diagram:
+\phantomsection\label{fac:III:4:no:72:diagram:alpha-star}
+\begin{center}
+\begin{tikzcd}
+T^1(M) \arrow[r]
+  & T^0(P) \arrow[r] \arrow[d,"\alpha^*"']
+  & T^0(N) \arrow[r] \arrow[d,"\alpha^*"']
+  & T^0(M) \arrow[r] \arrow[d,"\alpha^*"']
+  & 0 \arrow[d,"\alpha^*"'] \\
+0 \arrow[r]
+  & P^* \arrow[r]
+  & N^* \arrow[r]
+  & M^* \arrow[r]
+  & 0.
+\end{tikzcd}
+\end{center}
+This diagram first shows that the image of $T^1(M)$ is contained in the
+kernel of $\alpha^*:T^0(P)\longrightarrow P^*$, which is precisely
+$E^r(P)$. This defines
+\phantomsection\label{fac:III:4:no:72:map:d-r-minus-1}
+\[
+d^{r-1}:E^{r-1}(M)\longrightarrow E^r(P).
+\]
+
+To define
+\phantomsection\label{fac:III:4:no:72:map:d-r}
+\[
+d^r:\operatorname{Ker}(T^0(M)\longrightarrow M^*)
+\longrightarrow\operatorname{Coker}(T^0(P)\longrightarrow P^*),
+\]
+we use the procedure of [6], Chapter~III, Lemma~3.3. If
+$x\in\operatorname{Ker}(T^0(M)\longrightarrow M^*)$, there exist
+$y\in P^*$ and $z\in T^0(N)$ such that $x$ is the image of $z$ and
+$y$ and $z$ have the same image in $N^*$; one then puts $d^r(x)=y$.
+
+The exactness of the sequence in
+\hyperref[fac:III:4:no:72:property:iii]{(iii)} follows from the exactness of
+\phantomsection\label{fac:III:4:no:72:formula:T-long-exact}
+\[
+\cdots\longrightarrow T^{r-q}(P)\longrightarrow T^{r-q}(N)
+\longrightarrow T^{r-q}(M)\longrightarrow T^{r-q-1}(P)
+\longrightarrow\cdots
+\]
+and from [6], loc.~cit.
+
+\phantomsection\label{fac:III:4:no:72:property:iv}
+\textit{(iv) The isomorphism in
+\hyperref[fac:III:4:no:72:property:i]{(i)} and the operators $d^q$ in
+\hyperref[fac:III:4:no:72:property:iii]{(iii)}
+are ``natural.''}
+
+This follows immediately from their definitions.
+
+Since properties
+\hyperref[fac:III:4:no:72:properties]{(i)--(iv)} characterize the derived
+functors of
+$\operatorname{Hom}_S(M,\Omega)$, we have
+\phantomsection\label{fac:III:4:no:72:formula:E-Ext}
+\[
+E^q(M)\simeq\operatorname{Ext}_S^q(M,\Omega),
+\]
+which proves \hyperref[fac:III:4:no:72:thm:1]{the theorem}.
+
+\phantomsection\label{fac:III:4:no:72:cor:1}
+\textsc{Corollary 1.} \textit{If $M$
+\hyperref[fac:III:2:no:56:def:TF]{satisfies condition (TF)}, then
+$H^q(M)$ is isomorphic to the vector-space dual of
+$\operatorname{Ext}_S^{r-q}(M,\Omega)_0$ for every $q\geq1$.}
+
+Indeed, we know that $H^q(M)$ is a finite-dimensional vector space
+whose dual is isomorphic to $\operatorname{Ext}_S^{r-q}(M,\Omega)_0$.
+
+\phantomsection\label{fac:III:4:no:72:cor:2}
+\textsc{Corollary 2.} \textit{If $M$
+\hyperref[fac:III:2:no:56:def:TF]{satisfies condition (TF)}, the
+$T^q(M)$ are graded $S$-modules of finite type for $q\geq1$, and
+$T^0(M)$ satisfies condition (TF).}
+
+One may replace $M$ by a module of finite type without changing the
+$B^q(M)$, and hence without changing the $T^q(M)$. The
+$\operatorname{Ext}_S^{r-q}(M,\Omega)$ are then $S$-modules of finite
+type, and $M^*\in\mathfrak{C}$, which proves
+\hyperref[fac:III:4:no:72:cor:2]{the corollary}.

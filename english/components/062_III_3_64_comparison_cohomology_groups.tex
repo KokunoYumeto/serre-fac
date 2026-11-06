@@ -1,0 +1,136 @@
+% FAC-EN-U0062
+% Source: fac_body.tex lines 2342--2403.
+% Authority: PDF physical pp. 62--63; printed pp. 257--258
+% (Chapter III, no. 64 complete).
+% Transcription repair FAC-FR-T0036 restores "allons" and four membership signs.
+
+\phantomsection\label{fac:III:3:no:64}
+\textbf{64. Comparison of the groups $H^q(M)$ and
+$H^q(X,\mathcal{A}(M))$.}
+
+Let $M$ be a graded $S$-module, and let $\mathcal{A}(M)$ be the algebraic
+sheaf on $X=\mathbf{P}_r(K)$ constructed from $M$ by the procedure of
+\hyperref[fac:III:2:no:57]{no.~57}. We shall compare $C(M)$ with
+$C'(\mathfrak{U},\mathcal{A}(M))$, the complex of alternating cochains of
+the covering $\mathfrak{U}=\{U_i\}_{i\in I}$ with values in the sheaf
+$\mathcal{A}(M)$.
+
+Let $m\in C_k^q(M)$, and let $(i_0,\ldots,i_q)$ be a sequence of $q+1$
+elements of $I$. The polynomial $(t_{i_0}\cdots t_{i_q})^k$ plainly
+belongs to $S(U_{i_0\cdots i_q})$, with the notation of
+\hyperref[fac:III:2:no:57]{no.~57}. It follows
+that
+\[
+\frac{m\langle i_0\cdots i_q\rangle}
+     {(t_{i_0}\cdots t_{i_q})^k}
+\]
+belongs to $M_U$, where $U=U_{i_0\cdots i_q}$, and hence defines a
+section of $\mathcal{A}(M)$ over $U_{i_0\cdots i_q}$. As
+$(i_0,\ldots,i_q)$ varies, the system formed by these sections is an
+alternating $q$-cochain of $\mathfrak{U}$ with values in
+$\mathcal{A}(M)$, which we denote by $\iota_k(m)$. It is immediate that
+$\iota_k$ commutes with $d$, and that
+$\iota_k=\iota_h\circ\rho_k^h$ if $h\geq k$. Passing to the direct limit,
+the $\iota_k$ therefore define a homomorphism
+\phantomsection\label{fac:III:3:no:64:map:iota}
+\[
+\iota:C(M)\longrightarrow C'(\mathfrak{U},\mathcal{A}(M))
+\]
+which commutes with $d$.
+
+\phantomsection\label{fac:III:3:no:64:prop:4}
+\textsc{Proposition 4.} \textit{If $M$
+\hyperref[fac:III:2:no:56:def:TF]{satisfies condition}}
+\hyperref[fac:III:2:no:56:def:TF]{(TF)}\textit{, the homomorphism
+$\iota:C(M)\to C'(\mathfrak{U},\mathcal{A}(M))$ is bijective.}
+
+If $M\in\mathcal{C}$, then $M_n=0$ for $n\geq n_0$, whence
+$C_k(M)=0$ for $k\geq n_0$ and $C(M)=0$. Since every $S$-module
+\hyperref[fac:III:2:no:56:def:TF]{satisfying (TF)} is
+$\mathcal{C}$-isomorphic to a module of finite type,
+this shows that we may restrict ourselves to the case in which $M$ is of
+finite type. We can then find an exact sequence
+\[
+L^1\longrightarrow L^0\longrightarrow M\longrightarrow0,
+\]
+where $L^1$ and $L^0$ are free of finite type. By
+\hyperref[fac:III:2:no:58:prop:3]{Propositions~3} and
+\hyperref[fac:III:2:no:58:prop:5]{5 of no.~58}, the sequence
+\phantomsection\label{fac:III:3:no:64:formula:sheaf-exact}
+\[
+\mathcal{A}(L^1)\longrightarrow\mathcal{A}(L^0)
+\longrightarrow\mathcal{A}(M)\longrightarrow0
+\]
+is an exact sequence of coherent algebraic sheaves. Since the
+$U_{i_0\cdots i_q}$ are affine open subsets, the sequence
+\phantomsection\label{fac:III:3:no:64:formula:cochain-exact}
+\[
+C'(\mathfrak{U},\mathcal{A}(L^1))
+\longrightarrow C'(\mathfrak{U},\mathcal{A}(L^0))
+\longrightarrow C'(\mathfrak{U},\mathcal{A}(M))
+\longrightarrow0
+\]
+is exact (cf.
+\hyperref[fac:II:3:no:45:thm:2:cor:2]{no.~45, Corollary~2 to Theorem~2}).
+The commutative diagram
+\phantomsection\label{fac:III:3:no:64:diagram:iota}
+\[
+\begin{tikzcd}
+C(L^1) \arrow[r] \arrow[d,"\iota"']
+  & C(L^0) \arrow[r] \arrow[d,"\iota"']
+  & C(M) \arrow[r] \arrow[d,"\iota"'] & 0 \arrow[d] \\
+C'(\mathfrak{U},\mathcal{A}(L^1)) \arrow[r]
+  & C'(\mathfrak{U},\mathcal{A}(L^0)) \arrow[r]
+  & C'(\mathfrak{U},\mathcal{A}(M)) \arrow[r] & 0
+\end{tikzcd}
+\]
+then shows that, if \hyperref[fac:III:3:no:64:prop:4]{the proposition}
+holds for $L^1$ and $L^0$, it holds
+for $M$. We are therefore reduced to the special case of a free module of
+finite type and then, by decomposition into a direct sum, to the case
+$M=S(n)$.
+
+In this case $\mathcal{A}(S(n))=\mathcal{O}(n)$. By the very definition
+of this sheaf, a section $f_{i_0\cdots i_q}$ of $\mathcal{O}(n)$ over
+$U_{i_0\cdots i_q}$ is a regular function on
+$V_{i_0}\cap\cdots\cap V_{i_q}$, homogeneous of degree $n$. Since
+$V_{i_0}\cap\cdots\cap V_{i_q}$ is the set of points of $K^{r+1}$ at
+which $t_{i_0}\cdots t_{i_q}$ is nonzero, there is an integer $k$ such
+that
+\phantomsection\label{fac:III:3:no:64:formula:fraction}
+\[
+f_{i_0\cdots i_q}
+=\frac{P\langle i_0\cdots i_q\rangle}
+       {(t_{i_0}\cdots t_{i_q})^k},
+\]
+where $P\langle i_0\cdots i_q\rangle$ is a homogeneous polynomial of
+degree $n+k(q+1)$, that is, of degree $k(q+1)$ in $S(n)$. Thus every
+alternating cochain
+$f\in C'(\mathfrak{U},\mathcal{O}(n))$ defines a system
+$P\langle i_0\cdots i_q\rangle$ which is an element of $C_k(S(n))$,
+and hence a homomorphism
+\phantomsection\label{fac:III:3:no:64:map:nu}
+\[
+\nu:C'(\mathfrak{U},\mathcal{O}(n))\longrightarrow C(S(n)).
+\]
+Since one immediately verifies that $\iota\circ\nu=1$ and
+$\nu\circ\iota=1$, it follows that $\iota$ is bijective, which completes
+the proof.
+
+\phantomsection\label{fac:III:3:no:64:cor}
+\textsc{Corollary.} \textit{The homomorphism $\iota$ defines an
+isomorphism from $H^q(M)$ onto $H^q(X,\mathcal{A}(M))$ for every
+$q\geq0$.}
+
+Indeed, we know that
+$H'^q(\mathfrak{U},\mathcal{A}(M))=H^q(\mathfrak{U},\mathcal{A}(M))$
+(\hyperref[fac:I:3:no:20:prop:2]{no.~20, Proposition~2}), and
+$H^q(\mathfrak{U},\mathcal{A}(M))=H^q(X,\mathcal{A}(M))$
+(\hyperref[fac:III:1:prop:2]{no.~52, Proposition~2}, which applies since
+$\mathcal{A}(M)$ is coherent).
+
+\phantomsection\label{fac:III:3:no:64:remark}
+\textsc{Remark.} It is easy to see that
+$\iota:C(M)\to C'(\mathfrak{U},\mathcal{A}(M))$ is \textit{injective}
+even when $M$ does not
+\hyperref[fac:III:2:no:56:def:TF]{satisfy condition (TF)}.

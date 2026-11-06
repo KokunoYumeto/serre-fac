@@ -1,0 +1,125 @@
+% FAC-EN-U0057
+% Source: fac_body.tex lines 2043--2076.
+% Authority: PDF physical pp. 56--57; printed pp. 251--252 (no. 59 complete).
+% English source-first translation; formulas and mathematical structure source-aligned.
+
+\phantomsection\label{fac:III:2:no:59}
+\textbf{59. Graded $S$-module associated with an algebraic sheaf.}
+
+Let $\mathcal{F}$ be an algebraic sheaf on $X$, and set
+
+\phantomsection\label{fac:III:2:no:59:formula:graded-sections}
+\[
+\Gamma(\mathcal{F})=
+\sum_{n\in\mathbf{Z}}\Gamma(\mathcal{F})_n,
+\qquad
+\Gamma(\mathcal{F})_n=\Gamma(X,\mathcal{F}(n)).
+\]
+The group $\Gamma(\mathcal{F})$ is graded; we shall endow it with the
+structure of an $S$-module. Let $s\in\Gamma(X,\mathcal{F}(q))$ and
+$P\in S_p$. We may identify $P$ with a section of $\mathcal{O}(p)$
+(compare \hyperref[fac:III:2:no:54]{no.~54}); hence $P\otimes s$ is a
+section of
+\phantomsection\label{fac:III:2:no:59:formula:S-action}
+\[
+\mathcal{O}(p)\otimes\mathcal{F}(q)
+=\mathcal{F}(q)(p)=\mathcal{F}(p+q),
+\]
+where we have used the isomorphisms of
+\hyperref[fac:III:2:no:54]{no.~54}. We have thus defined a
+section of $\mathcal{F}(p+q)$, which we denote by $P.s$ rather than
+$P\otimes s$. The map $(P,s)\mapsto P.s$ gives
+$\Gamma(\mathcal{F})$ the structure of an $S$-module compatible with
+its grading.
+
+One can also define $P.s$ in terms of its components over the $U_i$.
+If the components of $s$ are
+$s_i\in\Gamma(U_i,\mathcal{F})$, with
+$s_i=(t_j^q/t_i^q).s_j$ on $U_i\cap U_j$, then
+\phantomsection\label{fac:III:2:no:59:formula:component-action}
+\[
+(P.s)_i=(P/t_i^p).s_i.
+\]
+This is well defined, since $P/t_i^p$ is a regular function on $U_i$.
+
+To compare the functors $\mathcal{A}(M)$ and $\Gamma(\mathcal{F})$, we
+shall define two canonical homomorphisms:
+\phantomsection\label{fac:III:2:no:59:formula:alpha-beta}
+\[
+\alpha:M\longrightarrow\Gamma(\mathcal{A}(M)),
+\qquad
+\beta:\mathcal{A}(\Gamma(\mathcal{F}))\longrightarrow\mathcal{F}.
+\]
+
+\phantomsection\label{fac:III:2:no:59:def:alpha}
+\textsc{Definition of $\alpha$.}
+Let $M$ be a graded $S$-module, and let $m\in M_0$ be a homogeneous
+element of degree zero in $M$. The element $m/1$ is a well-defined
+element of $M_x$, and varies continuously with $x\in X$; hence $m$
+defines a section $\alpha(m)$ of $\mathcal{A}(M)$. If now $m$ is
+homogeneous of degree $n$, then $m$ is homogeneous of degree zero in
+$M(n)$, and therefore defines a section $\alpha(m)$ of
+$\mathcal{A}(M(n))=\mathcal{A}(M)(n)$ (compare
+\hyperref[fac:III:2:no:58:prop:4]{Proposition~4}). This defines
+$\alpha:M\to\Gamma(\mathcal{A}(M))$, and it is immediate that $\alpha$
+is a homomorphism.
+
+\phantomsection\label{fac:III:2:no:59:def:beta}
+\textsc{Definition of $\beta$.}
+Let $\mathcal{F}$ be an algebraic sheaf on $X$, and let $s/Q$ be an
+element of $\Gamma(\mathcal{F})_x$, with
+$s\in\Gamma(X,\mathcal{F}(n))$, $Q\in S_n$, and $Q(x)\ne0$. The
+function $1/Q$ is homogeneous of degree $-n$ and regular at $x$, hence
+is a section of $\mathcal{O}(-n)$ in a neighborhood of $x$. It follows
+that $1/Q\otimes s$ is a section of
+$\mathcal{O}(-n)\otimes\mathcal{F}(n)=\mathcal{F}$ in a neighborhood
+of $x$, and thus defines an element of $\mathcal{F}_x$. We denote this
+element by $\beta_x(s/Q)$, since it depends only on $s/Q$. The map
+$\beta_x$ can also be defined using the components $s_i$ of $s$: if
+$x\in U_i$, then
+\phantomsection\label{fac:III:2:no:59:formula:beta-x}
+\[
+\beta_x(s/Q)=(t_i^n/Q).s_i(x).
+\]
+The collection of homomorphisms $\beta_x$ defines the homomorphism
+$\beta:\mathcal{A}(\Gamma(\mathcal{F}))\to\mathcal{F}$.
+
+The homomorphisms $\alpha$ and $\beta$ are related by the following
+propositions, which follow by a direct calculation.
+
+\phantomsection\label{fac:III:2:no:59:prop:7}
+\textsc{Proposition 7.} \textit{Let $M$ be a graded $S$-module. The
+composite of the homomorphisms}
+\phantomsection\label{fac:III:2:no:59:formula:prop7-composite}
+\[
+\mathcal{A}(M)\longrightarrow
+\mathcal{A}(\Gamma(\mathcal{A}(M)))\longrightarrow\mathcal{A}(M)
+\]
+\textit{is the identity.}
+
+(The first homomorphism is defined by
+$\alpha:M\to\Gamma(\mathcal{A}(M))$, and the second is $\beta$, applied
+to $\mathcal{F}=\mathcal{A}(M)$.)
+
+\phantomsection\label{fac:III:2:no:59:prop:8}
+\textsc{Proposition 8.} \textit{Let $\mathcal{F}$ be an algebraic sheaf
+on $X$. The composite of the homomorphisms}
+\phantomsection\label{fac:III:2:no:59:formula:prop8-composite}
+\[
+\Gamma(\mathcal{F})\longrightarrow
+\Gamma(\mathcal{A}(\Gamma(\mathcal{F})))
+\longrightarrow\Gamma(\mathcal{F})
+\]
+\textit{is the identity.}
+
+(The first homomorphism is $\alpha$, applied to
+$M=\Gamma(\mathcal{F})$, while the second is defined by
+$\beta:\mathcal{A}(\Gamma(\mathcal{F}))\to\mathcal{F}$.)
+
+\phantomsection\label{fac:III:2:no:59:forecast:no:65}
+We shall show in \hyperref[fac:III:3:no:65]{no.~65} that
+$\beta:\mathcal{A}(\Gamma(\mathcal{F}))\to\mathcal{F}$ is bijective if
+$\mathcal{F}$ is coherent, and that
+$\alpha:M\to\Gamma(\mathcal{A}(M))$ is
+\hyperref[fac:III:2:no:56:def:C-morphism]{$\mathcal{C}$-bijective} if
+$M$ \hyperref[fac:III:2:no:56:def:TF]{satisfies condition (TF)}.

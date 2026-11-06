@@ -1,0 +1,120 @@
+% FAC-EN-U0078
+% Source: fac_body.tex lines 3295--3356.
+% Authority: PDF physical pp. 80--81; printed pp. 275--276
+% (no. 80 complete; hard stop before no. 81).
+
+\medskip
+\phantomsection\label{fac:III:6:no:80}
+\textbf{80. Relation with the characteristic function of a graded
+$S$-module.}
+Let $\mathfrak F$ be a coherent algebraic sheaf on the space
+$\mathbf P_r(K)$; we shall write $\chi(\mathfrak F)$ instead of
+$\chi(\mathbf P_r(K),\mathfrak F)$. We have:
+
+\phantomsection\label{fac:III:6:no:80:prop:3}
+\textsc{Proposition 3.} \textit{$\chi(\mathfrak F(n))$ is a polynomial
+in $n$ of degree at most $r$.}
+
+By \hyperref[fac:III:2:no:60:theorem:2]{Theorem~2 of no.~60}, there
+exists a finitely generated graded $S$-module $M$ such that
+$\mathfrak A(M)$ is isomorphic to $\mathfrak F$. Applying Hilbert's
+syzygy theorem to $M$, we obtain an exact sequence of graded
+$S$-modules
+\phantomsection\label{fac:III:6:no:80:prop:3:module-resolution}
+\[
+0\longrightarrow L^{r+1}\longrightarrow\cdots\longrightarrow L^0
+\longrightarrow M\longrightarrow0,
+\]
+where the $L^q$ are finitely generated free modules. Applying the
+functor $\mathfrak A$ to this sequence, we obtain\footnote{The French
+print omits the subject \emph{on} in ``En appliquant le foncteur
+$\mathfrak A$ \`a cette suite, obtient une suite exacte de faisceaux.''
+The diplomatic French layer preserves the printed sentence; the
+corrected French layer restores \emph{on}, and the English follows the
+grammatically and mathematically required reading.} an exact sequence
+of sheaves
+\phantomsection\label{fac:III:6:no:80:prop:3:sheaf-resolution}
+\[
+0\longrightarrow\mathcal L^{r+1}\longrightarrow\cdots
+\longrightarrow\mathcal L^0\longrightarrow\mathfrak F
+\longrightarrow0,
+\]
+where each $\mathcal L^q$ is isomorphic to a finite direct sum of
+sheaves $\mathcal O(n_i)$. \hyperref[fac:III:6:no:79:prop:2]{Proposition~2}
+shows that $\chi(\mathfrak F(n))$ is equal to the alternating sum of
+the $\chi(\mathcal L^q(n))$, which reduces us to the case of the sheaf
+$\mathcal O(n_i)$. But it follows from
+\hyperref[fac:III:3:no:62]{no.~62} that
+\phantomsection\label{fac:III:6:no:80:formula:chi-O-n}
+\[
+\chi(\mathcal O(n))=\binom{n+r}{r},
+\]
+which is indeed a polynomial in $n$ of degree at most $r$; this proves
+the \hyperref[fac:III:6:no:80:prop:3]{proposition}.
+
+\phantomsection\label{fac:III:6:no:80:prop:4}
+\textsc{Proposition 4.} \textit{Let $M$ be a graded $S$-module
+satisfying condition \textup{(TF)}, and let
+$\mathfrak F=\mathfrak A(M)$. For every sufficiently large $n$,}
+\phantomsection\label{fac:III:6:no:80:prop:4:formula}
+\[
+\chi(\mathfrak F(n))=\dim_K M_n.
+\]
+
+Indeed, we know from \hyperref[fac:III:3:no:65]{no.~65} that, for
+sufficiently large $n$, the homomorphism
+$\alpha:M_n\to H^0(X,\mathfrak F(n))$ is bijective and
+$H^q(X,\mathfrak F(n))=0$ for every $q>0$; hence
+\[
+\chi(\mathfrak F(n))=h^0(X,\mathfrak F(n))=\dim_K M_n.
+\]
+
+We thus recover the well-known fact that $\dim_K M_n$ is a polynomial
+in $n$ for sufficiently large $n$. This polynomial, which we shall
+denote by $P_M$, is called the
+\phantomsection\label{fac:III:6:no:80:def:characteristic-function}
+\textit{characteristic function} of $M$. For every $n\in\mathbf Z$,
+we have
+\phantomsection\label{fac:III:6:no:80:formula:P-M}
+\[
+P_M(n)=\chi(\mathfrak F(n));
+\]
+in particular, on taking $n=0$, we see that
+\textit{the constant term of $P_M$ is equal to $\chi(\mathfrak F)$}.
+
+Apply \hyperref[fac:III:6:no:80:prop:4]{this} to $M=S/I(V)$, where $I(V)$ is the homogeneous ideal of $S$
+consisting of the polynomials that vanish on a closed subvariety $V$
+of $\mathbf P_r(K)$. In this case the constant term of $P_M$ is called
+the \phantomsection\label{fac:III:6:no:80:def:arithmetic-genus}
+\textit{arithmetic genus} of $V$ (cf.~[19]); since, on the other hand,
+$\mathfrak A(M)=\mathcal O_V$, we obtain:
+
+\phantomsection\label{fac:III:6:no:80:prop:5}
+\textsc{Proposition 5.} \textit{The arithmetic genus of a projective
+variety $V$ is equal to}
+\phantomsection\label{fac:III:6:no:80:prop:5:formula}
+\[
+\chi(V,\mathcal O_V)=\sum_{q=0}^{\infty}(-1)^q
+ \dim_K H^q(V,\mathcal O_V).
+\]
+
+\textsc{Remarks}. \phantomsection\label{fac:III:6:no:80:remark:1}
+(1) The \hyperref[fac:III:6:no:80:prop:5]{preceding proposition} brings out the fact that the arithmetic
+genus is independent of the embedding of $V$ in a projective space,
+since the same is true of the $H^q(V,\mathcal O_V)$.
+
+\phantomsection\label{fac:III:6:no:80:remark:2}
+(2) The \textit{virtual} arithmetic genus (defined by Zariski in [19])
+can likewise be reduced to an Euler--Poincaré characteristic. We shall
+return later to this question, which is closely connected with the
+Riemann--Roch theorem.
+
+\phantomsection\label{fac:III:6:no:80:remark:3}
+(3) For convenience, we have adopted a definition of the arithmetic
+genus slightly different from the classical definition (cf.~[19]). If
+all the irreducible components of $V$ have the same dimension $p$, the
+two definitions are related by the formula
+\phantomsection\label{fac:III:6:no:80:remark:3:formula}
+\[
+\chi(V,\mathcal O_V)=1+(-1)^p p_a(V).
+\]

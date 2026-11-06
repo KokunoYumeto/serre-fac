@@ -1,0 +1,80 @@
+% FAC-EN-U0055
+% Source: fac_body.tex lines 1955--1996.
+% Authority: PDF physical pp. 54--55; printed pp. 249--250 (no. 57 complete).
+% English source-first translation; singleton typo corrected transparently and logged.
+
+\phantomsection\label{fac:III:2:no:57}
+\textbf{57. Algebraic sheaf associated with a graded $S$-module.}
+
+\phantomsection\label{fac:III:2:no:57:def:S-U}
+If $U$ is a nonempty subset of $X$, we denote by $S(U)$ the subset of
+$S=K[t_0,\ldots,t_r]$ consisting of the homogeneous polynomials $Q$ such
+that $Q(x)\neq0$ for every $x\in U$. The subset $S(U)$ is multiplicatively closed
+and does not contain $0$. For $U=\{x\}$, we write $S(x)$ instead of
+$S(\{x\})$.
+
+\phantomsection\label{fac:III:2:no:57:def:M-U}
+Let $M$ be a graded $S$-module. We denote by $M_U$ the set of fractions
+$m/Q$, where $m\in M$, $Q\in S(U)$, and $m$ and $Q$ are homogeneous of the
+\textit{same} degree. Two fractions $m/Q$ and $m'/Q'$ are identified if
+there exists $Q''\in S(U)$ such that
+\phantomsection\label{fac:III:2:no:57:formula:equivalence}
+\[
+Q''(Q'm-Qm')=0.
+\]
+This indeed defines an equivalence relation on the pairs $(m,Q)$. For
+$U=\{x\}$, we write $M_x$ instead of $M_{\{x\}}$.
+
+Applying this construction to $M=S$, we find that $S_U$ is the ring of
+rational fractions $P/Q$, where $P$ and $Q$ are homogeneous polynomials of
+the same degree and $Q\in S(U)$. If $M$ is any graded $S$-module, then
+$M_U$ becomes an $S_U$-module by setting
+\phantomsection\label{fac:III:2:no:57:formula:module-operations}
+\[
+\frac{m}{Q}+\frac{m'}{Q'}=\frac{Q'm+Qm'}{QQ'},
+\qquad
+\frac{P}{Q}\cdot\frac{m}{Q'}=\frac{Pm}{QQ'}.
+\]
+
+If $U\subset V$, then $S(V)\subset S(U)$, and hence there are canonical
+homomorphisms
+\phantomsection\label{fac:III:2:no:57:formula:transition}
+\[
+\varphi_U^V:M_V\longrightarrow M_U.
+\]
+\phantomsection\label{fac:III:2:no:57:construction:A}
+The system $(M_U,\varphi_U^V)$, with $U$ and $V$ ranging over the nonempty
+open subsets of $X$, therefore defines a sheaf, which we denote by
+$\mathcal{A}(M)$. One immediately verifies that
+\phantomsection\label{fac:III:2:no:57:formula:stalk}
+\[
+\varinjlim_{x\in U}M_U=M_x;
+\]
+that is, $\mathcal{A}(M)_x=M_x$.
+
+In particular, $\mathcal{A}(S)=\mathcal{O}$. Since the $M_U$ are
+$S_U$-modules, it follows that $\mathcal{A}(M)$ is a sheaf of
+$\mathcal{A}(S)$-modules, that is, an \textit{algebraic sheaf} on $X$.
+Every homomorphism $\varphi:M\to M'$ naturally defines $S_U$-linear
+homomorphisms $\varphi_U:M_U\to M'_U$, and hence a homomorphism of sheaves
+\[
+\mathcal{A}(\varphi):\mathcal{A}(M)\longrightarrow\mathcal{A}(M'),
+\]
+which we shall often denote simply by $\varphi$. Evidently,
+\phantomsection\label{fac:III:2:no:57:formula:functoriality}
+\[
+\mathcal{A}(\varphi+\psi)=\mathcal{A}(\varphi)+\mathcal{A}(\psi),
+\qquad
+\mathcal{A}(1)=1,
+\qquad
+\mathcal{A}(\varphi\circ\psi)
+=\mathcal{A}(\varphi)\circ\mathcal{A}(\psi).
+\]
+Thus the operation $M\mapsto\mathcal{A}(M)$ is an \textit{additive covariant functor}
+from the category of graded $S$-modules to the category
+of algebraic sheaves on $X$.
+
+(The preceding definitions are entirely analogous to those of
+\hyperref[fac:II:4]{§4 of Chapter~II}. Notice, however, that $S_U$ is not
+the ring of fractions of $S$ with respect to $S(U)$, but only its
+homogeneous component of degree zero.)

@@ -1,0 +1,147 @@
+% FAC-EN-U0079
+% Source: fac_body.tex lines 3358--3400.
+% Authority: PDF physical pp. 81--82; printed pp. 276--277
+% (no. 81 complete; hard stop before Paris and the bibliography).
+
+\medskip
+\phantomsection\label{fac:III:6:no:81}
+\textbf{81. Degree of the characteristic function.}
+If $\mathfrak F$ is a coherent algebraic sheaf on an algebraic variety
+$V$, we call the set of points $x\in V$ such that
+$\mathfrak F_x\neq0$ the \phantomsection\label{fac:III:6:no:81:def:support}
+\textit{support} of $\mathfrak F$, and denote it by
+$\operatorname{Supp}(\mathfrak F)$. Since $\mathfrak F$ is a sheaf of
+finite type, this set is \textit{closed}: indeed, if
+$\mathfrak F_x=0$, the zero section generates $\mathfrak F_x$, and
+hence also $\mathfrak F_y$ for every $y$ sufficiently close to $x$ by
+\hyperref[fac:I:2:no:12:prop:1]{Proposition~1 of no.~12}. Thus the
+complement of $\operatorname{Supp}(\mathfrak F)$ is open.
+
+Let $M$ be a finitely generated graded $S$-module, and let
+$\mathfrak F=\mathfrak A(M)$ be the sheaf defined by $M$ on
+$\mathbf P_r(K)=X$. We can determine $\operatorname{Supp}(\mathfrak F)$
+from $M$ as follows.
+
+Let
+\phantomsection\label{fac:III:6:no:81:primary-decomposition}
+\[
+0=\bigcap_\alpha M^\alpha
+\]
+be a decomposition of $0$ as an intersection of homogeneous primary
+submodules $M^\alpha$ of $M$, with the $M^\alpha$ corresponding to
+homogeneous prime ideals $\mathfrak p^\alpha$ (cf.~[12], Chap.~IV).
+We shall suppose that this decomposition is ``as short as possible,''
+that is, that no $M^\alpha$ is contained in the intersection of the
+others. For every $x\in X$, each $\mathfrak p^\alpha$ defines a prime
+ideal $\mathfrak p_x^\alpha$ of the local ring $\mathcal O_x$, and
+$\mathfrak p_x^\alpha=\mathcal O_x$ if and only if $x$ does not belong
+to the variety $V^\alpha$ defined by $\mathfrak p^\alpha$. Likewise,
+\phantomsection\label{fac:III:6:no:81:localized-primary-decomposition}
+\[
+0=\bigcap_\alpha M_x^\alpha
+\]
+in $M_x$, and one readily verifies that this gives a primary
+decomposition of $0$ in $M_x$, with the $M_x^\alpha$ corresponding to
+the prime ideals $\mathfrak p_x^\alpha$. If $x\notin V^\alpha$, then
+$M_x^\alpha=M_x$; restricting to the $M_x^\alpha$ for which
+$x\in V^\alpha$ gives a decomposition ``as short as possible''
+(cf.~[12], Chap.~IV, th.~4, where analogous results are established).
+It follows immediately that $M_x\neq0$ if and only if $x$ belongs to
+one of the varieties $V^\alpha$; in other words,
+\phantomsection\label{fac:III:6:no:81:formula:support-union}
+\[
+\operatorname{Supp}(\mathfrak F)=\bigcup_\alpha V^\alpha.
+\]
+
+\phantomsection\label{fac:III:6:no:81:prop:6}
+\textsc{Proposition 6.} \textit{If $\mathfrak F$ is a coherent
+algebraic sheaf on $\mathbf P_r(K)$, the degree of the polynomial
+$\chi(\mathfrak F(n))$ is equal to the dimension of
+$\operatorname{Supp}(\mathfrak F)$.}
+
+\phantomsection\label{fac:III:6:no:81:prop:6:proof}
+We argue by induction on $r$, the case $r=0$ being trivial. We may
+suppose that $\mathfrak F=\mathfrak A(M)$, where $M$ is a finitely
+generated graded $S$-module. With the
+\hyperref[fac:III:6:no:81:primary-decomposition]{notation introduced above}, we
+must prove that $\chi(\mathfrak F(n))$ is a polynomial of degree
+\phantomsection\label{fac:III:6:no:81:formula:q}
+\[
+q=\sup_\alpha\dim V^\alpha.
+\]
+
+Let $t$ be a homogeneous linear form belonging to none of the prime
+ideals $\mathfrak p^\alpha$, except possibly the ``improper'' prime
+ideal $\mathfrak p^0=(t_0,\ldots,t_r)$; such a form exists because the
+field $K$ is infinite. Let $E$ be the hyperplane of $X$ with equation
+$t=0$. Consider the exact sequence
+\phantomsection\label{fac:III:6:no:81:sequence:hyperplane}
+\[
+0\longrightarrow\mathcal O(-1)\longrightarrow\mathcal O
+\longrightarrow\mathcal O_E\longrightarrow0,
+\]
+where $\mathcal O\to\mathcal O_E$ is the restriction homomorphism,
+while $\mathcal O(-1)\to\mathcal O$ is the homomorphism
+$f\mapsto t\cdot f$. Tensoring with $\mathfrak F$ gives the exact
+sequence
+\phantomsection\label{fac:III:6:no:81:sequence:tensored}
+\[
+\mathfrak F(-1)\longrightarrow\mathfrak F
+\longrightarrow\mathfrak F_E\longrightarrow0,
+\qquad
+\mathfrak F_E=\mathfrak F\otimes_{\mathcal O}\mathcal O_E.
+\]
+Over $U_i$, we may identify $\mathfrak F(-1)$ with $\mathfrak F$, and
+under this identification the homomorphism
+$\mathfrak F(-1)\to\mathfrak F$ just defined becomes multiplication
+by $t/t_i$. Since $t$ was chosen outside the $\mathfrak p^\alpha$,
+$t/t_i$ belongs to none of the prime ideals of
+$M_x=\mathfrak F_x$ when $x\in U_i$, and the
+\hyperref[fac:III:6:no:81:sequence:tensored]{preceding homomorphism} is
+injective (cf.~[12], p.~122, th.~7, b$'''$). We therefore have the
+exact sequence
+\phantomsection\label{fac:III:6:no:81:sequence:injective}
+\[
+0\longrightarrow\mathfrak F(-1)\longrightarrow\mathfrak F
+\longrightarrow\mathfrak F_E\longrightarrow0,
+\]
+and hence, for every $n\in\mathbf Z$, the exact sequence
+\phantomsection\label{fac:III:6:no:81:sequence:twisted}
+\[
+0\longrightarrow\mathfrak F(n-1)\longrightarrow\mathfrak F(n)
+\longrightarrow\mathfrak F_E(n)\longrightarrow0.
+\]
+Applying \hyperref[fac:III:6:no:79:prop:1]{Proposition~1}, we obtain
+\phantomsection\label{fac:III:6:no:81:formula:first-difference}
+\[
+\chi(\mathfrak F(n))-\chi(\mathfrak F(n-1))
+=\chi(\mathfrak F_E(n)).
+\]
+
+But $\mathfrak F_E$ is a coherent sheaf of $\mathcal O_E$-modules;
+in other words, it is a coherent algebraic sheaf on $E$, which is a
+projective space of dimension $r-1$. Moreover,
+$\mathfrak F_{x,E}=0$ means that the endomorphism of $\mathfrak F_x$
+defined by multiplication by $t/t_i$ is surjective, which implies
+$\mathfrak F_x=0$ (cf.~[6], Chap.~VIII, prop.~5.1$'$). Consequently,
+\phantomsection\label{fac:III:6:no:81:formula:support-intersection}
+\[
+\operatorname{Supp}(\mathfrak F_E)
+=E\cap\operatorname{Supp}(\mathfrak F).
+\]
+Since $E$ contains none of the varieties $V^\alpha$, it follows from
+a known result that $\dim\operatorname{Supp}(\mathfrak F_E)=q-1$. By
+the induction hypothesis, $\chi(\mathfrak F_E(n))$ is therefore a
+polynomial of degree $q-1$; since it is the first difference of the
+function $\chi(\mathfrak F(n))$, the latter is indeed a polynomial of
+degree $q$.
+
+\textsc{Remarks}. \phantomsection\label{fac:III:6:no:81:remark:1}
+(1) \hyperref[fac:III:6:no:81:prop:6]{Proposition~6} was well known when
+$\mathfrak F=\mathcal O/\mathcal J$, with $\mathcal J$ a coherent
+sheaf of ideals. See, for example, [9], no.~24.
+
+\phantomsection\label{fac:III:6:no:81:remark:2}
+(2) The \hyperref[fac:III:6:no:81:prop:6:proof]{preceding proof} does not use
+\hyperref[fac:III:6:no:80:prop:3]{Proposition~3} and therefore
+proves it anew.

@@ -1,0 +1,139 @@
+% FAC-EN-U0050
+% French source: fac_body.tex lines 1798--1828.
+% Authority: PDF physical pp. 49--50; printed pp. 244--245 (no. 52 complete).
+
+\medskip
+\phantomsection\label{fac:III:1:no:52}
+\textbf{52. Cohomology of subvarieties of projective space.}
+Apply \hyperref[fac:II:3:thm:4]{Theorem~4 of no.~47} to the covering
+$\mathfrak{U}=\{U_i\}_{i\in I}$ defined in the \hyperref[fac:III:1:no:51]{preceding number}; this is
+possible because each $U_i$ is isomorphic to $K^r$. We obtain:
+
+\phantomsection\label{fac:III:1:prop:2}
+\textsc{Proposition 2.}
+\textit{If $\mathcal{F}$ is a coherent algebraic sheaf on
+$X=\mathbf{P}_r(K)$, the homomorphism
+\[
+\sigma(\mathfrak{U}):H^n(\mathfrak{U},\mathcal{F})
+  \longrightarrow H^n(X,\mathcal{F})
+\]
+is bijective for every $n\geq0$.}
+
+Since $\mathfrak{U}$ consists of $r+1$ open subsets, we have (cf. \hyperref[fac:I:3:no:20:prop:2:cor]{no.~20,
+corollary to Proposition~2}):
+
+\phantomsection\label{fac:III:1:no:52:cor:1}
+\textsc{Corollary.}
+\[
+H^n(X,\mathcal{F})=0\qquad\textit{for }n>r.
+\]
+
+This last result may be generalized as follows:
+
+\phantomsection\label{fac:III:1:prop:3}
+\textsc{Proposition 3.}
+\textit{Let $V$ be an algebraic variety isomorphic to a locally closed
+subvariety of a projective space $X$. Let $\mathcal{F}$ be a coherent
+algebraic sheaf on $V$, and let $W$ be a subvariety of $V$ such that
+$\mathcal{F}$ vanishes outside $W$. Then
+\[
+H^n(V,\mathcal{F})=0\qquad\text{for }n>\dim W.
+\]}
+
+In particular, on taking $W=V$, we obtain:
+
+\phantomsection\label{fac:III:1:no:52:cor:2}
+\textsc{Corollary.}
+\[
+H^n(V,\mathcal{F})=0\qquad\textit{for }n>\dim V.
+\]
+
+Identify $V$ with a locally closed subvariety of
+$X=\mathbf{P}_r(K)$. There is an open subset $U$ of $X$ such that $V$ is
+closed in $U$. We may suppose that $W$ is closed in $V$, which is plainly
+permissible; then $W$ is closed in $U$. Put $F=X\setminus U$. Before proving
+\hyperref[fac:III:1:prop:3]{Proposition~3}, we establish two lemmas.
+
+\phantomsection\label{fac:III:1:lemma:1}
+\textsc{Lemma 1.}
+\textit{Let $k=\dim W$. There exist $k+1$ homogeneous polynomials
+$P_i(t_0,\ldots,t_r)$, of degrees $>0$, which vanish on $F$ and have no
+common zero on $W$.}
+
+(By an abuse of language, a homogeneous polynomial $P$ is said to vanish at
+a point $x$ of $\mathbf{P}_r(K)$ if it vanishes on $\pi^{-1}(x)$.)
+
+We argue by induction on $k$, the case $k=-1$ being trivial. Choose one
+point on each irreducible component of $W$, and let $P_1$ be a homogeneous
+polynomial, of degree $>0$, which vanishes on $F$ and vanishes at none of
+these points. (The existence of $P_1$ follows from the fact that $F$ is
+closed, in view of the definition of the topology of $\mathbf{P}_r(K)$.)
+Let $W'$ be the subvariety of $W$ formed by the points $x\in W$ such that
+$P_1(x)=0$. By the construction of $P_1$, no irreducible component of $W$
+is contained in $W'$, and it follows (cf. \hyperref[fac:II:1:no:36]{no.~36}) that $\dim W'<k$.
+Applying the induction hypothesis to $W'$, we see that there exist $k$
+homogeneous polynomials $P_2,\ldots,P_{k+1}$ which vanish on $F$ and have no
+common zero on $W'$. It is clear that
+$P_1,\ldots,P_{k+1}$ have the required properties.
+
+\phantomsection\label{fac:III:1:lemma:2}
+\textsc{Lemma 2.}
+\textit{Let $P(t_0,\ldots,t_r)$ be a homogeneous polynomial of degree
+$n>0$. The set $X_P$ of points $x\in X$ such that $P(x)\neq0$ is an affine
+open subset of $X$.}
+
+Associate with each point $y=(\mu_0,\ldots,\mu_r)\in Y$ the point of a
+suitable space $K^N$ whose coordinates are all the monomials
+\[
+\mu_0^{m_0}\cdots\mu_r^{m_r},
+\qquad m_0+\cdots+m_r=n.
+\]
+Passing to the quotient gives a map
+\phantomsection\label{fac:III:1:no:52:map:veronese}
+\[
+\varphi_n:X\longrightarrow\mathbf{P}_{N-1}(K).
+\]
+It is classical, and moreover easy to verify, that $\varphi_n$ is a
+biregular isomorphism of $X$ onto a closed subvariety of
+$\mathbf{P}_{N-1}(K)$ (the ``Veronese variety''). The map $\varphi_n$
+transforms the open subset $X_P$ into the locus of points of $\varphi_n(X)$
+which do not lie on a certain hyperplane of $\mathbf{P}_{N-1}(K)$. Since
+the complement of a hyperplane is isomorphic to an affine space, it follows
+that $X_P$ is indeed isomorphic to a closed subvariety of an affine space.
+
+We now prove \hyperref[fac:III:1:prop:3]{Proposition~3}. Extend the sheaf $\mathcal{F}$ by zero on
+$U\setminus V$. We obtain a coherent algebraic sheaf on $U$, which we again
+denote by $\mathcal{F}$, and we know (cf. \hyperref[fac:I:3:no:26]{no.~26}) that
+\[
+H^n(U,\mathcal{F})=H^n(V,\mathcal{F}).
+\]
+Let $P_1,\ldots,P_{k+1}$ be homogeneous polynomials satisfying the
+conditions of \hyperref[fac:III:1:lemma:1]{Lemma~1}, and let $P_{k+2},\ldots,P_h$ be homogeneous
+polynomials of degrees $>0$ which vanish on $W\cup F$ and have no common
+zero at any point of $U\setminus W$. (To obtain such polynomials, it is
+enough to take a system of homogeneous generators of the ideal defined by
+$W\cup F$ in $K[t_0,\ldots,t_r]$.) For every $i$, $1\leq i\leq h$, let
+$V_i$ be the set of points $x\in X$ such that $P_i(x)\neq0$. Then
+$V_i\subset U$, and the preceding hypotheses show that
+\phantomsection\label{fac:III:1:no:52:cover:B}
+\[
+\mathfrak{B}=\{V_i\}
+\]
+is an open covering of $U$. Moreover, \hyperref[fac:III:1:lemma:2]{Lemma~2} shows that the $V_i$ are
+affine open subsets, whence
+\[
+H^n(\mathfrak{B},\mathcal{F})
+ =H^n(U,\mathcal{F})
+ =H^n(V,\mathcal{F})
+\qquad\text{for every }n\geq0.
+\]
+On the other hand, if $n>k$ and the indices $i_0,\ldots,i_n$ are distinct,
+one of these indices is $>k+1$, and $V_{i_0\cdots i_n}$ does not meet $W$.
+It follows that the group of alternating cochains
+\phantomsection\label{fac:III:1:no:52:formula:alternating-cochains}
+\[
+C^{\prime n}(\mathfrak{B},\mathcal{F})
+\]
+is zero if $n>k$. Therefore
+$H^n(\mathfrak{B},\mathcal{F})=0$, by \hyperref[fac:I:3:no:20:prop:2]{Proposition~2 of no.~20}, which proves
+\hyperref[fac:III:1:prop:3]{Proposition~3}.

@@ -1,0 +1,67 @@
+% FAC-EN-U0024
+% French source: fac_body.tex lines 873--892.
+% Authority: PDF physical pp. 23--24; printed pp. 218--219 (no. 26 complete).
+% Printed-source repair: FAC-FR-C0010.
+
+\medskip
+\phantomsection\label{fac:I:3:no:26}
+\textbf{26. Cohomology of a closed subspace.}
+Let $\mathcal{F}$ be a sheaf on the space $X$, and let $Y$ be a subspace of $X$. Let $\mathcal{F}(Y)$ be the sheaf induced by $\mathcal{F}$ on $Y$, in the sense of \hyperref[fac:I:1:no:4]{no.~4}. If
+$\mathfrak{U}=\{U_i\}_{i\in I}$ is a covering of $X$, the sets
+$U'_i=Y\cap U_i$ form a covering $\mathfrak{U}'$ of $Y$. If
+$f_{i_0\ldots i_q}$ is a section of $\mathcal{F}$ over $U_{i_0\ldots i_q}$, its restriction to
+\[
+U'_{i_0\ldots i_q}=Y\cap U_{i_0\ldots i_q}
+\]
+is a section of $\mathcal{F}(Y)$.\footnote{The printed source places a stray comma between $U'_{i_0\ldots i_q}$ and the defining equality. It is removed here and in the corrected French layer.}
+Restriction is a homomorphism
+\[
+\rho:C(\mathfrak{U},\mathcal{F})
+\longrightarrow C(\mathfrak{U}',\mathcal{F}(Y))
+\]
+which commutes with $d$, and hence defines
+\[
+\rho^*:H^q(\mathfrak{U},\mathcal{F})
+\longrightarrow H^q(\mathfrak{U}',\mathcal{F}(Y)).
+\]
+If $\mathfrak{U}<\mathfrak{V}$, then $\mathfrak{U}'<\mathfrak{V}'$, and
+\[
+\rho^*\circ\sigma(\mathfrak{U},\mathfrak{V})
+=\sigma(\mathfrak{U}',\mathfrak{V}')\circ\rho^*.
+\]
+Thus, by passage to the limit over $\mathfrak{U}$, the homomorphisms $\rho^*$ define homomorphisms
+\[
+\rho^*:H^q(X,\mathcal{F})
+\longrightarrow H^q(Y,\mathcal{F}(Y)).
+\]
+
+\phantomsection\label{fac:I:3:no:26:prop:8}
+\textsc{Proposition 8.} \textit{Suppose that $Y$ is closed in $X$ and that $\mathcal{F}$ is zero outside $Y$. Then the homomorphism}
+\[
+\rho^*:H^q(X,\mathcal{F})\longrightarrow H^q(Y,\mathcal{F}(Y))
+\]
+\textit{is bijective for every $q\geq0$.}
+
+The \hyperref[fac:I:3:no:26:prop:8]{proposition} follows from the following two facts:
+
+\begin{enumerate}[label=(\alph*),leftmargin=2.5em]
+\item Every covering $\mathfrak{W}=\{W_i\}_{i\in I}$ of $Y$ is of the form $\mathfrak{U}'$, where $\mathfrak{U}$ is a covering of $X$.
+
+Indeed, it is enough to set $U_i=W_i\cup(X-Y)$, since $Y$ is closed in $X$.
+
+\item For every covering $\mathfrak{U}$ of $X$, the homomorphism
+\[
+\rho:C(\mathfrak{U},\mathcal{F})
+\longrightarrow C(\mathfrak{U}',\mathcal{F}(Y))
+\]
+is bijective.
+
+Indeed, this follows from \hyperref[fac:I:1:no:5:prop:5]{Proposition~5} of \hyperref[fac:I:1:no:5]{no.~5}, applied to $U_{i_0\ldots i_q}$ and the sheaf $\mathcal{F}$.
+\end{enumerate}
+
+\hyperref[fac:I:3:no:26:prop:8]{Proposition~8} may also be expressed as follows. If $\mathcal{G}$ is a sheaf on $Y$, and if $\mathcal{G}^X$ is the sheaf obtained by extending $\mathcal{G}$ by zero outside $Y$, then
+\[
+H^q(Y,\mathcal{G})=H^q(X,\mathcal{G}^X)
+\qquad(q\geq0).
+\]
+In other words, the identification of $\mathcal{G}$ with $\mathcal{G}^X$ is compatible with passage to cohomology groups.

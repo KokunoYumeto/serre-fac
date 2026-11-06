@@ -1,0 +1,99 @@
+% FAC-EN-U0065
+% Source: fac_body.tex lines 2465--2483.
+% Authority: PDF physical pp. 65--66; printed pp. 260--261
+% (Chapter III, no. 67 complete).
+
+\phantomsection\label{fac:III:3:no:67}
+\textbf{67. A supplement.}
+
+\phantomsection\label{fac:III:3:no:67:def:M-natural}
+If $M$ is a graded $S$-module
+\hyperref[fac:III:2:no:56:def:TF]{satisfying (TF)}, we shall denote by
+$M^\natural$ the graded $S$-module $\Gamma(\mathcal{A}(M))$. We saw in
+\phantomsection\label{fac:III:3:no:67:map:alpha}
+\hyperref[fac:III:3:no:65:prop:5]{no.~65} that
+$\alpha:M\longrightarrow M^\natural$ is
+\hyperref[fac:III:2:no:56:def:C-morphism]{$\mathcal{C}$-bijective}. We shall
+give conditions under which $\alpha$ is bijective.
+
+\phantomsection\label{fac:III:3:no:67:prop:9}
+\textsc{Proposition 9.} \textit{The homomorphism
+$\alpha:M\longrightarrow M^\natural$ is bijective if and only if the
+following conditions hold:}
+
+\phantomsection\label{fac:III:3:no:67:prop:9:item:i}
+\textit{(i) If $m\in M$ is such that $t_i\cdot m=0$ for every $i\in I$,
+then $m=0$.}
+
+\phantomsection\label{fac:III:3:no:67:prop:9:item:ii}
+\textit{(ii) If homogeneous elements $m_i\in M$ of the same degree satisfy
+$t_j\cdot m_i-t_i\cdot m_j=0$ for every pair $(i,j)$, then there exists
+$m\in M$ such that $m_i=t_i\cdot m$.}
+
+\phantomsection\label{fac:III:3:no:67:proof:necessity}
+Let us show that conditions~\hyperref[fac:III:3:no:67:prop:9:item:i]{(i)}
+and~\hyperref[fac:III:3:no:67:prop:9:item:ii]{(ii)} hold for $M^\natural$,
+which will prove their necessity.
+For~\hyperref[fac:III:3:no:67:prop:9:item:i]{(i)}, we may suppose that $m$ is
+homogeneous, that is, that it is a section of $\mathcal{A}(M(n))$; in this
+case, \hyperref[fac:III:3:no:67:prop:9:item:i]{the condition}
+$t_i\cdot m=0$ implies that $m$ is zero on $U_i$, and,
+since this holds for every $i\in I$, we indeed have $m=0$.
+For~\hyperref[fac:III:3:no:67:prop:9:item:ii]{(ii)}, let
+$n$ be the degree of the $m_i$; thus
+$m_i\in\Gamma(\mathcal{A}(M(n)))$. Since $1/t_i$ is a section of
+$\mathcal{O}(-1)$ on $U_i$, $m_i/t_i$ is a section of
+$\mathcal{A}(M(n-1))$ on $U_i$, and
+\hyperref[fac:III:3:no:67:prop:9:item:ii]{the condition}
+$t_j\cdot m_i-t_i\cdot m_j=0$ shows that these various sections are the
+\phantomsection\label{fac:III:3:no:67:proof:necessity:section-m}
+restrictions of a unique section $m$ of $\mathcal{A}(M(n-1))$ on $X$. It
+remains to compare the sections $t_i\cdot m$ and $m_i$; to show that they
+coincide on $U_j$, it suffices to see that
+$t_j(t_i\cdot m-m_i)=0$ on $U_j$, which follows from the formula
+$t_j\cdot m_i=t_i\cdot m_j$ and
+\hyperref[fac:III:3:no:67:proof:necessity:section-m]{the definition of $m$}.
+
+\phantomsection\label{fac:III:3:no:67:proof:injectivity}
+Let us now show that~\hyperref[fac:III:3:no:67:prop:9:item:i]{(i)} implies
+that $\alpha$ is injective. For all sufficiently large $n$, we know that
+$\alpha:M_n\longrightarrow M_n^\natural$ is bijective, and we may therefore
+argue by descending induction on $n$. If $\alpha(m)=0$, with $m\in M_n$,
+then
+$t_i\alpha(m)=\alpha(t_i\cdot m)=0$. The induction hypothesis applies
+because $t_i\cdot m\in M_{n+1}$, and gives $t_i\cdot m=0$ for every $i$;
+condition~\hyperref[fac:III:3:no:67:prop:9:item:i]{(i)} then gives $m=0$.
+
+\phantomsection\label{fac:III:3:no:67:proof:surjectivity}
+Finally, let us show that~\hyperref[fac:III:3:no:67:prop:9:item:i]{(i)}
+and~\hyperref[fac:III:3:no:67:prop:9:item:ii]{(ii)} imply that $\alpha$ is
+surjective. As before, we may argue by descending induction on $n$. If
+$m'\in M_n^\natural$, the induction hypothesis shows that there exist
+$m_i\in M_{n+1}$ such that $\alpha(m_i)=t_i\cdot m'$. We have
+$\alpha(t_j\cdot m_i-t_i\cdot m_j)=0$, whence
+$t_j\cdot m_i-t_i\cdot m_j=0$, since $\alpha$ is injective.
+Condition~\hyperref[fac:III:3:no:67:prop:9:item:ii]{(ii)} then implies the
+existence of $m\in M_n$ such that $t_i\cdot m=m_i$; we have
+$t_i(m'-\alpha(m))=0$ for every $i$, and
+condition~\hyperref[fac:III:3:no:67:prop:9:item:i]{(i)}, already proved for
+$M^\natural$, shows that $m'=\alpha(m)$ and completes the proof.
+
+\phantomsection\label{fac:III:3:no:67:remark:1}
+\textsc{Remarks.} (1) The proof shows that
+condition~\hyperref[fac:III:3:no:67:prop:9:item:i]{(i)} is necessary and
+sufficient for $\alpha$ to be injective.
+
+\phantomsection\label{fac:III:3:no:67:remark:2}
+(2) Conditions~\hyperref[fac:III:3:no:67:prop:9:item:i]{(i)}
+and~\hyperref[fac:III:3:no:67:prop:9:item:ii]{(ii)} may be expressed as
+follows:\hfill\break
+\phantomsection\label{fac:III:3:no:67:formula:alpha1}the homomorphism
+\mbox{$\alpha^1:M_n\longrightarrow H^0_1(M(n))$} is bijective for every
+$n\in\mathbf{Z}$. Moreover,
+\hyperref[fac:III:3:no:64:prop:4]{Proposition~4} shows that $M^\natural$ may
+be identified with the graded $S$-module
+\phantomsection\label{fac:III:3:no:67:formula:direct-sum}
+$\sum_{n\in\mathbf{Z}}H^0(M(n))$, and it would be easy to deduce from this
+a purely algebraic proof of
+\hyperref[fac:III:3:no:67:prop:9]{Proposition~9} (without using the sheaf
+$\mathcal{A}(M)$).

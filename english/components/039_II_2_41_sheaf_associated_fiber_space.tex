@@ -1,0 +1,35 @@
+% FAC-EN-U0039
+% French source: fac_body.tex lines 1386--1398 plus source notes at lines 1408--1410.
+% Authority: PDF physical p. 38; printed p. 233 (no. 41 complete).
+
+\medskip
+\phantomsection\label{fac:II:2:no:41}
+\textbf{41. Sheaf associated with a fiber space with vector-space fiber.}
+Let $E$ be an algebraic fiber space with vector-space fiber of dimension $r$ and base an algebraic variety $V$. By definition, the typical fiber of $E$ is the vector space $K^r$, and its structure group is the linear group $\mathbf{GL}(r,K)$ acting on $K^r$ in the usual way. (For the definition of an algebraic fiber space, cf.~[17]; see also [15], no.~4, for \textit{analytic} fiber spaces with vector-space fibers.)
+
+\phantomsection\label{fac:II:2:no:41:def:sheaf-of-germs-of-sections}
+If $U$ is an open subset of $V$, let $\mathcal{S}(E)_U$ be the set of sections of $E$ that are regular on $U$. If $V\supset U$, there is a restriction homomorphism $\varphi_U^V:\mathcal{S}(E)_V\to\mathcal{S}(E)_U$. This gives a sheaf $\mathcal{S}(E)$, called the \textit{sheaf of germs of sections} of $E$. Since $E$ is a fiber space with vector-space fiber, every $\mathcal{S}(E)_U$ is a $\Gamma(U,\mathcal{O}_V)$-module, and it follows that $\mathcal{S}(E)$ is an algebraic sheaf on $V$. Locally identifying $E$ with $V\times K^r$, we obtain:
+
+\phantomsection\label{fac:II:2:no:41:prop:5}
+\textsc{Proposition 5.} \textit{The sheaf $\mathcal{S}(E)$ is locally isomorphic to $\mathcal{O}_V^r$; in particular, it is a coherent algebraic sheaf.}
+
+Conversely, it is easy to see that every algebraic sheaf $\mathcal{F}$ on $V$ which is locally isomorphic to $\mathcal{O}_V^r$ is isomorphic to a sheaf $\mathcal{S}(E)$, where $E$ is determined up to isomorphism (cf.~[15] for the analytic case).
+
+If $V$ is nonsingular, we may take for $E$ the fiber space of tangent $p$-covectors on $V$, where $p$ is an integer $\geq0$. Let $\Omega^p$ be the corresponding sheaf $\mathcal{S}(E)$. An element of $\Omega_x^p$, for $x\in V$, is nothing other than a differential form of degree $p$ on $V$ which is regular at $x$. Put
+\phantomsection\label{fac:II:2:no:41:formula:h-p-q}
+\[
+h^{p,q}=\dim_K H^q(V,\Omega^p).
+\]
+In the classical case, when $V$ is projective, $h^{p,q}$ is known to equal the dimension of the space of harmonic forms of type $(p,q)$ (Dolbeault's theorem\footnote[3]{P. Dolbeault, \textit{Sur la cohomologie des variétés analytiques complexes}, C. R. Paris, 236 (1953), 175--177.}). If $B_n$ denotes the $n$-th Betti number of $V$, then
+\phantomsection\label{fac:II:2:no:41:formula:Betti-sum}
+\[
+B_n=\sum_{p+q=n}h^{p,q}.
+\]
+In the general case, one could take the \hyperref[fac:II:2:no:41:formula:Betti-sum]{preceding formula} as the \textit{definition} of the Betti numbers of a nonsingular projective variety; indeed, we shall see in \hyperref[fac:III:3:no:66]{no.~66} that the $h^{p,q}$ are finite. Their properties would then have to be studied, notably whether they coincide with those occurring in the Weil conjectures concerning varieties over finite fields.\footnote[4]{\textit{Bull. Amer. Math. Soc.}, 55 (1949), 507.} We merely point out here that they satisfy ``Poincaré duality,''
+\phantomsection\label{fac:II:2:no:41:formula:Poincare-duality}
+\[
+B_n=B_{2m-n},
+\]
+when $V$ is irreducible and of dimension $m$.
+
+The cohomology groups $H^q(V,\mathcal{S}(E))$ also occur in other questions, notably in the Riemann--Roch theorem and in the classification of algebraic fiber spaces over $V$ whose structure group is the affine group $x\mapsto ax+b$ (cf.~[17], \S4, where the case $\dim V=1$ is treated).

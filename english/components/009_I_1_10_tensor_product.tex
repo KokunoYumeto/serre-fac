@@ -1,0 +1,65 @@
+% FAC-EN-U0009
+% French source: fac_body.tex lines 276--310.
+% Authority: PDF physical pp. 10--11; printed pp. 205--206 (no. 10 complete).
+
+\medskip
+\phantomsection\label{fac:I:1:no:10}
+\textbf{10. Tensor product of two sheaves.}
+
+Let $\mathcal{A}$ be a sheaf of rings, let $\mathcal{F}$ be a sheaf of right $\mathcal{A}$-modules, and let $\mathcal{G}$ be a sheaf of left $\mathcal{A}$-modules. For every $x\in X$, put $\mathcal{H}_x=\mathcal{F}_x\otimes\mathcal{G}_x$, where the tensor product is taken over the ring $\mathcal{A}_x$ (cf., for example, [6], Chap.~II, \S2), and let $\mathcal{H}$ be the disjoint union of the $\mathcal{H}_x$.
+
+\medskip
+\phantomsection\label{fac:I:1:no:10:prop:8}
+\textsc{Proposition 8.} \textit{There exists a unique sheaf structure on the set $\mathcal{H}$ such that, if $s$ and $t$ are sections of $\mathcal{F}$ and $\mathcal{G}$ over an open set $U$, the map}
+\[
+x\longmapsto s(x)\otimes t(x)\in\mathcal{H}_x
+\]
+\textit{is a section of $\mathcal{H}$ over $U$.}
+
+\textit{The sheaf $\mathcal{H}$ so defined is called the tensor product (over $\mathcal{A}$) of $\mathcal{F}$ and $\mathcal{G}$ and is denoted by $\mathcal{F}\otimes_{\mathcal{A}}\mathcal{G}$. If the $\mathcal{A}_x$ are commutative, it is a sheaf of $\mathcal{A}$-modules.}
+
+Suppose that $\mathcal{H}$ is endowed with a sheaf structure satisfying the stated condition, and let $s_i$ and $t_i$ be sections of $\mathcal{F}$ and $\mathcal{G}$ over an open set $U\subset X$. Then the map $x\mapsto\sum_i s_i(x)\otimes t_i(x)$ is a section of $\mathcal{H}$ over $U$. Every $h\in\mathcal{H}_x$ can be written as $h=\sum_i f_i\otimes g_i$, with $f_i\in\mathcal{F}_x$ and $g_i\in\mathcal{G}_x$, and hence also as $\sum_i s_i(x)\otimes t_i(x)$, where the $s_i$ and $t_i$ are sections defined in a neighborhood $U$ of $x$. It follows that every section of $\mathcal{H}$ must locally be equal to a section of the preceding form, proving the uniqueness of the sheaf structure on $\mathcal{H}$.
+
+We now prove existence. We may suppose that $\mathcal{A}$, $\mathcal{F}$, and $\mathcal{G}$ are defined, as in no.~\hyperref[fac:I:1:no:6]{6}, by systems $(\mathcal{A}_U,\varphi_U^V)$, $(\mathcal{F}_U,\psi_U^V)$, and $(\mathcal{G}_U,\chi_U^V)$. Put $\mathcal{H}_U=\mathcal{F}_U\otimes\mathcal{G}_U$, where the tensor product is taken over $\mathcal{A}_U$. Passing to the tensor product, the homomorphisms $\psi_U^V$ and $\chi_U^V$ define a homomorphism $\eta_U^V:\mathcal{H}_V\to\mathcal{H}_U$. Moreover,
+\[
+\varinjlim_{x\in U}\mathcal{H}_U
+=\left(\varinjlim_{x\in U}\mathcal{F}_U\right)
+ \otimes
+ \left(\varinjlim_{x\in U}\mathcal{G}_U\right)
+=\mathcal{H}_x,
+\]
+where the tensor product is taken over $\mathcal{A}_x$ (commutation of the tensor product with direct limits; cf., for example, [6], Chap.~VI, Exer.~18). The sheaf defined by the system $(\mathcal{H}_U,\eta_U^V)$ may therefore be identified with $\mathcal{H}$, which is thereby endowed with a sheaf structure plainly satisfying the required condition. Finally, if the $\mathcal{A}_x$ are commutative, we may suppose that the $\mathcal{A}_U$ are commutative as well (it is enough to take $\mathcal{A}_U=\Gamma(U,\mathcal{A})$); hence $\mathcal{H}_U$ is an $\mathcal{A}_U$-module, and $\mathcal{H}$ is a sheaf of $\mathcal{A}$-modules.
+
+Now let $\varphi$ be an $\mathcal{A}$-homomorphism from $\mathcal{F}$ to $\mathcal{F}'$, and let $\psi$ be an $\mathcal{A}$-homomorphism from $\mathcal{G}$ to $\mathcal{G}'$. Then $\varphi_x\otimes\psi_x$ is a homomorphism (of abelian groups in general, and of $\mathcal{A}_x$-modules if $\mathcal{A}_x$ is commutative), and the definition of $\mathcal{F}\otimes_{\mathcal{A}}\mathcal{G}$ shows that the collection of the $\varphi_x\otimes\psi_x$ is a homomorphism from $\mathcal{F}\otimes_{\mathcal{A}}\mathcal{G}$ to $\mathcal{F}'\otimes_{\mathcal{A}}\mathcal{G}'$. This homomorphism is denoted by $\varphi\otimes\psi$; if $\psi$ is the identity map, we write $\varphi$ instead of $\varphi\otimes 1$.
+
+All the usual properties of the tensor product of two modules carry over directly to the tensor product of two sheaves of modules. For example, every exact sequence
+\[
+\mathcal{F}\longrightarrow\mathcal{F}'\longrightarrow\mathcal{F}''\longrightarrow 0
+\]
+gives rise to an exact sequence
+\[
+\mathcal{F}\otimes_{\mathcal{A}}\mathcal{G}
+\longrightarrow\mathcal{F}'\otimes_{\mathcal{A}}\mathcal{G}
+\longrightarrow\mathcal{F}''\otimes_{\mathcal{A}}\mathcal{G}
+\longrightarrow 0.
+\]
+There are canonical isomorphisms
+\[
+\mathcal{F}\otimes_{\mathcal{A}}(\mathcal{G}_1+\mathcal{G}_2)
+\simeq
+\mathcal{F}\otimes_{\mathcal{A}}\mathcal{G}_1
++\mathcal{F}\otimes_{\mathcal{A}}\mathcal{G}_2,
+\qquad
+\mathcal{F}\otimes_{\mathcal{A}}\mathcal{A}\simeq\mathcal{F},
+\]
+and, supposing the $\mathcal{A}_x$ commutative to simplify the notation,
+\[
+\mathcal{F}\otimes_{\mathcal{A}}\mathcal{G}
+\simeq\mathcal{G}\otimes_{\mathcal{A}}\mathcal{F},
+\qquad
+\mathcal{F}\otimes_{\mathcal{A}}
+  (\mathcal{G}\otimes_{\mathcal{A}}\mathcal{K})
+\simeq
+(\mathcal{F}\otimes_{\mathcal{A}}\mathcal{G})
+  \otimes_{\mathcal{A}}\mathcal{K}.
+\]

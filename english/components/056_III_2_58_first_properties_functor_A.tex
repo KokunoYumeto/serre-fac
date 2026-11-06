@@ -1,0 +1,133 @@
+% FAC-EN-U0056
+% Source: fac_body.tex lines 1999--2040.
+% Authority: PDF physical pp. 55--56; printed pp. 250--251 (no. 58 complete).
+% English source-first translation; printed grammatical slip corrected transparently and logged.
+
+\phantomsection\label{fac:III:2:no:58}
+\textbf{58. First properties of the functor $\mathcal{A}(M)$.}
+
+\phantomsection\label{fac:III:2:no:58:prop:3}
+\textsc{Proposition 3.} \textit{The functor $M\mapsto\mathcal{A}(M)$ is exact.}
+
+Let
+\phantomsection\label{fac:III:2:no:58:formula:graded-exact-sequence}
+\[
+M\xrightarrow{\alpha}M'\xrightarrow{\beta}M''
+\]
+be an exact sequence of graded $S$-modules, and let us show that the
+sequence
+\phantomsection\label{fac:III:2:no:58:formula:stalk-exact-sequence}
+\[
+M_x\xrightarrow{\alpha}M'_x\xrightarrow{\beta}M''_x
+\]
+is also exact. Let $m'/Q\in M'_x$ be an element of the kernel of $\beta$.
+By the \hyperref[fac:III:2:no:57:def:M-U]{definition of $M''_x$}, there exists $R\in S(x)$ such that
+$R\beta(m')=0$. But then there exists $m\in M$ such that
+$\alpha(m)=Rm'$, and
+\phantomsection\label{fac:III:2:no:58:formula:preimage}
+\[
+\alpha\!\left(\frac{m}{RQ}\right)=\frac{m'}{Q},
+\]
+as required. (Compare \hyperref[fac:II:4:lemma:1]{no.~48, Lemma~1}.)
+
+\phantomsection\label{fac:III:2:no:58:prop:4}
+\textsc{Proposition 4.} \textit{If $M$ is a graded $S$-module and $n$ is
+an integer, then $\mathcal{A}(M(n))$ is canonically isomorphic to
+$\mathcal{A}(M)(n)$.}
+
+Let $i\in I$, $x\in U_i$, and $m/Q\in M(n)_x$, with
+$m\in M(n)_p$, $Q\in S(x)$, and $\deg Q=p$. Set
+\phantomsection\label{fac:III:2:no:58:formula:eta}
+\[
+\eta_{i,x}(m/Q)=\frac{m}{t_i^nQ}\in M_x,
+\]
+which is legitimate since $m\in M_{n+p}$ and $t_i^nQ\in S(x)$. It is
+immediate that $\eta_{i,x}:M(n)_x\to M_x$ is bijective for every
+$x\in U_i$, and defines an isomorphism $\eta_i$ from
+$\mathcal{A}(M(n))$ onto $\mathcal{A}(M)$ over $U_i$. Moreover,
+\phantomsection\label{fac:III:2:no:58:formula:eta-transition}
+\[
+\eta_i\circ\eta_j^{-1}=\theta_{ij}(n)
+\]
+over $U_i\cap U_j$. In view of the definition of the operation
+$\mathcal{F}(n)$ in \hyperref[fac:III:2:no:54]{no.~54}, and
+\hyperref[fac:I:1:no:4:prop:4]{Proposition~4 of no.~4}, this proves that
+$\mathcal{A}(M(n))$ is isomorphic to
+$\mathcal{A}(M)(n)$.
+
+\phantomsection\label{fac:III:2:no:58:corollary}
+\textsc{Corollary.} \textit{$\mathcal{A}(S(n))$ is canonically isomorphic
+to $\mathcal{O}(n)$.}
+
+Indeed, we have already said that $\mathcal{A}(S)$ is isomorphic to
+$\mathcal{O}$.
+
+(It is also directly evident that $\mathcal{A}(S(n))$ is isomorphic to
+$\mathcal{O}'(n)$, since $\mathcal{O}'(n)_x$ consists precisely of the
+rational fractions $P/Q$ such that
+$\deg P-\deg Q=n$ and $Q\in S(x)$.)
+
+\phantomsection\label{fac:III:2:no:58:prop:5}
+\textsc{Proposition 5.} \textit{Let $M$ be a graded $S$-module
+\hyperref[fac:III:2:no:56:def:TF]{satisfying condition (TF)}. Then the algebraic
+sheaf $\mathcal{A}(M)$ is coherent, and $\mathcal{A}(M)=0$ if and only if
+$M\in\mathcal{C}$.}
+
+If $M\in\mathcal{C}$, then for every $m\in M$ and every $x\in X$ there
+exists $Q\in S(x)$ such that $Qm=0$: it is enough to take $Q$ of
+sufficiently large degree. Thus $M_x=0$, whence $\mathcal{A}(M)=0$.
+
+Now let $M$ be a graded $S$-module
+\hyperref[fac:III:2:no:56:def:TF]{satisfying condition (TF)}. There is a
+finitely generated homogeneous submodule $N$ of $M$ such that
+$M/N\in\mathcal{C}$. By what precedes and
+\hyperref[fac:III:2:no:58:prop:3]{Proposition~3}, the map
+$\mathcal{A}(N)\to\mathcal{A}(M)$ is bijective, so it is enough to prove
+that $\mathcal{A}(N)$ is coherent. Since $N$ is finitely generated, there
+is an exact sequence
+\phantomsection\label{fac:III:2:no:58:formula:free-presentation}
+\[
+L^1\longrightarrow L^0\longrightarrow N\longrightarrow0,
+\]
+where $L^0$ and $L^1$ are finitely generated \textit{free} modules. By
+\hyperref[fac:III:2:no:58:prop:3]{Proposition~3}, the sequence
+\phantomsection\label{fac:III:2:no:58:formula:sheaf-presentation}
+\[
+\mathcal{A}(L^1)\longrightarrow\mathcal{A}(L^0)
+\longrightarrow\mathcal{A}(N)\longrightarrow0
+\]
+is exact. By the corollary to
+\hyperref[fac:III:2:no:58:prop:4]{Proposition~4}, however,
+$\mathcal{A}(L^0)$ and $\mathcal{A}(L^1)$ are isomorphic to finite direct
+sums of sheaves $\mathcal{O}(n_i)$, and are therefore coherent. It follows
+that $\mathcal{A}(N)$ is coherent.
+
+Finally, let $M$ be a graded $S$-module
+\hyperref[fac:III:2:no:56:def:TF]{satisfying (TF)} and such that
+$\mathcal{A}(M)=0$. By what precedes, we may suppose that $M$ is finitely
+generated. If $m$ is a homogeneous element of $M$, let
+$\mathfrak{a}_m$ be the annihilator of $m$, that is, the set of
+polynomials $Q\in S$ such that $Qm=0$; clearly $\mathfrak{a}_m$ is a
+homogeneous ideal. Moreover, the assumption $M_x=0$ for every $x\in X$
+implies that the zero locus of $\mathfrak{a}_m$ in $K^{r+1}$ is empty or
+reduced to $\{0\}$. Hilbert's Nullstellensatz then shows that every
+homogeneous polynomial of sufficiently large degree belongs to
+$\mathfrak{a}_m$. Applying this to a finite system of generators of $M$,
+we conclude at once that $M_p=0$ for all sufficiently large $p$, which
+completes the proof.
+
+Combining \hyperref[fac:III:2:no:58:prop:3]{Propositions~3} and
+\hyperref[fac:III:2:no:58:prop:5]{5}, we obtain:
+
+\phantomsection\label{fac:III:2:no:58:prop:6}
+\textsc{Proposition 6.} \textit{Let $M$ and $M'$ be two graded
+$S$-modules \hyperref[fac:III:2:no:56:def:TF]{satisfying condition (TF)},
+and let $\varphi:M\to M'$ be a
+homomorphism. The homomorphism}
+\phantomsection\label{fac:III:2:no:58:formula:A-phi}
+\[
+\mathcal{A}(\varphi):\mathcal{A}(M)\longrightarrow\mathcal{A}(M')
+\]
+\textit{is injective (respectively surjective, bijective) if and only if
+$\varphi$ is $\mathcal{C}$-injective (respectively
+$\mathcal{C}$-surjective, $\mathcal{C}$-bijective).}

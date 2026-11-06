@@ -1,0 +1,96 @@
+% FAC-EN-U0061
+% Source: fac_body.tex lines 2270--2339.
+% Authority: PDF physical pp. 61--62; printed pp. 256--257
+% (Chapter III, no. 63 complete).
+% Printed-source correction C0037 restores the superscript 0 on L_n^0.
+
+\phantomsection\label{fac:III:3:no:63}
+\textbf{63. General properties of $H^q(M)$.}
+
+\phantomsection\label{fac:III:3:no:63:prop:3}
+\textsc{Proposition 3.} \textit{Let $M$ be a graded $S$-module
+\hyperref[fac:III:2:no:56:def:TF]{satisfying condition}}
+\hyperref[fac:III:2:no:56:def:TF]{(TF)}. \textit{Then:}
+
+\phantomsection\label{fac:III:3:no:63:prop:3:item:a}
+\textit{(a) There exists an integer $k(M)$ such that
+$\rho_k^h:H_k^q(M)\to H_h^q(M)$ is bijective for
+$h\geq k\geq k(M)$ and every $q$.}
+
+\phantomsection\label{fac:III:3:no:63:prop:3:item:b}
+\textit{(b) $H^q(M)$ is a finite-dimensional vector space over $K$ for
+every $q\geq0$.}
+
+\phantomsection\label{fac:III:3:no:63:prop:3:item:c}
+\textit{(c) There exists an integer $n(M)$ such that, for $n\geq n(M)$,
+$\alpha:M_n\to H^0(M(n))$ is bijective and $H^q(M(n))=0$ for every
+$q>0$.}
+
+We reduce at once to the case in which $M$ is of finite type. We shall
+then say that $M$ has \emph{dimension} $\leq s$ (where $s$ is an integer
+$\geq0$) if there is an exact sequence
+\phantomsection\label{fac:III:3:no:63:def:dimension}
+\[
+0\longrightarrow L^s\longrightarrow L^{s-1}\longrightarrow\cdots
+\longrightarrow L^0\longrightarrow M\longrightarrow0,
+\]
+in which the $L^i$ are graded free $S$-modules of finite type. By
+Hilbert's syzygy theorem (see [6], Chapter VIII, Theorem 6.5), this
+dimension is always $\leq r+1$.
+
+We prove \hyperref[fac:III:3:no:63:prop:3]{the proposition} by induction
+on the dimension of $M$. If that
+dimension is zero, $M$ is free of finite type, that is, a direct sum of
+modules $S(n_i)$, and the proposition follows from
+\hyperref[fac:III:3:no:62:cor:2]{Corollaries~2} and
+\hyperref[fac:III:3:no:62:cor:3]{3} to
+\hyperref[fac:III:3:no:62:prop:2]{Proposition~2}. Suppose that $M$
+has dimension $\leq s$, and let $N$ be the kernel of $L^0\to M$. The
+graded $S$-module $N$ has dimension $\leq s-1$, and there is an exact
+sequence
+\phantomsection\label{fac:III:3:no:63:formula:short-exact}
+\[
+0\longrightarrow N\longrightarrow L^0\longrightarrow M
+\longrightarrow0.
+\]
+By the induction hypothesis,
+\hyperref[fac:III:3:no:63:prop:3]{the proposition} holds for $N$ and $L^0$.
+Applying the five lemma ([7], Chapter I, Lemma 4.3) to the commutative
+diagram
+\phantomsection\label{fac:III:3:no:63:diagram:five-lemma}
+\[
+\begin{tikzcd}
+H_k^q(N) \arrow[r] \arrow[d] & H_k^q(L^0) \arrow[r] \arrow[d]
+  & H_k^q(M) \arrow[r] \arrow[d] & H_k^{q+1}(N) \arrow[r] \arrow[d]
+  & H_k^{q+1}(L^0) \arrow[d] \\
+H_h^q(N) \arrow[r] & H_h^q(L^0) \arrow[r] & H_h^q(M) \arrow[r]
+  & H_h^{q+1}(N) \arrow[r] & H_h^{q+1}(L^0),
+\end{tikzcd}
+\]
+for $h\geq k\geq\operatorname{Sup}(k(N),k(L^0))$, proves
+\hyperref[fac:III:3:no:63:prop:3:item:a]{(a)}, and hence also
+\hyperref[fac:III:3:no:63:prop:3:item:b]{(b)}, since the $H_k^q(M)$ are
+finite-dimensional over $K$.
+On the other hand, the exact sequence
+\phantomsection\label{fac:III:3:no:63:formula:cohomology-segment}
+\[
+H^q(L^0(n))\longrightarrow H^q(M(n))\longrightarrow H^{q+1}(N(n))
+\]
+shows that $H^q(M(n))=0$ for
+$n\geq\operatorname{Sup}(n(L^0),n(N))$. Finally, consider the
+commutative diagram
+\phantomsection\label{fac:III:3:no:63:diagram:alpha}
+\[
+\begin{tikzcd}
+0 \arrow[r] \arrow[d] & N_n \arrow[r] \arrow[d,"\alpha"]
+  & L_n^0 \arrow[r] \arrow[d,"\alpha"]
+  & M_n \arrow[r] \arrow[d,"\alpha"] & 0 \arrow[d] \\
+0 \arrow[r] & H^0(N(n)) \arrow[r] & H^0(L^0(n)) \arrow[r]
+  & H^0(M(n)) \arrow[r] & H^1(N(n));
+\end{tikzcd}
+\]
+The printed upper middle term is $L_n$, with its superscript $0$
+omitted. For $n\geq n(N)$ we have $H^1(N(n))=0$; it follows that
+$\alpha:M_n\to H^0(M(n))$ is bijective for
+$n\geq\operatorname{Sup}(n(L^0),n(N))$, which completes the proof of
+\hyperref[fac:III:3:no:63:prop:3]{the proposition}.

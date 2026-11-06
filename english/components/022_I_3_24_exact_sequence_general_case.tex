@@ -1,0 +1,116 @@
+% FAC-EN-U0022
+% French source: fac_body.tex lines 710--815.
+% Authority: PDF physical pp. 21--22; printed pp. 216--217 (no. 24 complete).
+% Printed-source repairs: FAC-FR-C0006 and FAC-FR-C0007.
+% The commutative diagram is native TeX and follows the authority's 2x4 node / 9-arrow structure.
+
+\medskip
+\phantomsection\label{fac:I:3:no:24}
+\textbf{24. Exact sequence of sheaves: the general case.}
+
+Let
+\[
+0\longrightarrow\mathcal{A}\xrightarrow{\alpha}\mathcal{B}
+\xrightarrow{\beta}\mathcal{C}\longrightarrow0
+\]
+be an exact sequence of sheaves. If $\mathfrak{U}$ is a covering of $X$, the sequence
+\[
+0\longrightarrow C(\mathfrak{U},\mathcal{A})
+\xrightarrow{\alpha}C(\mathfrak{U},\mathcal{B})
+\xrightarrow{\beta}C(\mathfrak{U},\mathcal{C})
+\]
+is plainly exact, but the homomorphism $\beta$ is not in general surjective. Denote by $C_0(\mathfrak{U},\mathcal{C})$ the image of this homomorphism; it is a subcomplex of $C(\mathfrak{U},\mathcal{C})$, whose cohomology groups will be denoted $H_0^q(\mathfrak{U},\mathcal{C})$. The exact sequence of complexes
+\[
+0\longrightarrow C(\mathfrak{U},\mathcal{A})
+\longrightarrow C(\mathfrak{U},\mathcal{B})
+\longrightarrow C_0(\mathfrak{U},\mathcal{C})\longrightarrow0
+\]
+gives rise to an exact cohomology sequence
+\[
+\cdots\longrightarrow H^q(\mathfrak{U},\mathcal{B})
+\longrightarrow H_0^q(\mathfrak{U},\mathcal{C})
+\xrightarrow{d}H^{q+1}(\mathfrak{U},\mathcal{A})
+\longrightarrow H^{q+1}(\mathfrak{U},\mathcal{B})\longrightarrow\cdots,
+\]
+where the coboundary operator $d$ is defined in the usual way.
+
+Now let $\mathfrak{U}=\{U_i\}_{i\in I}$ and $\mathfrak{V}=\{V_j\}_{j\in J}$ be two coverings, and let $\tau:I\to J$ be a map such that $U_i\subset V_{\tau i}$; thus $\mathfrak{U}<\mathfrak{V}$. The commutative diagram
+\begin{center}
+\begin{tikzcd}[row sep=large,column sep=large]
+0 \arrow[r] & C(\mathfrak{V},\mathcal{A}) \arrow[r] \arrow[d,"\tau"']
+  & C(\mathfrak{V},\mathcal{B}) \arrow[r] \arrow[d,"\tau"']
+  & C(\mathfrak{V},\mathcal{C}) \arrow[d,"\tau"'] \\
+0 \arrow[r] & C(\mathfrak{U},\mathcal{A}) \arrow[r]
+  & C(\mathfrak{U},\mathcal{B}) \arrow[r]
+  & C(\mathfrak{U},\mathcal{C})
+\end{tikzcd}
+\end{center}
+shows that $\tau$ maps $C_0(\mathfrak{V},\mathcal{C})$ into $C_0(\mathfrak{U},\mathcal{C})$, and hence defines homomorphisms
+\[
+\tau^*:H_0^q(\mathfrak{V},\mathcal{C})
+\longrightarrow H_0^q(\mathfrak{U},\mathcal{C}).
+\]
+Moreover, the homomorphisms $\tau^*$ are independent of the choice of the map $\tau$.\footnote{The printed source says ``the choice of the map $\tau^*$''; the auxiliary map being chosen is $\tau$, whereas $\tau^*$ is the induced homomorphism.} Indeed, if $f\in C_0^q(\mathfrak{V},\mathcal{C})$, then $kf\in C_0^{q-1}(\mathfrak{U},\mathcal{C})$, with the notation of the proof of \hyperref[fac:I:3:no:21:prop:3]{Proposition~3}. We have therefore obtained canonical homomorphisms
+\[
+\sigma(\mathfrak{U},\mathfrak{V}):
+H_0^q(\mathfrak{V},\mathcal{C})
+\longrightarrow H_0^q(\mathfrak{U},\mathcal{C});
+\]
+we may then define $H_0^q(X,\mathcal{C})$ as the direct limit, over $\mathfrak{U}$, of the groups $H_0^q(\mathfrak{U},\mathcal{C})$.
+
+Since a direct limit of exact sequences is exact (cf. [7], Chap.~VIII, Th.~5.4), we obtain:
+
+\phantomsection\label{fac:I:3:no:24:prop:5}
+\textsc{Proposition 5.} \textit{The sequence}
+\[
+\cdots\longrightarrow H^q(X,\mathcal{B})
+\xrightarrow{\beta^*}H_0^q(X,\mathcal{C})
+\xrightarrow{d}H^{q+1}(X,\mathcal{A})
+\xrightarrow{\alpha^*}H^{q+1}(X,\mathcal{B})
+\longrightarrow\cdots
+\]
+\textit{is exact.}
+
+Here $d$ denotes the homomorphism obtained by passage to the limit from
+\[
+d:H_0^q(\mathfrak{U},\mathcal{C})
+\longrightarrow H^{q+1}(\mathfrak{U},\mathcal{A}).
+\]
+
+In order to apply the \hyperref[fac:I:3:no:24:prop:5]{preceding proposition}, it is useful to compare the groups $H_0^q(X,\mathcal{C})$ and $H^q(X,\mathcal{C})$. The injection of $C_0(\mathfrak{U},\mathcal{C})$ into $C(\mathfrak{U},\mathcal{C})$ defines homomorphisms
+\[
+H_0^q(\mathfrak{U},\mathcal{C})\longrightarrow H^q(\mathfrak{U},\mathcal{C}),
+\]
+and hence, by passage to the limit over $\mathfrak{U}$, homomorphisms
+\[
+H_0^q(X,\mathcal{C})\longrightarrow H^q(X,\mathcal{C}).
+\]
+
+\phantomsection\label{fac:I:3:no:24:prop:6}
+\textsc{Proposition 6.} \textit{The canonical homomorphism $H_0^q(X,\mathcal{C})\to H^q(X,\mathcal{C})$ is bijective for $q=0$ and injective for $q=1$.}
+
+We first prove a \hyperref[fac:I:3:no:24:lemma:1]{lemma}.
+
+\phantomsection\label{fac:I:3:no:24:lemma:1}
+\textsc{Lemma 1.} \textit{Let $\mathfrak{V}=\{V_j\}_{j\in J}$ be a covering, and let $f=(f_j)$ be an element of $C^0(\mathfrak{V},\mathcal{C})$. There exist a covering $\mathfrak{U}=\{U_i\}_{i\in I}$ and a map $\tau:I\to J$ such that $U_i\subset V_{\tau i}$ and $\tau f\in C_0^0(\mathfrak{U},\mathcal{C})$.}
+
+For every $x\in X$, choose $\tau x\in J$ such that $x\in V_{\tau x}$. Since $f_{\tau x}$ is a section of $\mathcal{C}$ over $V_{\tau x}$, there exist an open neighborhood $U_x$ of $x$, contained in $V_{\tau x}$, and a section $b_x$ of $\mathcal{B}$ over $U_x$ such that $\beta(b_x)=f_{\tau x}$ on $U_x$. The $\{U_x\}_{x\in X}$ form a covering $\mathfrak{U}$ of $X$, and the $b_x$ form a $0$-cochain $b$ of $\mathfrak{U}$ with values in $\mathcal{B}$; since $\tau f=\beta(b)$, we indeed have $\tau f\in C_0^0(\mathfrak{U},\mathcal{C})$.
+
+\phantomsection\label{fac:I:3:no:24:proof:H1-injectivity}
+We now show that $H_0^1(X,\mathcal{C})\to H^1(X,\mathcal{C})$ is injective. An element of the kernel of this map can be represented by a $1$-cocycle $z=(z_{j_0j_1})\in C'_0(\mathfrak{V},\mathcal{C})$ for which there exists $f=(f_j)\in C^0(\mathfrak{V},\mathcal{C})$ with $df=z$. Applying \hyperref[fac:I:3:no:24:lemma:1]{Lemma~1} to $f$, we find a covering $\mathfrak{U}$ such that $\tau f\in C_0^0(\mathfrak{U},\mathcal{C})$, which implies that $\tau z$ is cohomologous to $0$\footnote{The printed source leaves a blank after ``cohomologous to.'' The missing term must be $0$: $\tau z=d(\tau f)$ inside $C_0(\mathfrak{U},\mathcal{C})$.} in $C_0(\mathfrak{U},\mathcal{C})$, and therefore has image $0$ in $H_0^1(X,\mathcal{C})$. \hyperref[fac:I:3:no:24:proof:H1-injectivity]{The same argument} shows that $H_0^0(X,\mathcal{C})\to H^0(X,\mathcal{C})$ is bijective.
+
+\phantomsection\label{fac:I:3:no:24:cor:1}
+\textsc{Corollary 1.} \textit{There is an exact sequence}
+\[
+0\longrightarrow H^0(X,\mathcal{A})
+\longrightarrow H^0(X,\mathcal{B})
+\longrightarrow H^0(X,\mathcal{C})
+\longrightarrow H^1(X,\mathcal{A})
+\longrightarrow H^1(X,\mathcal{B})
+\longrightarrow H^1(X,\mathcal{C}).
+\]
+
+This is an immediate consequence of \hyperref[fac:I:3:no:24:prop:5]{Propositions~5} \hyperref[fac:I:3:no:24:prop:6]{and~6}.
+
+\phantomsection\label{fac:I:3:no:24:cor:2}
+\textsc{Corollary 2.} \textit{If $H^1(X,\mathcal{A})=0$, then $\Gamma(X,\mathcal{B})\to\Gamma(X,\mathcal{C})$ is surjective.}

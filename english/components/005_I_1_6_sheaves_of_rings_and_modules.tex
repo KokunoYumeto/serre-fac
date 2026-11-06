@@ -1,0 +1,23 @@
+% FAC-EN-U0005
+% French source: fac_body.tex lines 202--218.
+% Authority: PDF physical pp. 7--8; printed pp. 202--203 (no. 6 complete).
+
+\medskip
+\phantomsection\label{fac:I:1:no:6}
+\textbf{6. Sheaves of rings and sheaves of modules.}
+
+The notion of a sheaf defined in no.~\hyperref[fac:I:1:no:1]{1} is that of a sheaf of \textit{abelian groups}. Clearly, analogous definitions exist for every algebraic structure (one could even define ``sheaves of sets,'' in which $\mathcal{F}_x$ has no algebraic structure and only axiom \hyperref[fac:I:1:no:1:axiom:I]{(I)} is postulated). In what follows, we shall mainly encounter sheaves of \textit{rings} and sheaves of \textit{modules}.
+
+A sheaf of rings $\mathcal{A}$ is a sheaf of abelian groups $\mathcal{A}_x$, $x\in X$, in which each $\mathcal{A}_x$ is endowed with a ring structure such that the map $(f,g)\mapsto f\cdot g$ is continuous from $\mathcal{A}+\mathcal{A}$ to $\mathcal{A}$ (with the notation of no.~\hyperref[fac:I:1:no:1]{1}). We shall always assume that each $\mathcal{A}_x$ has a unit element which depends continuously on $x$.
+
+If $\mathcal{A}$ is a sheaf of rings satisfying the preceding condition, then $\Gamma(U,\mathcal{A})$ is a ring with unit, and $\rho_U^V:\Gamma(V,\mathcal{A})\to\Gamma(U,\mathcal{A})$ is a unital homomorphism when $U\subset V$. Conversely, suppose that rings $\mathcal{A}_U$ with unit and unital homomorphisms $\varphi_U^V:\mathcal{A}_V\to\mathcal{A}_U$ are given, with $\varphi_U^V\circ\varphi_V^W=\varphi_U^W$. Then the sheaf $\mathcal{A}$ defined by the system $(\mathcal{A}_U,\varphi_U^V)$ is a sheaf of rings. For example, if $G$ is a ring with unit, the sheaf of germs of functions with values in $G$ (defined in no.~\hyperref[fac:I:1:no:3]{3}) is a sheaf of rings.
+
+Let $\mathcal{A}$ be a sheaf of rings. A sheaf $\mathcal{F}$ is called a \textit{sheaf of $\mathcal{A}$-modules} if each $\mathcal{F}_x$ is endowed with the structure of a unital $\mathcal{A}_x$-module (on the left, to fix ideas), varying ``continuously'' with $x$ in the following sense: if $\mathcal{A}+\mathcal{F}$ is the subset of $\mathcal{A}\times\mathcal{F}$ formed by the pairs $(a,f)$ such that $\pi(a)=\pi(f)$, then the map $(a,f)\mapsto a\cdot f$ is continuous from $\mathcal{A}+\mathcal{F}$ to $\mathcal{F}$.
+
+If $\mathcal{F}$ is a sheaf of $\mathcal{A}$-modules, then $\Gamma(U,\mathcal{F})$ is a unital module over $\Gamma(U,\mathcal{A})$. Conversely, suppose that $\mathcal{A}$ is defined by the system $(\mathcal{A}_U,\varphi_U^V)$ as above, and let $\mathcal{F}$ be the sheaf defined by a system $(\mathcal{F}_U,\psi_U^V)$, where each $\mathcal{F}_U$ is a unital $\mathcal{A}_U$-module and
+\begin{equation*}
+\psi_U^V(a\cdot f)=\varphi_U^V(a)\cdot\psi_U^V(f)
+\end{equation*}
+for $a\in\mathcal{A}_V$ and $f\in\mathcal{F}_V$. Then $\mathcal{F}$ is a sheaf of $\mathcal{A}$-modules.
+
+Every sheaf of abelian groups may be regarded as a sheaf of $\mathbf{Z}$-modules, where $\mathbf{Z}$ denotes the constant sheaf isomorphic to the ring of integers. This will allow us, in what follows, to restrict our attention to sheaves of modules.

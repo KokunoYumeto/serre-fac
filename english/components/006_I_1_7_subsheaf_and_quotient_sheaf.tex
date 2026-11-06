@@ -1,0 +1,40 @@
+% FAC-EN-U0006
+% French source: fac_body.tex lines 219--242.
+% Authority: PDF physical pp. 8--9; printed pp. 203--204 (no. 7 complete).
+
+\medskip
+\phantomsection\label{fac:I:1:no:7}
+\textbf{7. Subsheaf and quotient sheaf.}
+
+Let $\mathcal{A}$ be a sheaf of rings and $\mathcal{F}$ a sheaf of $\mathcal{A}$-modules. For every $x\in X$, let $\mathcal{G}_x$ be a subset of $\mathcal{F}_x$. We say that $\mathcal{G}=\bigcup\mathcal{G}_x$ is a \textit{subsheaf} of $\mathcal{F}$ if:
+
+\begin{enumerate}[label=(\alph*),leftmargin=2.5em]
+\item\label{fac:I:1:no:7:item:a} \textit{$\mathcal{G}_x$ is an $\mathcal{A}_x$-submodule of $\mathcal{F}_x$ for every $x\in X$;}
+\item\label{fac:I:1:no:7:item:b} \textit{$\mathcal{G}$ is an open subset of $\mathcal{F}$.}
+\end{enumerate}
+
+Condition \hyperref[fac:I:1:no:7:item:b]{(b)} may equivalently be expressed as follows:
+
+\begin{quote}
+(b$'$) \textit{If $x$ is a point of $X$, and if $s$ is a section of $\mathcal{F}$ over a neighborhood of $x$ such that $s(x)\in\mathcal{G}_x$, then $s(y)\in\mathcal{G}_y$ for every $y$ sufficiently near $x$.}
+\end{quote}
+
+It is clear that, if these conditions hold, $\mathcal{G}$ is a sheaf of $\mathcal{A}$-modules.
+
+Let $\mathcal{G}$ be a subsheaf of $\mathcal{F}$, and put $\mathcal{H}_x=\mathcal{F}_x/\mathcal{G}_x$ for every $x\in X$. Endow $\mathcal{H}=\bigcup\mathcal{H}_x$ with the quotient topology induced by that of $\mathcal{F}$. One readily sees that this makes $\mathcal{H}$ into a sheaf of $\mathcal{A}$-modules, called the \textit{quotient sheaf} of $\mathcal{F}$ by $\mathcal{G}$ and denoted by $\mathcal{F}/\mathcal{G}$. It may also be defined by the procedure of no.~\hyperref[fac:I:1:no:3]{3}: if $U$ is open in $X$, put
+\[
+  \mathcal{H}_U=\Gamma(U,\mathcal{F})/\Gamma(U,\mathcal{G}),
+\]
+where $\varphi_U^V$ is the homomorphism induced on the quotient by
+\[
+  \rho_U^V:\Gamma(V,\mathcal{F})\longrightarrow\Gamma(U,\mathcal{F}).
+\]
+The sheaf defined by the system $(\mathcal{H}_U,\varphi_U^V)$ is precisely $\mathcal{H}$.
+
+Either definition of $\mathcal{H}$ shows that, if $s$ is a section of $\mathcal{H}$ near $x$, there exists a section $t$ of $\mathcal{F}$ near $x$ such that the class of $t(y)$ modulo $\mathcal{G}_y$ is equal to $s(y)$ for every $y$ sufficiently near $x$. Of course, this is no longer true globally in general: if $U$ is open in $X$, one has only the exact sequence
+\[
+  0\longrightarrow\Gamma(U,\mathcal{G})
+  \longrightarrow\Gamma(U,\mathcal{F})
+  \longrightarrow\Gamma(U,\mathcal{H}),
+\]
+the homomorphism $\Gamma(U,\mathcal{F})\to\Gamma(U,\mathcal{H})$ not being surjective in general (cf. no.~\hyperref[fac:I:3:no:24]{24}).

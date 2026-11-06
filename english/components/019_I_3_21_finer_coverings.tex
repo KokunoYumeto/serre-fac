@@ -1,0 +1,40 @@
+% FAC-EN-U0019
+% French source: fac_body.tex lines 631--664.
+% Authority: PDF physical pp. 19--20; printed pp. 214--215 (no. 21 complete).
+% Transcription repair FAC-FR-T0018 restores membership signs in lines 633 and 647.
+
+\medskip
+\phantomsection\label{fac:I:3:no:21}
+\textbf{21. Passage from a covering to a finer covering.}
+
+A covering $\mathfrak{U}=\{U_i\}_{i\in I}$ is said to be \textit{finer} than a covering $\mathfrak{V}=\{V_j\}_{j\in J}$ if there is a map $\tau:I\to J$ such that $U_i\subset V_{\tau i}$ for every $i\in I$. If $f\in C^q(\mathfrak{V},\mathcal{F})$, put
+\[
+(\tau f)_{i_0\cdots i_q}
+=\rho_U^V(f_{\tau i_0\cdots\tau i_q}),
+\]
+where $\rho_U^V$ denotes the restriction homomorphism defined by the inclusion of $U_{i_0\cdots i_q}$ in $V_{\tau i_0\cdots\tau i_q}$. The map $f\mapsto\tau f$ is a homomorphism from $C^q(\mathfrak{V},\mathcal{F})$ to $C^q(\mathfrak{U},\mathcal{F})$, defined for every $q\geq0$ and commuting with $d$; it therefore induces homomorphisms
+\[
+\tau^*:H^q(\mathfrak{V},\mathcal{F})
+\longrightarrow H^q(\mathfrak{U},\mathcal{F}).
+\]
+
+\phantomsection\label{fac:I:3:no:21:prop:3}
+\textsc{Proposition 3.} \textit{The homomorphisms $\tau^*:H^q(\mathfrak{V},\mathcal{F})\to H^q(\mathfrak{U},\mathcal{F})$ depend only on $\mathfrak{U}$ and $\mathfrak{V}$, and not on the chosen map $\tau$.}
+
+Let $\tau$ and $\tau'$ be two maps from $I$ to $J$ such that $U_i\subset V_{\tau i}$ and $U_i\subset V_{\tau'i}$. We must show that $\tau^*=\tau'^*$.
+
+For $f\in C^q(\mathfrak{V},\mathcal{F})$, put
+\[
+(kf)_{i_0\cdots i_{q-1}}
+=\sum_{h=0}^{h=q-1}(-1)^h
+\rho_h(f_{\tau i_0\cdots\tau i_h\,\tau'i_h\cdots\tau'i_{q-1}}),
+\]
+where $\rho_h$ denotes the restriction homomorphism defined by the inclusion of $U_{i_0\cdots i_{q-1}}$ in $V_{\tau i_0\cdots\tau i_h\,\tau'i_h\cdots\tau'i_{q-1}}$.
+
+A direct calculation (cf. [7], Chap.~VI, \S3) gives
+\[
+dkf+k\,df=\tau'f-\tau f,
+\]
+which proves the \hyperref[fac:I:3:no:21:prop:3]{proposition}.
+
+Consequently, if $\mathfrak{U}$ is finer than $\mathfrak{V}$, then for every integer $q\geq0$ there is a canonical homomorphism from $H^q(\mathfrak{V},\mathcal{F})$ to $H^q(\mathfrak{U},\mathcal{F})$. In what follows, this homomorphism is denoted $\sigma(\mathfrak{U},\mathfrak{V})$.

@@ -1,0 +1,102 @@
+% FAC-EN-U0068
+% Source: fac_body.tex lines 2589--2622.
+% Authority: PDF physical pp. 68--69; printed pp. 263--264
+% (Chapter III no. 70 complete).
+% French control: T0041 repairs four inherited epsilon commands to the
+% printed membership sign. No printed-source correction is admitted here.
+
+\phantomsection\label{fac:III:4:no:70}
+\textbf{70. Definition of the functors $T^q(M)$.}
+We first define the notion of the \textit{dual} module of a graded
+$S$-module. Let $M$ be a graded $S$-module. For every
+$n\in\mathbf{Z}$, $M_n$ is a vector space over $K$; we denote its dual
+vector space by $(M_n)'$. Put
+\phantomsection\label{fac:III:4:no:70:def:dual-module}
+\[
+M^*=\sum_{n\in\mathbf{Z}}M_n^*,
+\qquad M_n^*=(M_{-n})'.
+\]
+
+We shall give $M^*$ an $S$-module structure compatible with its grading.
+\phantomsection\label{fac:III:4:no:70:formula:dual-action}
+For every $P\in S_p$, the map $m\mapsto Pm$ is a $K$-linear map from
+$M_{-n-p}$ to $M_{-n}$ and therefore defines by transposition a
+$K$-linear map from $(M_{-n})'=M_n^*$ to
+$(M_{-n-p})'=M_{n+p}^*$. This defines the $S$-module structure of
+$M^*$.
+\phantomsection\label{fac:III:4:no:70:formula:dual-Hom}
+We could equally have defined
+\[
+M^*=\operatorname{Hom}_S(M,K),
+\qquad K=S/(t_0,\ldots,t_r),
+\]
+where $K$ denotes the indicated graded $S$-module.
+
+\phantomsection\label{fac:III:4:no:70:property:bidual}
+The graded $S$-module $M^*$ is called the \textit{dual} of $M$. We have
+$M^{**}=M$ if each $M_n$ is finite-dimensional over $K$; this is the
+case if $M=\Gamma(\mathcal{F})$, with $\mathcal{F}$ a coherent algebraic
+sheaf on $X$, or if $M$ is of finite type. Every homomorphism
+$\varphi:M\longrightarrow N$ defines by transposition a homomorphism
+from $N^*$ to $M^*$.
+
+\phantomsection\label{fac:III:4:no:70:property:dual-exact}
+If $M\longrightarrow N\longrightarrow P$ is exact, then
+$P^*\longrightarrow N^*\longrightarrow M^*$ is exact as well. In other
+words, $M\mapsto M^*$ is a contravariant exact functor.
+\phantomsection\label{fac:III:4:no:70:property:inverse-system}
+When $I$ is a
+homogeneous ideal of $S$, the dual of $S/I$ is precisely the ``inverse
+system'' of $I$ in the sense of Macaulay (cf.~[9], no.~25).
+
+Now let $M$ be a graded $S$-module, and let $q$ be an integer $\geq0$.
+In the \hyperref[fac:III:4:no:69]{preceding number} we defined the graded $S$-module
+\hyperref[fac:III:4:no:69:def:Bq]{$B^q(M)$}; its dual module will be
+denoted by $T^q(M)$. Thus, by definition,
+\phantomsection\label{fac:III:4:no:70:def:Tq}
+\[
+T^q(M)=\sum_{n\in\mathbf{Z}}T^q(M)_n,
+\qquad T^q(M)_n=(H^q(M(-n)))'.
+\]
+
+\phantomsection\label{fac:III:4:no:70:property:T-functoriality}
+Every homomorphism $\varphi:M\longrightarrow N$ defines a homomorphism
+from $B^q(M)$ to $B^q(N)$, hence a homomorphism from $T^q(N)$ to
+$T^q(M)$. Thus the $T^q(M)$ are contravariant functors of $M$ (we shall
+see in \hyperref[fac:III:4:no:72]{no.~72} that they can be expressed very
+simply in terms of
+$\operatorname{Ext}_S$).
+
+Every exact sequence
+\phantomsection\label{fac:III:4:no:70:formula:short-exact}
+\[
+0\longrightarrow M\longrightarrow N\longrightarrow P\longrightarrow0
+\]
+gives rise to an exact sequence
+\phantomsection\label{fac:III:4:no:70:formula:long-exact-B}
+\[
+\cdots\longrightarrow B^q(M)\longrightarrow B^q(N)
+\longrightarrow B^q(P)\longrightarrow B^{q+1}(M)
+\longrightarrow\cdots,
+\]
+and hence, by transposition, to an exact sequence
+\phantomsection\label{fac:III:4:no:70:formula:long-exact-T}
+\[
+\cdots\longrightarrow T^{q+1}(M)\longrightarrow T^q(P)
+\longrightarrow T^q(N)\longrightarrow T^q(M)
+\longrightarrow\cdots.
+\]
+
+The homomorphism
+\hyperref[fac:III:4:no:69:map:alpha]{$\alpha:M\longrightarrow B^0(M)$}
+defines by transposition a homomorphism
+\phantomsection\label{fac:III:4:no:70:map:alpha-star}
+\[
+\alpha^*:T^0(M)\longrightarrow M^*.
+\]
+\phantomsection\label{fac:III:4:no:70:property:B-vanishing}
+Since $B^q(M)=0$ for $q>r$, we have
+\phantomsection\label{fac:III:4:no:70:formula:vanishing}
+\[
+T^q(M)=0\qquad(q>r).
+\]

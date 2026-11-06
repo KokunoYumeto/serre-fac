@@ -1,0 +1,83 @@
+% FAC-EN-U0045
+% French source: fac_body.tex lines 1604--1633.
+% Authority: PDF physical pp. 44--45; printed pp. 239--240 (no. 47 complete).
+% Semantic entities: FAC-SEM-NO-II-3-47; FAC-SEM-PROP-II-3-8;
+% FAC-SEM-THM-II-3-4; FAC-SEM-THM-II-3-5;
+% FAC-SEM-COR-II-3-5-1; FAC-SEM-COR-II-3-5-2.
+
+\medskip
+\phantomsection\label{fac:II:3:no:47}
+\textbf{47. Coverings of algebraic varieties by affine open subsets.}
+
+\phantomsection\label{fac:II:3:prop:8}
+\textsc{Proposition 8.} \textit{Let $X$ be an affine variety, and let
+$\mathfrak{U}=\{U_i\}_{i\in I}$ be a finite covering of $X$ by affine open
+subsets. If $\mathcal{F}$ is a coherent algebraic sheaf on $X$, then
+$H^q(\mathfrak{U},\mathcal{F})=0$ for every $q>0$.}
+
+By \hyperref[fac:II:3:no:42:prop:3]{Proposition~3}, there are regular functions $P_j$ on $X$ such that the
+covering $\mathfrak{B}=\{X_{P_j}\}$ is finer than $\mathfrak{U}$. For every
+$(i_0,\ldots,i_p)$, the covering $\mathfrak{B}_{i_0\ldots i_p}$ induced by
+$\mathfrak{B}$ on $U_{i_0\ldots i_p}$ is defined by the restrictions of the
+$P_j$ to $U_{i_0\ldots i_p}$. Since $U_{i_0\ldots i_p}$ is an affine variety
+by \hyperref[fac:II:3:no:42:prop:1]{Proposition~1}, \hyperref[fac:II:3:no:46:thm:3]{Theorem~3} applies to it, and therefore
+$H^q(\mathfrak{B}_{i_0\ldots i_p},\mathcal{F})=0$ for every $q>0$. Applying
+\hyperref[fac:I:4:no:29:prop:5]{Proposition~5 of no.~29}, we then obtain
+\[
+H^q(\mathfrak{U},\mathcal{F})=H^q(\mathfrak{B},\mathcal{F});
+\]
+and since $H^q(\mathfrak{B},\mathcal{F})=0$ for $q>0$ by \hyperref[fac:II:3:no:46:thm:3]{Theorem~3}, the
+proposition is proved.
+
+\phantomsection\label{fac:II:3:thm:4}
+\textsc{Theorem 4.} \textit{Let $X$ be an algebraic variety, let
+$\mathcal{F}$ be a coherent algebraic sheaf on $X$, and let
+$\mathfrak{U}=\{U_i\}_{i\in I}$ be a finite covering of $X$ by affine open
+subsets. The homomorphism
+$\sigma(\mathfrak{U}):H^n(\mathfrak{U},\mathcal{F})\to H^n(X,\mathcal{F})$
+is bijective for every $n\geq0$.}
+
+Consider the family $\mathfrak{B}^{\alpha}$ of finite coverings of $X$ by
+affine open subsets. By \hyperref[fac:II:3:no:42:thm:1:cor]{the corollary to Theorem~1}, these coverings are
+arbitrarily fine. Moreover, for every system $(i_0,\ldots,i_p)$, the covering
+$\mathfrak{B}^{\alpha}_{i_0\ldots i_p}$ induced by
+$\mathfrak{B}^{\alpha}$ on $U_{i_0\ldots i_p}$ is a covering by affine open
+subsets, by \hyperref[fac:II:3:no:42:prop:1]{Proposition~1}. Hence \hyperref[fac:II:3:prop:8]{Proposition~8} gives
+$H^q(\mathfrak{B}^{\alpha}_{i_0\ldots i_p},\mathcal{F})=0$ for $q>0$.
+\hyperref[fac:I:4:no:29:thm:1:item:a]{Conditions (a)} and \hyperref[fac:I:4:no:29:thm:1:item:b]{(b)} of \hyperref[fac:I:4:no:29:thm:1]{Theorem~1 of no.~29} are therefore satisfied, and
+the theorem follows.
+
+\phantomsection\label{fac:II:3:thm:5}
+\textsc{Theorem 5.} \textit{Let $X$ be an algebraic variety, and let
+$\mathfrak{U}=\{U_i\}_{i\in I}$ be a finite covering of $X$ by affine open
+subsets. Let
+$0\to\mathcal{A}\to\mathcal{B}\to\mathcal{C}\to0$ be an exact sequence of
+sheaves on $X$, where $\mathcal{A}$ is coherent algebraic. The canonical
+homomorphism
+$H_0^q(\mathfrak{U},\mathcal{C})\to H^q(\mathfrak{U},\mathcal{C})$
+(cf. \hyperref[fac:I:3:no:24]{no.~24}) is bijective for every $q\geq0$.}
+
+It is clearly enough to show that
+$C_0(\mathfrak{U},\mathcal{C})=C(\mathfrak{U},\mathcal{C})$; that is, every
+section of $\mathcal{C}$ over $U_{i_0\ldots i_q}$ is the image of a section
+of $\mathcal{B}$ over $U_{i_0\ldots i_q}$. This follows from \hyperref[fac:II:3:no:46:thm:3:cor:2]{Corollary~2 to
+Theorem~3}.
+
+\phantomsection\label{fac:II:3:thm:5:cor:1}
+\textsc{Corollary 1.} \textit{Let $X$ be an algebraic variety, and let
+$0\to\mathcal{A}\to\mathcal{B}\to\mathcal{C}\to0$ be an exact sequence of
+sheaves on $X$, where $\mathcal{A}$ is coherent algebraic. The canonical
+homomorphism $H_0^q(X,\mathcal{C})\to H^q(X,\mathcal{C})$ is bijective for
+every $q\geq0$.}
+
+This is an immediate consequence of \hyperref[fac:II:3:no:42:thm:1]{Theorems~1} \hyperref[fac:II:3:thm:5]{and~5}.
+
+\phantomsection\label{fac:II:3:thm:5:cor:2}
+\textsc{Corollary 2.} \textit{There is an exact sequence}
+\[
+\cdots\longrightarrow H^q(X,\mathcal{B})
+\longrightarrow H^q(X,\mathcal{C})
+\longrightarrow H^{q+1}(X,\mathcal{A})
+\longrightarrow H^{q+1}(X,\mathcal{B})
+\longrightarrow\cdots .
+\]

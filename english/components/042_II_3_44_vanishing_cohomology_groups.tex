@@ -1,0 +1,104 @@
+% FAC-EN-U0042
+% French source: fac_body.tex lines 1489--1546.
+% Authority: PDF physical pp. 41--42; printed pp. 236--237 (no. 44 complete).
+% Printed-source repairs: FAC-FR-C0028--FAC-FR-C0029.
+
+\medskip
+\phantomsection\label{fac:II:3:no:44}
+\textbf{44. Vanishing of certain cohomology groups.}
+
+\phantomsection\label{fac:II:3:no:44:prop:7}
+\textsc{Proposition 7.} \textit{Let $X$ be an irreducible affine variety, let $Q_i$ be a finite family of regular functions on $X$ having no common zero, and let $\mathfrak{U}$ be the open covering of $X$ formed by the sets $X_{Q_i}=U_i$. If $\mathcal{F}$ is a coherent algebraic subsheaf of $\mathcal{O}_X^p$, then}
+\[
+H^q(\mathfrak{U},\mathcal{F})=0
+\qquad\textit{for every $q>0$.}
+\]
+
+After replacing $\mathfrak{U}$ by an equivalent covering if necessary, we may suppose that none of the functions $Q_i$ is identically zero; in other words, $U_i\neq\varnothing$ for every $i$.
+
+Let $f=(f_{i_0\ldots i_q})$ be a $q$-cocycle of $\mathfrak{U}$ with values in $\mathcal{F}$. Each $f_{i_0\ldots i_q}$ is a section of $\mathcal{F}$ over $U_{i_0\ldots i_q}$ and may therefore be identified with a system of $p$ regular functions on $U_{i_0\ldots i_q}$. Applying \hyperref[fac:II:3:no:43:prop:5]{Proposition~5} to
+\[
+Q=Q_{i_0}\cdots Q_{i_q},
+\]
+we see that, for every sufficiently large $n$,
+\[
+g_{i_0\ldots i_q}
+=(Q_{i_0}\cdots Q_{i_q})^n f_{i_0\ldots i_q}
+\]
+is a system of $p$ regular functions on all of $X$, that is, a section of $\mathcal{O}_X^p$ over $X$. Choose an integer $n$ for which this holds for every tuple $i_0,\ldots,i_q$; this is possible because there are only finitely many such tuples. Consider the image of $g_{i_0\ldots i_q}$ in the coherent sheaf $\mathcal{O}_X^p/\mathcal{F}$. It is a section which vanishes on $U_{i_0\ldots i_q}$. \hyperref[fac:II:3:no:43:prop:6]{Proposition~6} therefore shows that, for every sufficiently large $m$, the product of this section by $(Q_{i_0}\cdots Q_{i_q})^m$ is zero on all of $X$. Thus
+\[
+(Q_{i_0}\cdots Q_{i_q})^m g_{i_0\ldots i_q}
+\]
+is a section of $\mathcal{F}$ over all of $X$. Setting $N=m+n$, we have consequently constructed sections $h_{i_0\ldots i_q}$ of $\mathcal{F}$ over $X$ which coincide with
+\[
+(Q_{i_0}\cdots Q_{i_q})^N f_{i_0\ldots i_q}
+\]
+on $U_{i_0\ldots i_q}$.
+
+Since the $Q_i^N$ have no common zero, there are functions
+\[
+R_i\in\Gamma(X,\mathcal{O}_X)
+\]
+such that $\sum R_iQ_i^N=1$. For every tuple $i_0,\ldots,i_{q-1}$, set
+\[
+k_{i_0\ldots i_{q-1}}
+=\sum_i
+\frac{R_i h_{i i_0\ldots i_{q-1}}}
+{(Q_{i_0}\cdots Q_{i_{q-1}})^N}.
+\]
+This is defined because $Q_{i_0}\cdots Q_{i_{q-1}}$ is nonzero on $U_{i_0\ldots i_{q-1}}$.
+
+We have thereby defined a cochain $k\in C^{q-1}(\mathfrak{U},\mathcal{F})$. I claim that $f=dk$, which will prove the proposition.
+
+We must verify that $(dk)_{i_0\ldots i_q}=f_{i_0\ldots i_q}$. It is enough to show that these two sections agree on
+\[
+U=\bigcap U_i,
+\]
+for they will then agree everywhere: they are systems of $p$ rational functions on $X$, and $U\neq\varnothing$. Over $U$ we may write
+\[
+k_{i_0\ldots i_{q-1}}
+=\sum_i R_iQ_i^N f_{i i_0\ldots i_{q-1}},
+\]
+and hence\footnote{The printed source has $(-1)^q$ in this summand. The coboundary formula alternates with the omitted index $j$, and the following use of the cocycle identity requires $(-1)^j$; corrected French and English therefore restore that exponent.}
+\[
+(dk)_{i_0\ldots i_q}
+=\sum_{j=0}^{j=q}(-1)^j
+  \sum_i R_iQ_i^N
+  f_{i i_0\ldots\widehat{\imath}_j\ldots i_q}.
+\]
+Since $f$ is a cocycle, this gives
+\[
+(dk)_{i_0\ldots i_q}
+=\sum_i R_iQ_i^N f_{i_0\ldots i_q}
+=f_{i_0\ldots i_q},
+\]
+as required.
+
+\phantomsection\label{fac:II:3:no:44:prop:7:cor:1}
+\textsc{Corollary 1.} \textit{$H^q(X,\mathcal{F})=0$ for $q>0$.}
+
+Indeed, \hyperref[fac:II:3:no:42:prop:3]{Proposition~3} shows that coverings of the type used in \hyperref[fac:II:3:no:44:prop:7]{Proposition~7} are arbitrarily fine.
+
+\phantomsection\label{fac:II:3:no:44:prop:7:cor:2}
+\textsc{Corollary 2.} \textit{The homomorphism}
+\[
+\Gamma(X,\mathcal{O}_X^p)
+\longrightarrow
+\Gamma(X,\mathcal{O}_X^p/\mathcal{F})
+\]
+\textit{is surjective.}
+
+This follows from \hyperref[fac:II:3:no:44:prop:7:cor:1]{Corollary~1 above} and \hyperref[fac:I:3:no:24:cor:2]{Corollary~2 to Proposition~6 of no.~24}.
+
+\phantomsection\label{fac:II:3:no:44:prop:7:cor:3}
+\textsc{Corollary 3.} \textit{Let $V$ be a closed subvariety of $K^r$, and let}
+\[
+A=K[X_1,\ldots,X_r]/I(V).
+\]
+\textit{The homomorphism}
+\[
+\iota:A\longrightarrow\Gamma(V,\mathcal{O}_V)
+\]
+\textit{is bijective.}
+
+Apply \hyperref[fac:II:3:no:44:prop:7:cor:2]{Corollary~2 above} with $X=K^r$, $p=1$, and $\mathcal{F}=\mathcal{J}(V)$, the ideal sheaf defined by $V$. It follows that every element of $\Gamma(V,\mathcal{O}_V)$ is the restriction of a section of $\mathcal{O}$ over $X$, that is, of a polynomial, by \hyperref[fac:II:3:no:43:prop:4]{Proposition~4} applied to $X$.

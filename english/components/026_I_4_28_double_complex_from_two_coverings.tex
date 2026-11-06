@@ -1,0 +1,133 @@
+% FAC-EN-U0026
+% French source: fac_body.tex lines 938--1015.
+% Authority: PDF physical pp. 25--26; printed pp. 220--221 (no. 28 complete).
+% Printed-source repair: FAC-FR-C0013.
+
+\medskip
+\phantomsection\label{fac:I:4:no:28}
+\textbf{28. Double complex defined by two coverings.}
+Let $\mathfrak{U}=\{U_i\}_{i\in I}$ and $\mathfrak{V}=\{V_j\}_{j\in J}$ be two coverings of $X$. If $s$ is a $p$-simplex of $S(I)$ and $s'$ is a $q$-simplex of $S(J)$, we shall denote by $U_s$ the intersection of the $U_i$ for $i\in s$ (cf. \hyperref[fac:I:3:no:18]{no.~18}), by $V_{s'}$ the intersection of the $V_j$ for $j\in s'$, by $\mathfrak{V}_s$ the covering of $U_s$ formed by the sets $\{U_s\cap V_j\}_{j\in J}$, and by $\mathfrak{U}_{s'}$ the covering of $V_{s'}$ formed by the sets $\{V_{s'}\cap U_i\}_{i\in I}$.
+
+Define a double complex
+\[
+C(\mathfrak{U},\mathfrak{V};\mathcal{F})
+=\sum_{p,q}C^{p,q}(\mathfrak{U},\mathfrak{V};\mathcal{F})
+\]
+as follows:
+\[
+C^{p,q}(\mathfrak{U},\mathfrak{V};\mathcal{F})
+=\prod\Gamma(U_s\cap V_{s'},\mathcal{F}),
+\]
+where the product is taken over all pairs $(s,s')$ such that $s$ is a simplex of dimension $p$ in $S(I)$ and $s'$ is a simplex of dimension $q$ in $S(J)$.
+
+Thus an element $f\in C^{p,q}(\mathfrak{U},\mathfrak{V};\mathcal{F})$ is a system $(f_{s,s'})$ of sections of $\mathcal{F}$ over the sets $U_s\cap V_{s'}$; equivalently, with the notation of \hyperref[fac:I:3:no:18]{no.~18}, it is a system
+\[
+f_{i_0\ldots i_p,j_0\ldots j_q}
+\in\Gamma(U_{i_0\ldots i_p}\cap V_{j_0\ldots j_q},\mathcal{F}).
+\]
+We may also identify $C^{p,q}(\mathfrak{U},\mathfrak{V};\mathcal{F})$ with
+\[
+\prod_{s'}C^p(\mathfrak{U}_{s'},\mathcal{F}).
+\]
+For each $s'$ there is a coboundary operation
+\[
+d:C^p(\mathfrak{U}_{s'},\mathcal{F})
+\longrightarrow C^{p+1}(\mathfrak{U}_{s'},\mathcal{F}),
+\]
+and hence a homomorphism
+\[
+d_{\mathfrak{U}}:
+C^{p,q}(\mathfrak{U},\mathfrak{V};\mathcal{F})
+\longrightarrow C^{p+1,q}(\mathfrak{U},\mathfrak{V};\mathcal{F}).
+\]
+Writing out the definition of $d_{\mathfrak{U}}$ gives
+\[
+(d_{\mathfrak{U}}f)_{i_0\ldots i_{p+1},j_0\ldots j_q}
+=\sum_{k=0}^{k=p+1}(-1)^k
+\rho_k\bigl(f_{i_0\ldots\hat{i}_k\ldots i_{p+1},j_0\ldots j_q}\bigr),
+\]
+where $\rho_k$ denotes the restriction homomorphism defined by the inclusion of\footnote{The printed target intersection retains $i_k$. The section being restricted is indexed by the simplex with $i_k$ omitted, so the larger target of the inclusion must omit $i_k$ as well. The corrected French and English restore the hat; diplomatic French preserves the print.}
+\[
+U_{i_0\ldots i_{p+1}}\cap V_{j_0\ldots j_q}
+\quad\text{in}\quad
+U_{i_0\ldots\hat{i}_k\ldots i_{p+1}}\cap V_{j_0\ldots j_q}.
+\]
+Similarly, define
+\[
+d_{\mathfrak{V}}:
+C^{p,q}(\mathfrak{U},\mathfrak{V};\mathcal{F})
+\longrightarrow C^{p,q+1}(\mathfrak{U},\mathfrak{V};\mathcal{F});
+\]
+then
+\[
+(d_{\mathfrak{V}}f)_{i_0\ldots i_p,j_0\ldots j_{q+1}}
+=\sum_{h=0}^{h=q+1}(-1)^h
+\rho_h\bigl(f_{i_0\ldots i_p,j_0\ldots\hat{j}_h\ldots j_{q+1}}\bigr).
+\]
+It is clear that
+\[
+d_{\mathfrak{U}}\circ d_{\mathfrak{U}}=0,
+\qquad
+d_{\mathfrak{U}}\circ d_{\mathfrak{V}}
+=d_{\mathfrak{V}}\circ d_{\mathfrak{U}},
+\qquad
+d_{\mathfrak{V}}\circ d_{\mathfrak{V}}=0.
+\]
+Setting
+\[
+d'=d_{\mathfrak{U}},
+\qquad d''=(-1)^p d_{\mathfrak{V}},
+\]
+endows $C(\mathfrak{U},\mathfrak{V};\mathcal{F})$ with the structure of a double complex. We may therefore apply to $K=C(\mathfrak{U},\mathfrak{V};\mathcal{F})$ the definitions of the \hyperref[fac:I:4:no:27]{preceding number}. The groups or complexes denoted in the general case by
+\[
+H^n(K),\quad H_I^{p,q}(K),\quad H_{II}^{p,q}(K),\quad K_I,\quad K_{II}
+\]
+will here be denoted respectively by
+\[
+H^n(\mathfrak{U},\mathfrak{V};\mathcal{F}),\quad
+H_I^{p,q}(\mathfrak{U},\mathfrak{V};\mathcal{F}),\quad
+H_{II}^{p,q}(\mathfrak{U},\mathfrak{V};\mathcal{F}),\quad
+C_I(\mathfrak{U},\mathfrak{V};\mathcal{F}),\quad
+C_{II}(\mathfrak{U},\mathfrak{V};\mathcal{F}).
+\]
+
+The definitions of $d'$ and $d''$ immediately give:
+
+\phantomsection\label{fac:I:4:no:28:prop:2}
+\textsc{Proposition 2.} $H_I^{p,q}(\mathfrak{U},\mathfrak{V};\mathcal{F})$ \textit{is isomorphic to}
+\[
+\prod_{s'}H^p(\mathfrak{U}_{s'},\mathcal{F}),
+\]
+\textit{where the product is taken over all simplices of dimension $q$ in $S(J)$. In particular,}
+\[
+C_{II}^q(\mathfrak{U},\mathfrak{V};\mathcal{F})
+=H_I^{0,q}(\mathfrak{U},\mathfrak{V};\mathcal{F})
+\]
+\textit{is isomorphic to}
+\[
+\prod_{s'}H^0(\mathfrak{U}_{s'},\mathcal{F})
+=C^q(\mathfrak{V},\mathcal{F}).
+\]
+
+We shall denote by $\iota''$ the canonical isomorphism
+\[
+\iota'':C(\mathfrak{V},\mathcal{F})
+\longrightarrow C_{II}(\mathfrak{U},\mathfrak{V};\mathcal{F}).
+\]
+Thus, if $(f_{j_0\ldots j_q})$ is an element of $C^q(\mathfrak{V},\mathcal{F})$, then
+\[
+(\iota''f)_{i_0,j_0\ldots j_q}
+=\rho_{i_0}(f_{j_0\ldots j_q}),
+\]
+where $\rho_{i_0}$ denotes the restriction homomorphism defined by the inclusion of
+\[
+U_{i_0}\cap V_{j_0\ldots j_q}
+\quad\text{in}\quad
+V_{j_0\ldots j_q}.
+\]
+
+Of course, the analogue of \hyperref[fac:I:4:no:28:prop:2]{Proposition~2} holds for $H_{II}^{p,q}(\mathfrak{U},\mathfrak{V};\mathcal{F})$, and there is an isomorphism
+\[
+\iota':C(\mathfrak{U},\mathcal{F})
+\longrightarrow C_I(\mathfrak{U},\mathfrak{V};\mathcal{F}).
+\]

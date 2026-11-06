@@ -1,0 +1,126 @@
+% FAC-EN-U0071
+% Source: fac_body.tex lines 2810--2885.
+% Authority: PDF physical pp. 72--73; printed pp. 267--268
+% (Chapter III section 5 / no. 73 complete; hard stop before no. 74).
+
+\medskip
+\phantomsection\label{fac:III:5}
+\phantomsection\label{fac:III:5:no:73}
+\textbf{73. Relations between the functors
+$\operatorname{Ext}_S^q$ and $\operatorname{Ext}_{\mathcal O_x}^q$.}
+Let $M$ and $N$ be two graded $S$-modules. If $x$ is a point of
+$X=\mathbf P_r(K)$, we defined the $\mathcal O_x$-modules $M_x$ and
+$N_x$ in \hyperref[fac:III:2:no:57]{no.~57}; we shall relate the
+$\operatorname{Ext}_{\mathcal O_x}^q(M_x,N_x)$ to the graded
+$S$-module $\operatorname{Ext}_S^q(M,N)$.
+
+\phantomsection\label{fac:III:5:no:73:prop:1}
+\textsc{Proposition 1.} \textit{Suppose that $M$ is finitely generated.
+Then:}
+
+\phantomsection\label{fac:III:5:no:73:prop:1:a}
+\textit{(a) The sheaf
+$\mathfrak A(\operatorname{Hom}_S(M,N))$ is isomorphic to the sheaf
+$\operatorname{Hom}_{\mathcal O}(\mathfrak A(M),\mathfrak A(N))$.}
+
+\phantomsection\label{fac:III:5:no:73:prop:1:b}
+\textit{(b) For every $x\in X$, the $\mathcal O_x$-module
+$\operatorname{Ext}_S^q(M,N)_x$ is isomorphic to the
+$\mathcal O_x$-module
+$\operatorname{Ext}_{\mathcal O_x}^q(M_x,N_x)$.}
+
+First define a homomorphism
+\phantomsection\label{fac:III:5:no:73:map:iota-x}
+\[
+\iota_x:\operatorname{Hom}_S(M,N)_x
+\longrightarrow\operatorname{Hom}_{\mathcal O_x}(M_x,N_x).
+\]
+An element of the first module is a fraction $\varphi/P$, where
+$\varphi\in\operatorname{Hom}_S(M,N)_n$, $P\in S(x)$, and $P$ is
+homogeneous of degree $n$. If $m/P'$ is an element of $M_x$, then
+$\varphi(m)/(PP')$ is an element of $N_x$ depending only on
+$\varphi/P$ and $m/P'$, and the assignment
+\[
+\frac{m}{P'}\longmapsto\frac{\varphi(m)}{PP'}
+\]
+is a homomorphism
+$\iota_x(\varphi/P):M_x\longrightarrow N_x$; this defines $\iota_x$.
+By \hyperref[fac:I:2:no:14:prop:5]{Proposition~5 of no.~14},
+$\operatorname{Hom}_{\mathcal O_x}(M_x,N_x)$ may be identified with
+\phantomsection\label{fac:III:5:no:73:formula:Hom-stalk}
+\[
+\operatorname{Hom}_{\mathcal O}(\mathfrak A(M),\mathfrak A(N))_x.
+\]
+Under this identification, $\iota_x$ becomes
+\[
+\iota_x:\mathfrak A(\operatorname{Hom}_S(M,N))_x
+\longrightarrow
+\operatorname{Hom}_{\mathcal O}(\mathfrak A(M),\mathfrak A(N))_x,
+\]
+and one readily checks that the collection of the $\iota_x$ is a
+homomorphism
+\phantomsection\label{fac:III:5:no:73:map:iota}
+\[
+\iota:\mathfrak A(\operatorname{Hom}_S(M,N))
+\longrightarrow
+\operatorname{Hom}_{\mathcal O}(\mathfrak A(M),\mathfrak A(N)).
+\]
+
+\phantomsection\label{fac:III:5:no:73:proof:free-case}
+When $M$ is a finitely generated free module, $\iota_x$ is bijective:
+indeed, it suffices to verify this when $M=S(n)$, in which case it is
+immediate.
+
+\phantomsection\label{fac:III:5:no:73:proof:resolution-case}
+Now let $M$ be an arbitrary finitely generated graded $S$-module, and
+choose a resolution of $M$:
+\phantomsection\label{fac:III:5:no:73:formula:resolution}
+\[
+\cdots\longrightarrow L^{q+1}\longrightarrow L^q
+\longrightarrow\cdots\longrightarrow L^0
+\longrightarrow M\longrightarrow0,
+\]
+\phantomsection\label{fac:III:5:no:73:def:complex-C}
+in which the $L^q$ are finitely generated free modules. Consider the
+complex $C$ formed by the $\operatorname{Hom}_S(L^q,N)$. Its
+cohomology groups are the $\operatorname{Ext}_S^q(M,N)$.
+\phantomsection\label{fac:III:5:no:73:def:boundaries-cocycles}
+In other words, if $B^q$ and $Z^q$
+denote the submodules of $C^q$ consisting respectively of coboundaries
+and cocycles, there are exact sequences
+\phantomsection\label{fac:III:5:no:73:formula:cycles-boundaries}
+\[
+0\longrightarrow Z^q\longrightarrow C^q
+\longrightarrow B^{q+1}\longrightarrow0
+\]
+and
+\[
+0\longrightarrow B^q\longrightarrow Z^q
+\longrightarrow\operatorname{Ext}_S^q(M,N)\longrightarrow0.
+\]
+
+Since the functor $M\mapsto\mathfrak A(M)$ is exact, the sequences
+\phantomsection\label{fac:III:5:no:73:formula:localized-cycles-boundaries}
+\[
+0\longrightarrow Z_x^q\longrightarrow C_x^q
+\longrightarrow B_x^{q+1}\longrightarrow0
+\]
+and
+\[
+0\longrightarrow B_x^q\longrightarrow Z_x^q
+\longrightarrow\operatorname{Ext}_S^q(M,N)_x\longrightarrow0
+\]
+are also exact.
+
+But, \hyperref[fac:III:5:no:73:proof:free-case]{by what precedes}, $C_x^q$
+is isomorphic to
+$\operatorname{Hom}_{\mathcal O_x}(L_x^q,N_x)$. The modules
+$\operatorname{Ext}_S^q(M,N)_x$ are therefore isomorphic to the
+cohomology groups of the complex formed by the
+$\operatorname{Hom}_{\mathcal O_x}(L_x^q,N_x)$; and since the $L_x^q$
+are plainly free $\mathcal O_x$-modules, this is precisely the
+definition of $\operatorname{Ext}_{\mathcal O_x}^q(M_x,N_x)$. This proves
+\hyperref[fac:III:5:no:73:prop:1:b]{(b)}. For $q=0$,
+\hyperref[fac:III:5:no:73:proof:resolution-case]{the preceding argument}
+shows that $\iota_x$ is bijective; hence $\iota$ is an isomorphism, which
+proves \hyperref[fac:III:5:no:73:prop:1:a]{(a)}.

@@ -1,0 +1,112 @@
+% FAC-EN-U0074
+% Source: fac_body.tex lines 3014--3057.
+% Authority: PDF physical pp. 75--76; printed pp. 270--271
+% (Chapter III no. 76 complete; hard stop before no. 77).
+% French control: no new transcription repair or printed-source correction.
+
+\medskip
+\phantomsection\label{fac:III:5:no:76}
+\textbf{76. Normal varieties.} We shall need the \hyperref[fac:III:5:no:76:lemma:2]{following lemma}.
+
+\phantomsection\label{fac:III:5:no:76:lemma:2}
+\textsc{Lemma 2.} \textit{Let $M$ be a finitely generated
+$\mathcal O_x$-module, and let $f$ be a noninvertible element of
+$\mathcal O_x$ such that $f\cdot m=0$ implies $m=0$ whenever $m\in M$.
+The dimension of the $\mathcal O_x$-module $M/fM$ is then equal to the
+dimension of $M$ increased by one.}
+
+By hypothesis there is an exact sequence
+\phantomsection\label{fac:III:5:no:76:formula:short-exact}
+\[
+0\longrightarrow M\overset\alpha\longrightarrow M
+\longrightarrow M/fM\longrightarrow0,
+\]
+where $\alpha$ is multiplication by $f$. If $N$ is a finitely
+generated $\mathcal O_x$-module, there is therefore an exact sequence
+\phantomsection\label{fac:III:5:no:76:formula:long-exact}
+\[
+\cdots\longrightarrow\operatorname{Ext}_{\mathcal O_x}^q(M,N)
+\overset\alpha\longrightarrow\operatorname{Ext}_{\mathcal O_x}^q(M,N)
+\longrightarrow\operatorname{Ext}_{\mathcal O_x}^{q+1}(M/fM,N)
+\longrightarrow\operatorname{Ext}_{\mathcal O_x}^{q+1}(M,N)
+\longrightarrow\cdots .
+\]
+
+Let $p$ be the dimension of $M$. Taking $q=p+1$ in the
+\hyperref[fac:III:5:no:76:formula:long-exact]{preceding exact
+sequence} shows that
+$\operatorname{Ext}_{\mathcal O_x}^{p+2}(M/fM,N)=0$; hence
+([6], Chapter~VI, \S2) $\dim(M/fM)\leq p+1$. On the other hand, since
+$\dim M=p$, one may choose an $N$ such that
+$\operatorname{Ext}_{\mathcal O_x}^p(M,N)\neq0$. Taking $q=p$ in the
+\hyperref[fac:III:5:no:76:formula:long-exact]{same exact sequence} identifies
+$\operatorname{Ext}_{\mathcal O_x}^{p+1}(M/fM,N)$ with the cokernel of
+\phantomsection\label{fac:III:5:no:76:formula:cokernel-map}
+\[
+\operatorname{Ext}_{\mathcal O_x}^p(M,N)
+\overset\alpha\longrightarrow\operatorname{Ext}_{\mathcal O_x}^p(M,N).
+\]
+This homomorphism is multiplication by $f$; since $f$ is not invertible
+in the local ring $\mathcal O_x$, [6], Chapter~VIII,
+Proposition~5.1$'$ shows that its cokernel is nonzero. Thus
+$\dim(M/fM)\geq p+1$, completing the proof.
+
+We now prove a result closely related to the ``Enriques--Severi
+lemma,'' due to Zariski [19].
+
+\phantomsection\label{fac:III:5:no:76:thm:4}
+\textsc{Theorem 4.} \textit{Let $V$ be an irreducible normal subvariety
+of dimension $\geq2$ in the projective space $\mathbf P_r(K)$. Let
+$\mathfrak F$ be a coherent algebraic sheaf on $V$ such that, for every
+$x\in V$, $\mathfrak F_x$ is a free module over $\mathcal O_{x,V}$.
+Then $H^1(V,\mathfrak F(-n))=0$ for all sufficiently large $n$.}
+
+\phantomsection\label{fac:III:5:no:76:thm:4:proof}
+By \hyperref[fac:III:5:no:74:thm:2]{Theorem~2}, it suffices to show that
+$\mathcal O_{x,V}$, regarded as an $\mathcal O_x$-module, has dimension
+$\leq r-2$. First choose an element $f\in\mathcal O_x$ such that
+$f(x)=0$ and the image of $f$ in $\mathcal O_{x,V}$ is nonzero; this is
+possible because $\dim V>0$. Since $V$ is irreducible,
+$\mathcal O_{x,V}$ is an integral domain, and
+\hyperref[fac:III:5:no:76:lemma:2]{Lemma~2} applies to
+$(\mathcal O_{x,V},f)$. Hence
+\phantomsection\label{fac:III:5:no:76:formula:first-dimension-step}
+\[
+\dim\mathcal O_{x,V}=\dim\bigl(\mathcal O_{x,V}/(f)\bigr)-1,
+\qquad (f)=f\cdot\mathcal O_{x,V}.
+\]
+
+Since $\mathcal O_{x,V}$ is integrally closed, all the prime ideals
+$\mathfrak p^\alpha$ of the principal ideal $(f)$ are minimal
+(cf. [12], p.~136, or [9], no.~37), and none is therefore equal to the
+maximal ideal $\mathfrak m$ of $\mathcal O_{x,V}$ (otherwise
+$\dim V\leq1$). We may thus choose an element $g\in\mathfrak m$ which
+belongs to none of the $\mathfrak p^\alpha$. This element $g$ is not a
+zero divisor in $\mathcal O_{x,V}/(f)$. Calling $\bar g$ a representative
+of $g$ in $\mathcal O_x$, \hyperref[fac:III:5:no:76:lemma:2]{Lemma~2} applies to
+$(\mathcal O_{x,V}/(f),\bar g)$, and gives
+\phantomsection\label{fac:III:5:no:76:formula:second-dimension-step}
+\[
+\dim\bigl(\mathcal O_{x,V}/(f)\bigr)
+=\dim\bigl(\mathcal O_{x,V}/(f,g)\bigr)-1.
+\]
+But the \hyperref[fac:III:5:no:74:syzygy-bound]{syzygy theorem cited above} gives
+$\dim\bigl(\mathcal O_{x,V}/(f,g)\bigr)\leq r$. Therefore
+$\dim\bigl(\mathcal O_{x,V}/(f)\bigr)\leq r-1$ and
+$\dim\mathcal O_{x,V}\leq r-2$, as required.
+
+\phantomsection\label{fac:III:5:no:76:cor}
+\textsc{Corollary.} \textit{One has
+$H^1(V,\mathcal O_V(-n))=0$ for all sufficiently large $n$.}
+
+\phantomsection\label{fac:III:5:no:76:remark:1}
+\textsc{Remarks.} (1) The
+\hyperref[fac:III:5:no:76:thm:4:proof]{argument above} is classical in the theory of
+syzygies. See, for example, W.~Gröbner, \textit{Moderne Algebraische
+Geometrie}, 152.6 and 153.1.
+
+\phantomsection\label{fac:III:5:no:76:remark:2}
+(2) Even if the dimension of $V$ is $>2$, it is possible to have
+$\dim\mathcal O_{x,V}=r-2$. This is notably the case when $V$ is a cone
+whose hyperplane section $W$ is a projectively normal irregular
+variety (i.e., $H^1(W,\mathcal O_W)\neq0$).

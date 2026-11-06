@@ -1,0 +1,79 @@
+% FAC-EN-U0044
+% French source: fac_body.tex lines 1574--1601.
+% Authority: PDF physical pp. 43--44; printed pp. 238--239 (no. 46 complete).
+
+\medskip
+\phantomsection\label{fac:II:3:no:46}
+\textbf{46. Cohomology groups of an affine variety with values in a coherent algebraic sheaf.}
+We shall generalize \hyperref[fac:II:3:no:44:prop:7]{Proposition~7}.
+
+\phantomsection\label{fac:II:3:no:46:thm:3}
+\textsc{Theorem 3.} \textit{Let $X$ be an affine variety, let $Q_i$ be a finite family of regular functions on $X$ having no common zero, and let $\mathfrak{U}$ be the open covering of $X$ formed by the sets $X_{Q_i}=U_i$. If $\mathcal{F}$ is a coherent algebraic sheaf on $X$, then}
+\[
+H^q(\mathfrak{U},\mathcal{F})=0
+\qquad\textit{for every $q>0$.}
+\]
+
+First suppose that $X$ is irreducible. By \hyperref[fac:II:3:no:45:thm:2:cor:1]{Corollary~1 to Theorem~2}, there is an exact sequence
+\[
+0\longrightarrow\mathcal{R}
+\longrightarrow\mathcal{O}_X^p
+\longrightarrow\mathcal{F}
+\longrightarrow0.
+\]
+The sequence of complexes
+\[
+0\longrightarrow C(\mathfrak{U},\mathcal{R})
+\longrightarrow C(\mathfrak{U},\mathcal{O}_X^p)
+\longrightarrow C(\mathfrak{U},\mathcal{F})
+\longrightarrow0
+\]
+is exact. Indeed, this amounts to saying that every section of $\mathcal{F}$ over a set $U_{i_0\ldots i_q}$ is the image of a section of $\mathcal{O}_X^p$ over $U_{i_0\ldots i_q}$, which follows from \hyperref[fac:II:3:no:44:prop:7:cor:2]{Corollary~2 to Proposition~7} applied to the irreducible variety $U_{i_0\ldots i_q}$. This exact sequence of complexes gives rise to a long exact cohomology sequence
+\[
+\cdots\longrightarrow H^q(\mathfrak{U},\mathcal{O}_X^p)
+\longrightarrow H^q(\mathfrak{U},\mathcal{F})
+\longrightarrow H^{q+1}(\mathfrak{U},\mathcal{R})
+\longrightarrow\cdots.
+\]
+For $q>0$, \hyperref[fac:II:3:no:44:prop:7]{Proposition~7} gives
+\[
+H^q(\mathfrak{U},\mathcal{O}_X^p)
+=H^{q+1}(\mathfrak{U},\mathcal{R})=0,
+\]
+and hence $H^q(\mathfrak{U},\mathcal{F})=0$.
+
+We now pass to the general case. We may embed $X$ as a closed subvariety of an affine space $K^r$. By \hyperref[fac:II:3:no:44:prop:7:cor:3]{Corollary~3 to Proposition~7}, the functions $Q_i$ are induced by polynomials $P_i$. Let, on the other hand, the $R_j$ be a finite system of generators of the ideal $I(X)$. The functions $P_i$ and $R_j$ have no common zero on $K^r$ and hence define an open covering $\mathfrak{U}'$ of $K^r$. Let $\mathcal{F}'$ be the sheaf obtained by extending $\mathcal{F}$ by zero outside $X$. Applying what we have just proved to $K^r$, to the functions $P_i,R_j$, and to the sheaf $\mathcal{F}'$, we find that
+\[
+H^q(\mathfrak{U}',\mathcal{F}')=0
+\qquad(q>0).
+\]
+The complex $C(\mathfrak{U}',\mathcal{F}')$ is immediately seen to be isomorphic to $C(\mathfrak{U},\mathcal{F})$. It follows that
+\[
+H^q(\mathfrak{U},\mathcal{F})=0,
+\]
+as required.
+
+\phantomsection\label{fac:II:3:no:46:thm:3:cor:1}
+\textsc{Corollary 1.} \textit{If $X$ is an affine variety and $\mathcal{F}$ is a coherent algebraic sheaf on $X$, then}
+\[
+H^q(X,\mathcal{F})=0
+\qquad\textit{for every $q>0$.}
+\]
+
+Indeed, coverings of the type used in the \hyperref[fac:II:3:no:46:thm:3]{preceding theorem} are arbitrarily fine.
+
+\phantomsection\label{fac:II:3:no:46:thm:3:cor:2}
+\textsc{Corollary 2.} \textit{Let}
+\[
+0\longrightarrow\mathcal{A}
+\longrightarrow\mathcal{B}
+\longrightarrow\mathcal{C}
+\longrightarrow0
+\]
+\textit{be an exact sequence of sheaves on an affine variety $X$. If $\mathcal{A}$ is coherent algebraic, then the homomorphism}
+\[
+\Gamma(X,\mathcal{B})\longrightarrow\Gamma(X,\mathcal{C})
+\]
+\textit{is surjective.}
+
+This follows from \hyperref[fac:II:3:no:46:thm:3:cor:1]{Corollary~1} with $q=1$.

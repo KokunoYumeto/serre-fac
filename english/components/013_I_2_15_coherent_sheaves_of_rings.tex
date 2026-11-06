@@ -1,0 +1,46 @@
+% FAC-EN-U0013
+% French source: fac_body.tex lines 461--492.
+% Authority: PDF physical pp. 15--16; printed pp. 210--211 (no. 15 complete).
+% Source correction FAC-FR-C0005: printed "Proposition 2" corrected to "Definition 2".
+
+\medskip
+\phantomsection\label{fac:I:2:no:15}
+\textbf{15. Coherent sheaves of rings.}
+
+The sheaf of rings $\mathcal{A}$ may be regarded as a sheaf of $\mathcal{A}$-modules; if this sheaf of $\mathcal{A}$-modules is coherent, we shall say that $\mathcal{A}$ is a \emph{coherent sheaf of rings}. Since $\mathcal{A}$ is plainly of finite type, this means that $\mathcal{A}$ satisfies condition~\hyperref[fac:I:2:no:12:def:2:item:b]{(b)} of \hyperref[fac:I:2:no:12:def:2]{Definition~2}.\footnote{The French source prints ``Proposition~2'' here; condition~\hyperref[fac:I:2:no:12:def:2:item:b]{(b)} is the condition in \hyperref[fac:I:2:no:12:def:2]{Definition~2}.} In other words:
+
+\phantomsection\label{fac:I:2:no:15:def:3}
+\textsc{Definition 3.} \textit{The sheaf $\mathcal{A}$ is a coherent sheaf of rings if the sheaf of relations among any finite number of sections of $\mathcal{A}$ over an open set $U$ is a sheaf of finite type on $U$.}
+
+\textsc{Examples.} \phantomsection\label{fac:I:2:no:15:example:1}(1) If $X$ is a complex analytic variety, the sheaf of germs of holomorphic functions on $X$ is a coherent sheaf of rings, by a theorem of K.~Oka (cf. [3], Expos\'e XV, or [5], \S5).
+
+\phantomsection\label{fac:I:2:no:15:example:2}(2) If $X$ is an algebraic variety, its sheaf of local rings is a coherent sheaf of rings (cf. no.~\hyperref[fac:II:2:no:37]{37}, \hyperref[fac:II:2:no:37:prop:1]{Proposition~1}).
+
+When $\mathcal{A}$ is a coherent sheaf of rings, the following results hold.
+
+\phantomsection\label{fac:I:2:no:15:prop:7}
+\textsc{Proposition 7.} \textit{A sheaf of $\mathcal{A}$-modules is coherent if and only if it is locally isomorphic to the cokernel of a homomorphism $\varphi:\mathcal{A}^q\to\mathcal{A}^p$.}
+
+Necessity is precisely \hyperref[fac:I:2:no:12:prop:2]{Proposition~2}; sufficiency follows because $\mathcal{A}^p$ and $\mathcal{A}^q$ are coherent, together with \hyperref[fac:I:2:no:13:thm:2]{Theorem~2}.
+
+\phantomsection\label{fac:I:2:no:15:prop:8}
+\textsc{Proposition 8.} \textit{A subsheaf of $\mathcal{A}^p$ is coherent if and only if it is of finite type.}
+
+This is a special case of \hyperref[fac:I:2:no:12:prop:3]{Proposition~3}.
+
+\phantomsection\label{fac:I:2:no:15:prop:8:cor}
+\textsc{Corollary.} \textit{The sheaf of relations among a finite number of sections of a coherent sheaf is coherent.}
+
+Indeed, this sheaf is of finite type by the very definition of coherent sheaves.
+
+\phantomsection\label{fac:I:2:no:15:prop:9}
+\textsc{Proposition 9.} \textit{Let $\mathcal{F}$ be a coherent sheaf of $\mathcal{A}$-modules. For every $x\in X$, let $\mathcal{J}_x$ be the ideal of $\mathcal{A}_x$ consisting of the elements $a\in\mathcal{A}_x$ such that $a\cdot f=0$ for every $f\in\mathcal{F}_x$. The $\mathcal{J}_x$ form a coherent sheaf of ideals (called the annihilator of $\mathcal{F}$).}
+
+Indeed, $\mathcal{J}_x$ is the kernel of the homomorphism
+\[
+\mathcal{A}_x\longrightarrow
+\operatorname{Hom}_{\mathcal{A}_x}(\mathcal{F}_x,\mathcal{F}_x);
+\]
+one then applies \hyperref[fac:I:2:no:14:prop:5]{Propositions~5} \hyperref[fac:I:2:no:14:prop:6]{and~6} and \hyperref[fac:I:2:no:13:thm:2]{Theorem~2}.
+
+More generally, the \textit{conductor} $\mathcal{F}:\mathcal{G}$ of a coherent sheaf $\mathcal{G}$ into a coherent subsheaf $\mathcal{F}$ is a coherent sheaf of ideals (it is the annihilator of $\mathcal{G}/\mathcal{F}$).

@@ -1,0 +1,49 @@
+% FAC-EN-U0029
+% French source: fac_body.tex lines 1152--1178.
+% Authority: PDF physical pp. 29--30; printed pp. 224--225 (no. 31 complete).
+% Transcription repair: FAC-FR-T0020. Printed-source repairs: FAC-FR-C0019--FAC-FR-C0021.
+
+\medskip
+\phantomsection\label{fac:II:1:no:31}
+\textbf{31. Locally closed subsets of affine space.}
+Let $r$ be an integer $\geq0$, and let $X=K^r$ be the \textit{affine space} of dimension $r$ over $K$. We equip $X$ with the \textit{Zariski topology}; recall that a subset of $X$ is closed in this topology if it is the common zero set of a family of polynomials
+\[
+P^{\alpha}\in K[X_1,\ldots,X_r].
+\]
+Since the polynomial ring is Noetherian, $X$ satisfies condition \hyperref[fac:II:1:no:30:condition:A]{(A)} of the \hyperref[fac:II:1:no:30]{preceding number}; moreover, it is easy to show that $X$ is irreducible.
+
+If $x=(x_1,\ldots,x_r)$ is a point of $X$, we denote by $\mathcal{O}_x$ the \textit{local ring} at $x$. Recall that it is the subring of the field $K(X_1,\ldots,X_r)$ consisting of the rational functions $R$ which can be written in the form
+\[
+R=P/Q,
+\]
+where $P$ and $Q$ are polynomials and $Q(x)\neq0$.
+
+Such a rational function is said to be \textit{regular at} $x$. At every point $x\in X$ at which $Q(x)\neq0$, the function $x\mapsto P(x)/Q(x)$ is a continuous $K$-valued function (where $K$ is given the Zariski topology), and it may be identified with $R$ because $K$ is infinite. The rings $\mathcal{O}_x$, $x\in X$, therefore form a subsheaf $\mathcal{O}$ of the sheaf $\mathcal{F}(X)$ of germs of $K$-valued functions on $X$ (cf. \hyperref[fac:I:1:no:3]{no.~3}); the sheaf $\mathcal{O}$ is a sheaf of rings.
+
+We shall extend this construction to locally closed subspaces of $X$. (A subset of a space $X$ is said to be \textit{locally closed} in $X$ if it is the intersection of an open subset and a closed subset of $X$.) Let $Y$ be such a subspace, and let $\mathcal{F}(Y)$ be the sheaf of germs of $K$-valued functions on $Y$. If $x$ is a point of $Y$, restriction of a function defines a canonical homomorphism
+\[
+\varepsilon_x:\mathcal{F}(X)_x\longrightarrow\mathcal{F}(Y)_x.
+\]
+The image of $\mathcal{O}_x$ under $\varepsilon_x$ is a subring of $\mathcal{F}(Y)_x$, which we denote by $\mathcal{O}_{x,Y}$. The $\mathcal{O}_{x,Y}$ form a subsheaf $\mathcal{O}_Y$ of $\mathcal{F}(Y)$, called the \textit{sheaf of local rings} of $Y$.
+
+Thus, by definition, a section of $\mathcal{O}_Y$ over an open subset $V$ of $Y$ is a map $f:V\to K$ which, in a neighborhood of each point $x\in V$, is equal to the restriction to $V$ of a rational function regular at $x$. Such a function $f$ is said to be \textit{regular} on $V$. It is continuous when $V$ has the topology induced from $X$ and $K$ has the Zariski topology. The set of functions regular at every point of $V$ is a ring, namely $\Gamma(V,\mathcal{O}_Y)$. Notice also that, if $f\in\Gamma(V,\mathcal{O}_Y)$ and $f(x)\neq0$ for every $x\in V$, then $1/f$ also belongs to $\Gamma(V,\mathcal{O}_Y)$.
+
+The sheaf $\mathcal{O}_Y$ may also be characterized as follows.
+
+\phantomsection\label{fac:II:1:no:31:prop:4}
+\textsc{Proposition 4.} \textit{Let $U$ (respectively $F$) be an open (respectively closed) subspace of $X$, and let $Y=U\cap F$. Let $I(F)$ be the ideal of $K[X_1,\ldots,X_r]$ consisting of the polynomials vanishing on $F$. If $x$ is a point of $Y$, the kernel of the surjection}
+\[
+\varepsilon_x:\mathcal{O}_x\longrightarrow\mathcal{O}_{x,Y}
+\]
+\textit{is the ideal $I(F)\mathcal{O}_x$ of $\mathcal{O}_x$.}
+
+It is clear that every element of $I(F)\mathcal{O}_x$ belongs to the kernel of $\varepsilon_x$. Conversely, let $R=P/Q$ be an element of this kernel, where $P$ and $Q$ are polynomials and $Q(x)\neq0$. By hypothesis, there is an open neighborhood $W$ of $x$ such that $P(y)=0$ for every $y\in W\cap F$. Let $F'$ be the complement of $W$, which is closed in $X$. Since $x\notin F'$, the definition of the Zariski topology gives a polynomial $P_1$ which vanishes on $F'$ and does not vanish at $x$. Then $P\,P_1$ belongs to $I(F)$, and we may write\footnote{The printed source writes $R=P\cdot P_1/Q\cdot P_1$ without grouping. The argument multiplies both numerator and denominator of $P/Q$ by $P_1$, so corrected French and English make the equal fraction explicit.}
+\[
+R=\frac{P\,P_1}{Q\,P_1},
+\]
+which proves that $R\in I(F)\mathcal{O}_x$.
+
+\phantomsection\label{fac:II:1:no:31:cor:prop:4}
+\textsc{Corollary.} \textit{The ring $\mathcal{O}_{x,Y}$ is isomorphic to the localization of $K[X_1,\ldots,X_r]/I(F)$ at the maximal ideal defined by the point $x$.}
+
+This follows immediately from the construction of the localization of a quotient ring (cf., for example, [8], Chap.~XV, \S5, Th.~XI).

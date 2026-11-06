@@ -1,0 +1,33 @@
+% FAC-EN-U0007
+% French source: fac_body.tex lines 245--266.
+% Authority: PDF physical pp. 9--10; printed pp. 204--205 (no. 8 complete).
+
+\medskip
+\phantomsection\label{fac:I:1:no:8}
+\textbf{8. Homomorphisms.}
+
+Let $\mathcal{A}$ be a sheaf of rings, and let $\mathcal{F}$ and $\mathcal{G}$ be two sheaves of $\mathcal{A}$-modules. An $\mathcal{A}$-\textit{homomorphism} (also called an $\mathcal{A}$-linear homomorphism, or simply a homomorphism) from $\mathcal{F}$ to $\mathcal{G}$ consists, for every $x\in X$, of an $\mathcal{A}_x$-homomorphism $\varphi_x:\mathcal{F}_x\to\mathcal{G}_x$, in such a way that the map $\varphi:\mathcal{F}\to\mathcal{G}$ defined by the $\varphi_x$ is continuous. Equivalently, if $s$ is a section of $\mathcal{F}$ over $U$, then $x\mapsto\varphi_x(s(x))$ is a section of $\mathcal{G}$ over $U$ (which we denote by $\varphi(s)$ or $\varphi\circ s$). For example, if $\mathcal{G}$ is a subsheaf of $\mathcal{F}$, the injection $\mathcal{G}\to\mathcal{F}$ and the projection $\mathcal{F}\to\mathcal{F}/\mathcal{G}$ are homomorphisms.
+
+\medskip
+\phantomsection\label{fac:I:1:no:8:prop:7}
+\textsc{Proposition 7.} \textit{Let $\varphi$ be a homomorphism from $\mathcal{F}$ to $\mathcal{G}$. For every $x\in X$, let $\mathfrak{N}_x$ be the kernel of $\varphi_x$, and let $\mathfrak{I}_x$ be the image of $\varphi_x$. Then $\mathfrak{N}=\bigcup\mathfrak{N}_x$ is a subsheaf of $\mathcal{F}$, $\mathfrak{I}=\bigcup\mathfrak{I}_x$ is a subsheaf of $\mathcal{G}$, and $\varphi$ induces an isomorphism from $\mathcal{F}/\mathfrak{N}$ onto $\mathfrak{I}$.}
+
+Since $\varphi_x$ is an $\mathcal{A}_x$-homomorphism, $\mathfrak{N}_x$ and $\mathfrak{I}_x$ are submodules of $\mathcal{F}_x$ and $\mathcal{G}_x$, respectively,\footnote{The printed French says ``submodules of $\mathcal{F}$ and $\mathcal{G}$,'' omitting the stalk subscripts. The objects $\mathfrak{N}_x$ and $\mathfrak{I}_x$ are $\mathcal{A}_x$-modules, and the same sentence immediately uses $\mathcal{F}_x/\mathfrak{N}_x$, so $\mathcal{F}_x$ and $\mathcal{G}_x$ are required.} and $\varphi_x$ induces an isomorphism from $\mathcal{F}_x/\mathfrak{N}_x$ onto $\mathfrak{I}_x$. Furthermore, if $s$ is a local section of $\mathcal{F}$ such that $s(x)\in\mathfrak{N}_x$, then $(\varphi\circ s)(x)=0$, whence $(\varphi\circ s)(y)=0$ for $y$ sufficiently near $x$, and therefore $s(y)\in\mathfrak{N}_y$. This shows that $\mathfrak{N}$ is a subsheaf of $\mathcal{F}$. If $t$ is a local section of $\mathcal{G}$ such that $t(x)\in\mathfrak{I}_x$, there exists a local section $s$ of $\mathcal{F}$ such that $(\varphi\circ s)(x)=t(x)$; hence $\varphi\circ s=t$ near $x$. This shows that $\mathfrak{I}$ is a subsheaf of $\mathcal{G}$, isomorphic to $\mathcal{F}/\mathfrak{N}$.
+
+The sheaf $\mathfrak{N}$ is called the \textit{kernel} of $\varphi$ and is denoted by $\Ker(\varphi)$; the sheaf $\mathfrak{I}$ is called the \textit{image} of $\varphi$ and is denoted by $\operatorname{Im}(\varphi)$; the sheaf $\mathcal{G}/\mathfrak{I}$ is called the \textit{cokernel} of $\varphi$ and is denoted by $\Coker(\varphi)$. A homomorphism $\varphi$ is said to be \textit{injective}, or one-to-one, if every $\varphi_x$ is injective, which is equivalent to $\Ker(\varphi)=0$; it is said to be \textit{surjective} if every $\varphi_x$ is surjective, which is equivalent to $\Coker(\varphi)=0$; it is said to be \textit{bijective} if it is both injective and surjective. In this case \hyperref[fac:I:1:no:8:prop:7]{Proposition~7} shows that it is an isomorphism from $\mathcal{F}$ onto $\mathcal{G}$, and $\varphi^{-1}$ is also a homomorphism. All definitions concerning homomorphisms of modules carry over in the same way to sheaves of modules. For example, a sequence of homomorphisms is said to be \textit{exact} if the image of each homomorphism coincides with the kernel of the following homomorphism. If $\varphi:\mathcal{F}\to\mathcal{G}$ is a homomorphism, the sequences
+\[
+0\longrightarrow\Ker(\varphi)\longrightarrow\mathcal{F}
+\longrightarrow\operatorname{Im}(\varphi)\longrightarrow 0
+\]
+and
+\[
+0\longrightarrow\operatorname{Im}(\varphi)\longrightarrow\mathcal{G}
+\longrightarrow\Coker(\varphi)\longrightarrow 0
+\]
+are exact.
+
+If $\varphi$ is a homomorphism from $\mathcal{F}$ to $\mathcal{G}$, the map $s\mapsto\varphi\circ s$ is a $\Gamma(U,\mathcal{A})$-homomorphism from $\Gamma(U,\mathcal{F})$ to $\Gamma(U,\mathcal{G})$. Conversely, suppose that $\mathcal{A}$, $\mathcal{F}$, and $\mathcal{G}$ are defined, as in no.~\hyperref[fac:I:1:no:6]{6}, by systems $(\mathcal{A}_U,\varphi_U^V)$, $(\mathcal{F}_U,\psi_U^V)$, and $(\mathcal{G}_U,\chi_U^V)$. Suppose also that, for every open set $U\subset X$, an $\mathcal{A}_U$-homomorphism $\varphi_U:\mathcal{F}_U\to\mathcal{G}_U$ is given such that
+\[
+\chi_U^V\circ\varphi_V=\varphi_U\circ\psi_U^V.
+\]
+Passing to the direct limit, the $\varphi_U$ define a homomorphism $\varphi:\mathcal{F}\to\mathcal{G}$.

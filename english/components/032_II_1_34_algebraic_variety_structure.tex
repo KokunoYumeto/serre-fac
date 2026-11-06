@@ -1,0 +1,73 @@
+% FAC-EN-U0032
+% French source: fac_body.tex lines 1213--1265.
+% Authority: PDF physical pp. 31--33; printed pp. 226--228 (no. 34 complete).
+% French spelling repairs: FAC-FR-C0023 and FAC-FR-C0024.
+
+\medskip
+\phantomsection\label{fac:II:1:no:34}
+\textbf{34. Definition of the structure of an algebraic variety.}
+
+\phantomsection\label{fac:II:1:no:34:def}
+\textsc{Definition.} \textit{An algebraic variety over $K$ (or simply an algebraic variety) is a set $X$ equipped with:}
+
+\phantomsection\label{fac:II:1:no:34:def:item:1}
+\textit{$1^\circ$ a topology,}
+
+\phantomsection\label{fac:II:1:no:34:def:item:2}
+\textit{$2^\circ$ a subsheaf $\mathcal{O}_X$ of the sheaf $\mathcal{F}(X)$ of germs of $K$-valued functions on $X$,}
+
+\textit{these data being required to satisfy the axioms $(\mathrm{VA}_I)$ and $(\mathrm{VA}_{II})$ stated below.}
+
+First observe that, if $X$ and $Y$ are equipped with two structures of the preceding type, there is a notion of an \textit{isomorphism} from $X$ onto $Y$: it is a homeomorphism from $X$ onto $Y$ which carries $\mathcal{O}_X$ to $\mathcal{O}_Y$. Moreover, if $X'$ is an open subset of $X$, we may equip $X'$ with the induced topology and the induced sheaf; this gives the notion of an \textit{induced structure} on an open subset. With this understood, we can state \hyperref[fac:II:1:no:34:axiom:VA-I]{axiom $(\mathrm{VA}_I)$}:
+
+\phantomsection\label{fac:II:1:no:34:axiom:VA-I}
+$(\mathrm{VA}_I)$---\textit{There exists a finite open covering $\mathfrak{B}=\{V_i\}_{i\in I}$ of $X$ such that every $V_i$, equipped with the structure induced by that of $X$, is isomorphic to a locally closed subspace $U_i$ of an affine space, equipped with the sheaf $\mathcal{O}_{U_i}$ defined in \hyperref[fac:II:1:no:31]{no.~31}.}
+
+For brevity, we call a topological space $X$ equipped with a sheaf $\mathcal{O}_X$ satisfying \hyperref[fac:II:1:no:34:axiom:VA-I]{axiom $(\mathrm{VA}_I)$} a \textit{prealgebraic variety}. An isomorphism $\varphi_i:V_i\to U_i$ is called a \textit{chart} of the open set $V_i$; thus \hyperref[fac:II:1:no:34:axiom:VA-I]{condition $(\mathrm{VA}_I)$} says that $X$ can be covered by finitely many open sets admitting charts. \hyperref[fac:II:1:no:30:prop:1]{Proposition~1 of no.~30} shows that $X$ then satisfies \hyperref[fac:II:1:no:30:condition:A]{condition (A)}, and hence is quasi-compact, as are all its subspaces.
+
+The topology of $X$ is called the ``Zariski topology'' of $X$, and the sheaf $\mathcal{O}_X$ is called the \textit{sheaf of local rings} of $X$.
+
+\phantomsection\label{fac:II:1:no:34:prop:8}
+\textsc{Proposition 8.} \textit{Let $X$ be a set which is the union of a finite family of subsets $X_j$, $j\in J$. Suppose that each $X_j$ is equipped with the structure of a prealgebraic variety and that the following conditions hold:}
+
+\begin{enumerate}[label=(\alph*),leftmargin=2.5em]
+\item\phantomsection\label{fac:II:1:no:34:prop:8:item:a} \textit{$X_i\cap X_j$ is open in $X_i$ for all $i,j\in J$;}
+\item\phantomsection\label{fac:II:1:no:34:prop:8:item:b} \textit{the structures induced by $X_i$ and $X_j$ on $X_i\cap X_j$ agree for all $i,j\in J$.}
+\end{enumerate}
+
+\textit{There then exists a unique structure of a prealgebraic variety on $X$ such that the $X_j$ are open in $X$ and the structure induced on each $X_j$ is the given structure.}
+
+The existence and uniqueness of the topology on $X$ and of the sheaf $\mathcal{O}_X$ are immediate. It remains to verify that this topology and this sheaf satisfy \hyperref[fac:II:1:no:34:axiom:VA-I]{$(\mathrm{VA}_I)$}, which follows because there are only finitely many $X_j$ and each satisfies \hyperref[fac:II:1:no:34:axiom:VA-I]{$(\mathrm{VA}_I)$}.
+
+\phantomsection\label{fac:II:1:no:34:cor:prop:8}
+\textsc{Corollary.} \textit{Let $X$ and $X'$ be two prealgebraic varieties. There exists a unique structure of a prealgebraic variety on $X\times X'$ satisfying the following condition: if $\varphi:V\to U$ and $\varphi':V'\to U'$ are charts (with $V$ open in $X$ and $V'$ open in $X'$), then $V\times V'$ is open in $X\times X'$ and $\varphi\times\varphi':V\times V'\to U\times U'$ is a chart.}
+
+Cover $X$ by finitely many open sets $V_i$ with charts $\varphi_i:V_i\to U_i$, and let $(V'_j,U'_j,\varphi'_j)$ be an analogous system for $X'$. The set $X\times X'$ is the union of the $V_i\times V'_j$. Equip each $V_i\times V'_j$ with the structure of a prealgebraic variety transported from that of $U_i\times U'_j$ by $\varphi_i^{-1}\times{\varphi'_j}^{-1}$. By the \hyperref[fac:II:1:no:33:cor:prop:7]{corollary to Proposition~7}, \hyperref[fac:II:1:no:34:prop:8:item:a]{conditions (a)} and \hyperref[fac:II:1:no:34:prop:8:item:b]{(b)} of \hyperref[fac:II:1:no:34:prop:8]{Proposition~8} apply to this covering of $X\times X'$. We thereby obtain a structure of a prealgebraic variety on $X\times X'$ satisfying the required conditions.
+
+We may apply the \hyperref[fac:II:1:no:34:cor:prop:8]{preceding corollary} in the special case $X'=X$. Thus $X\times X$ is equipped with the structure of a prealgebraic variety, and in particular with a \textit{topology}. We can now state \hyperref[fac:II:1:no:34:axiom:VA-II]{axiom $(\mathrm{VA}_{II})$}:
+
+\phantomsection\label{fac:II:1:no:34:axiom:VA-II}
+$(\mathrm{VA}_{II})$---\textit{The diagonal $\Delta$ of $X\times X$ is closed in $X\times X$.}
+
+Suppose that $X$ is a prealgebraic variety obtained by the ``gluing'' procedure of \hyperref[fac:II:1:no:34:prop:8]{Proposition~8}. \hyperref[fac:II:1:no:34:axiom:VA-II]{Condition $(\mathrm{VA}_{II})$} holds if and only if
+\[
+X_{ij}=\Delta\cap(X_i\times X_j)
+\]
+is closed in $X_i\times X_j$. Now $X_{ij}$ is the set of pairs $(x,x)$ with $x\in X_i\cap X_j$. Suppose there are charts $\varphi_i:X_i\to U_i$, and put
+\[
+T_{ij}=(\varphi_i\times\varphi_j)(X_{ij}).
+\]
+Then $T_{ij}$ is the set of pairs $(\varphi_i(x),\varphi_j(x))$ as $x$ ranges over $X_i\cap X_j$. \hyperref[fac:II:1:no:34:axiom:VA-II]{Axiom $(\mathrm{VA}_{II})$} therefore takes the following form:
+
+\phantomsection\label{fac:II:1:no:34:axiom:VA-II-prime}
+$(\mathrm{VA}'_{II})$---\textit{For every pair $(i,j)$, $T_{ij}$ is closed in $U_i\times U_j$.}
+
+In this form we recognize Weil's axiom (A) (cf. [16], p.~167), except that Weil considers only irreducible varieties.
+
+\phantomsection\label{fac:II:1:no:34:examples}
+\textsc{Examples} of algebraic varieties: every locally closed subspace $U$ of an affine space, equipped with the induced topology and the sheaf $\mathcal{O}_U$ defined in \hyperref[fac:II:1:no:31]{no.~31}, is an algebraic variety. Every projective variety is an algebraic variety (cf. \hyperref[fac:III:1:no:51]{no.~51}). Every algebraic fiber space (cf. [17]) whose base and fiber are algebraic varieties is an algebraic variety.
+
+\phantomsection\label{fac:II:1:no:34:remarks}
+\textsc{Remarks.} \phantomsection\label{fac:II:1:no:34:remark:1}(1) Note the analogy between \hyperref[fac:II:1:no:34:axiom:VA-II]{condition $(\mathrm{VA}_{II})$} and the separation condition imposed on topological, differentiable, and analytic varieties.
+
+\phantomsection\label{fac:II:1:no:34:remark:2}(2) Simple examples show that \hyperref[fac:II:1:no:34:axiom:VA-II]{condition $(\mathrm{VA}_{II})$} \textit{does not} follow from \hyperref[fac:II:1:no:34:axiom:VA-I]{condition $(\mathrm{VA}_I)$}.

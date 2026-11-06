@@ -1,0 +1,127 @@
+% FAC-EN-U0067
+% Source: fac_body.tex lines 2524--2587.
+% Authority: PDF physical pp. 67--68; printed pp. 262--263
+% (Chapter III no. 69 complete).
+% French control: T0040 repairs eight inherited epsilon commands to the
+% printed membership sign. No printed-source correction is admitted here.
+
+\phantomsection\label{fac:III:4:no:69}
+\textbf{69. Interpretation of $H_k^q(M)$ by means of
+$\operatorname{Ext}_S^q$.}
+Let $M$ be a graded $S$-module, and let $k$ be an integer $\geq0$. Put
+\phantomsection\label{fac:III:4:no:69:def:Bk}
+\[
+B_k^q(M)=\sum_{n\in\mathbf{Z}}H_k^q(M(n)),
+\]
+with the notation of \hyperref[fac:III:3:no:61]{no.~61}.
+
+This gives a graded group, isomorphic to the $q$-th cohomology group of
+the complex $\sum_{n\in\mathbf{Z}}C_k(M(n))$. This complex may be given
+an $S$-module structure compatible with its grading by putting
+\phantomsection\label{fac:III:4:no:69:formula:S-action}
+\[
+(P\cdot m)\langle i_0\cdots i_q\rangle
+=P\cdot m\langle i_0\cdots i_q\rangle,
+\quad\text{if }P\in S_p\text{ and }
+m\langle i_0\cdots i_q\rangle\in C_k^q(M(n)).
+\]
+Since the coboundary operator is a homogeneous $S$-homomorphism of
+degree~$0$, it follows that the $B_k^q(M)$ are themselves graded
+$S$-modules.
+
+We shall put
+\phantomsection\label{fac:III:4:no:69:def:Bq}
+\[
+B^q(M)=\varinjlim_{k\to\infty}B_k^q(M)
+=\sum_{n\in\mathbf{Z}}H^q(M(n)).
+\]
+The $B^q(M)$ are graded $S$-modules. For $q=0$ we have
+\phantomsection\label{fac:III:4:no:69:formula:B0}
+\[
+B^0(M)=\sum_{n\in\mathbf{Z}}H^0(M(n)),
+\]
+and recover the module denoted by
+\hyperref[fac:III:3:no:67:def:M-natural]{$M^\natural$} in
+\hyperref[fac:III:3:no:67]{no.~67} (when $M$
+\hyperref[fac:III:2:no:56:def:TF]{satisfies condition~(TF)}).
+\phantomsection\label{fac:III:4:no:69:map:alpha}
+For each $n\in\mathbf{Z}$, we defined in
+\hyperref[fac:III:3:no:62:def:alpha]{no.~62} a linear map
+$\alpha:M_n\longrightarrow H^0(M(n))$; it follows at once that the sum
+of these maps defines a homomorphism, again denoted by $\alpha$, from
+$M$ to $B^0(M)$.
+
+\phantomsection\label{fac:III:4:no:69:prop:1}
+\textsc{Proposition 1.} \textit{Let $k$ be an integer $\geq0$, and let
+$J_k$ be the ideal $(t_0^k,\ldots,t_r^k)$ of $S$. For every graded
+$S$-module $M$, the graded $S$-modules $B_k^q(M)$ and
+$\operatorname{Ext}_S^q(J_k,M)$ are isomorphic.}
+
+\phantomsection\label{fac:III:4:no:69:def:Lk}
+Let $L_k^q$, $q=0,\ldots,r$, be the free graded $S$-module with basis
+elements $e\langle i_0\cdots i_q\rangle$,
+$0\leq i_0<i_1<\cdots<i_q\leq r$, of degree $k(q+1)$. Define an
+operator $d:L_k^{q+1}\longrightarrow L_k^q$ and an operator
+$\varepsilon:L_k^0\longrightarrow J_k$ by the formulas
+\phantomsection\label{fac:III:4:no:69:formula:d}
+\[
+d(e\langle i_0\cdots i_{q+1}\rangle)
+=\sum_{j=0}^{j=q+1}(-1)^j t_{i_j}^k\cdot
+e\langle i_0\cdots\widehat{\imath}_j\cdots i_{q+1}\rangle
+\]
+and
+\phantomsection\label{fac:III:4:no:69:formula:augmentation}
+\[
+\varepsilon(e\langle i\rangle)=t_i^k.
+\]
+
+\phantomsection\label{fac:III:4:no:69:lemma:1}
+\textsc{Lemma 1.} \textit{The sequence of homomorphisms}
+\phantomsection\label{fac:III:4:no:69:formula:resolution-Jk}
+\[
+0\longrightarrow L_k^r\mathop{\longrightarrow}^{d}L_k^{r-1}
+\longrightarrow\cdots\longrightarrow L_k^0
+\mathop{\longrightarrow}^{\varepsilon}J_k\longrightarrow0
+\]
+\textit{is exact.}
+
+For $k=1$ this result is well known (cf.~[6], Chapter~VIII, \S4); the
+general case is proved in the same way (or reduced to it). One may also
+use the theorem proved in [11].
+
+\hyperref[fac:III:4:no:69:prop:1]{Proposition~1} follows immediately from
+\hyperref[fac:III:4:no:69:lemma:1]{the lemma}, on observing that the complex
+formed by the
+$\operatorname{Hom}_S(L_k^q,M)$ and the transpose of $d$ is precisely the
+complex $\sum_{n\in\mathbf{Z}}C_k(M(n))$.
+
+\phantomsection\label{fac:III:4:no:69:cor:1}
+\textsc{Corollary 1.} $H_k^q(M)$ \textit{is isomorphic to}
+$\operatorname{Ext}_S^q(J_k,M)_0$.
+
+Indeed, these two groups are the degree-zero components of the graded
+groups $B_k^q(M)$ and $\operatorname{Ext}_S^q(J_k,M)$.
+
+\phantomsection\label{fac:III:4:no:69:cor:2}
+\textsc{Corollary 2.} $H^q(M)$ \textit{is isomorphic to}
+$\varinjlim_{k\to\infty}\operatorname{Ext}_S^q(J_k,M)_0$.
+
+It is readily seen that the homomorphism
+\hyperref[fac:III:3:no:61:formula:rho]
+{$\rho_k^h:H_k^q(M)\longrightarrow H_h^q(M)$} of
+\hyperref[fac:III:3:no:61]{no.~61} is carried by
+the isomorphism of \hyperref[fac:III:4:no:69:cor:1]{Corollary~1} to the
+homomorphism
+\phantomsection\label{fac:III:4:no:69:formula:Ext-transition}
+\[
+\operatorname{Ext}_S^q(J_k,M)_0\longrightarrow
+\operatorname{Ext}_S^q(J_h,M)_0
+\]
+defined by the inclusion $J_h\longrightarrow J_k$; this proves
+\hyperref[fac:III:4:no:69:cor:2]{Corollary~2}.
+
+\phantomsection\label{fac:III:4:no:69:remark}
+\textsc{Remark.} Let $M$ be a graded $S$-module of finite type. By
+\hyperref[fac:II:4:no:48]{no.~48}, $M$ defines a coherent algebraic sheaf
+$\mathfrak F'$ on $K^{r+1}$, hence on $Y=K^{r+1}-\{0\}$, and one may
+verify that $H^q(Y,\mathfrak F')$ is isomorphic to $B^q(M)$.

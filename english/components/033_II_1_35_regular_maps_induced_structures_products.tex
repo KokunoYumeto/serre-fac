@@ -1,0 +1,42 @@
+% FAC-EN-U0033
+% French source: fac_body.tex lines 1268--1284.
+% Authority: PDF physical p. 33; printed p. 228 (no. 35 complete).
+% Transcription repair: FAC-FR-T0021 restores two source-visible primes.
+
+\medskip
+\phantomsection\label{fac:II:1:no:35}
+\textbf{35. Regular maps, induced structures, products.}
+
+\phantomsection\label{fac:II:1:no:35:def:regular}
+Let $X$ and $Y$ be two algebraic varieties and let $\varphi$ be a map from $X$ to $Y$. The map $\varphi$ is said to be \textit{regular} if:
+
+\begin{enumerate}[label=(\alph*),leftmargin=2.5em]
+\item\phantomsection\label{fac:II:1:no:35:def:regular:item:a} \textit{$\varphi$ is continuous;}
+\item\phantomsection\label{fac:II:1:no:35:def:regular:item:b} \textit{if $x\in X$ and $f\in\mathcal{O}_{\varphi(x),Y}$, then $f\circ\varphi\in\mathcal{O}_{x,X}$.}
+\end{enumerate}
+
+As in \hyperref[fac:II:1:no:32]{no.~32}, the composite of two regular maps is regular; and a bijection $\varphi:X\to Y$ is an isomorphism if and only if $\varphi$ and $\varphi^{-1}$ are regular maps. Thus regular maps form a family of \textit{morphisms} for the structure of algebraic varieties, in the sense of [1], Chapter~IV.
+
+Let $X$ be an algebraic variety and let $X'$ be a locally closed subset of $X$. Equip $X'$ with the topology induced by that of $X$ and with the sheaf $\mathcal{O}_{X'}$ induced by $\mathcal{O}_X$. More precisely, for every $x\in X'$, define $\mathcal{O}_{x,X'}$ to be the image of $\mathcal{O}_{x,X}$ under the canonical homomorphism
+\[
+\mathcal{F}(X)_x\longrightarrow\mathcal{F}(X')_x.
+\]
+\hyperref[fac:II:1:no:34:axiom:VA-I]{Axiom $(\mathrm{VA}_I)$} holds: if $\varphi_i:V_i\to U_i$ is a system of charts such that $X=\bigcup V_i$, put
+\[
+V'_i=X'\cap V_i,\qquad U'_i=\varphi_i(V'_i);
+\]
+then the restrictions $\varphi_i:V'_i\to U'_i$ form a system of charts such that $X'=\bigcup V'_i$. \hyperref[fac:II:1:no:34:axiom:VA-II]{Axiom $(\mathrm{VA}_{II})$} holds because the topology of $X'\times X'$ is induced by that of $X\times X$ (one could equally use \hyperref[fac:II:1:no:34:axiom:VA-II-prime]{$(\mathrm{VA}'_{II})$}). We thereby define an algebraic-variety structure on $X'$ which is said to be \textit{induced} by that of $X$; we also say that $X'$ is a \textit{subvariety} of $X$ (Weil [16] reserves the term ``subvariety'' for what we call here a closed irreducible subvariety). If $\iota$ denotes the inclusion of $X'$ into $X$, then $\iota$ is regular. Moreover, if $\varphi$ is a map from an algebraic variety $Y$ to $X'$, then $\varphi:Y\to X'$ is regular if and only if $\iota\circ\varphi:Y\to X$ is regular. This justifies the term ``induced structure'' (cf. [1], loc. cit.).
+
+If $X$ and $X'$ are two algebraic varieties, then $X\times X'$ is an algebraic variety, called the \textit{product variety}. Indeed, it is enough to prove \hyperref[fac:II:1:no:34:axiom:VA-II-prime]{axiom $(\mathrm{VA}'_{II})$}. In other words, if $\varphi_i:V_i\to U_i$ and $\varphi'_{i'}:V'_{i'}\to U'_{i'}$ are systems of charts such that $X=\bigcup V_i$ and $X'=\bigcup V'_{i'}$, then
+\[
+T_{ij}\times T'_{i',j'}
+\]
+is closed in $U_i\times U_j\times U'_{i'}\times U'_{j'}$ (with the notation of \hyperref[fac:II:1:no:34]{no.~34}). This follows immediately from the fact that $T_{ij}$ and $T'_{i',j'}$ are closed in $U_i\times U_j$ and $U'_{i'}\times U'_{j'}$, respectively.
+
+\hyperref[fac:II:1:no:33:prop:6]{Propositions~6} \hyperref[fac:II:1:no:33:prop:7]{and~7} hold without change for arbitrary algebraic varieties.
+
+If $\varphi:X\to Y$ is a regular map, its graph $\Phi$ is \textit{closed} in $X\times Y$, since it is the inverse image of the diagonal of $Y\times Y$ under the map
+\[
+\varphi\times 1:X\times Y\longrightarrow Y\times Y.
+\]
+Moreover, the map $\psi:X\to\Phi$ defined by $\psi(x)=(x,\varphi(x))$ is an isomorphism: indeed, $\psi$ is regular, as is $\psi^{-1}$, since the latter is the restriction of the projection $X\times Y\to X$.

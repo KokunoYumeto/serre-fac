@@ -1,0 +1,104 @@
+% FAC-EN-U0066
+% Source: fac_body.tex lines 2486--2523.
+% Authority: PDF physical pp. 66--67; printed pp. 261--262
+% (Chapter III section 4 opening and no. 68 complete).
+% French control: T0039 repairs two inherited epsilon commands to the
+% printed membership sign. No printed-source correction is admitted here.
+
+\phantomsection\label{fac:III:4}
+\section*{\S4. Relations with the functors $\operatorname{Ext}_S^q$}
+\addcontentsline{toc}{section}{Chapter III, \S4. Relations with the functors
+$\operatorname{Ext}_S^q$}
+
+\phantomsection\label{fac:III:4:no:68}
+\textbf{68. The functors $\operatorname{Ext}_S^q$.}
+We retain the notation of \hyperref[fac:III:2:no:56]{no.~56}. If $M$ and
+$N$ are two graded $S$-modules, we shall denote by
+$\operatorname{Hom}_S(M,N)_n$ the group of homogeneous $S$-homomorphisms
+of degree $n$ from $M$ to $N$, and by $\operatorname{Hom}_S(M,N)$ the
+graded group
+\phantomsection\label{fac:III:4:no:68:def:graded-hom}
+\[
+\sum_{n\in\mathbf{Z}}\operatorname{Hom}_S(M,N)_n.
+\]
+It is a graded $S$-module; when $M$ is of finite type, it coincides with
+the $S$-module of all $S$-homomorphisms from $M$ to $N$.
+
+The derived functors (cf.~[6], Chapter~V) of the functor
+$\operatorname{Hom}_S(M,N)$ are the functors
+$\operatorname{Ext}_S^q(M,N)$, $q=0,1,\ldots$. Let us briefly recall
+\hyperref[fac:III:4:no:68:construction:Ext]{their definition}.\footnote{When
+$M$ is not a module of finite type, the
+$\operatorname{Ext}_S^q(M,N)$ defined here may differ from the
+$\operatorname{Ext}_S^q(M,N)$ defined in [6], because
+$\operatorname{Hom}_S(M,N)$ does not have the same meaning in the two
+cases. Nevertheless, all the proofs in [6] remain valid without change
+in the case considered here; this may be seen either directly or by
+applying the Appendix of [6].}
+
+\phantomsection\label{fac:III:4:no:68:construction:Ext}
+One chooses a ``resolution'' of $M$, that is, an exact sequence
+\phantomsection\label{fac:III:4:no:68:formula:resolution}
+\[
+\cdots\longrightarrow L^{q+1}\longrightarrow L^q\longrightarrow\cdots
+\longrightarrow L^0\longrightarrow M\longrightarrow0,
+\]
+where the $L^q$ are free graded $S$-modules and the maps are
+homomorphisms (that is, as usual, homogeneous $S$-homomorphisms of
+degree~$0$). Put
+\phantomsection\label{fac:III:4:no:68:def:Ext}
+$C^q=\operatorname{Hom}_S(L^q,N)$. The homomorphism
+$L^{q+1}\longrightarrow L^q$ defines by transposition a homomorphism
+$d:C^q\longrightarrow C^{q+1}$ satisfying $d\circ d=0$. Thus
+\phantomsection\label{fac:III:4:no:68:formula:Hom-complex}
+$C=\sum_{q\geq0}C^q$ has the structure of a complex, and its $q$-th
+cohomology group is, by definition, $\operatorname{Ext}_S^q(M,N)$; one
+shows that it does not depend on
+\hyperref[fac:III:4:no:68:formula:resolution]{the chosen resolution}. Since
+the $C^q$
+are graded $S$-modules and $d:C^q\longrightarrow C^{q+1}$ is homogeneous
+of degree~$0$, the $\operatorname{Ext}_S^q(M,N)$ are graded $S$-modules,
+with homogeneous subspaces $\operatorname{Ext}_S^q(M,N)_n$. These latter
+spaces are the cohomology groups of the complex formed by the
+$\operatorname{Hom}_S(L^q,N)_n$; in other words, they are the derived
+functors of $\operatorname{Hom}_S(M,N)_n$.
+
+\phantomsection\label{fac:III:4:no:68:properties}
+Let us recall the principal properties of $\operatorname{Ext}_S^q$:
+$\operatorname{Ext}_S^0(M,N)=\operatorname{Hom}_S(M,N)$;
+$\operatorname{Ext}_S^q(M,N)=0$ for $q>r+1$ if $M$ is of finite type
+(by Hilbert's syzygy theorem, cf.~[6], Chapter~VIII, Theorem~6.5);
+$\operatorname{Ext}_S^q(M,N)$ is an $S$-module of finite type if $M$ and
+$N$ are of finite type (for one may choose a resolution in which the
+$L^q$ are of finite type); and for every $n\in\mathbf{Z}$ there are
+canonical isomorphisms
+\phantomsection\label{fac:III:4:no:68:formula:shift}
+\[
+\operatorname{Ext}_S^q(M(n),N)
+ \simeq \operatorname{Ext}_S^q(M,N(-n))
+ \simeq \operatorname{Ext}_S^q(M,N)(-n).
+\]
+
+The exact sequences
+\phantomsection\label{fac:III:4:no:68:formula:short-exact}
+\[
+0\longrightarrow N\longrightarrow N'\longrightarrow N''\longrightarrow0
+\qquad\text{and}\qquad
+0\longrightarrow M\longrightarrow M'\longrightarrow M''\longrightarrow0
+\]
+give rise to the exact sequences
+\phantomsection\label{fac:III:4:no:68:formula:long-exact-N}
+\[
+\cdots\longrightarrow\operatorname{Ext}_S^q(M,N)
+\longrightarrow\operatorname{Ext}_S^q(M,N')
+\longrightarrow\operatorname{Ext}_S^q(M,N'')
+\longrightarrow\operatorname{Ext}_S^{q+1}(M,N)\longrightarrow\cdots
+\]
+and
+\phantomsection\label{fac:III:4:no:68:formula:long-exact-M}
+\[
+\cdots\longrightarrow\operatorname{Ext}_S^q(M'',N)
+\longrightarrow\operatorname{Ext}_S^q(M',N)
+\longrightarrow\operatorname{Ext}_S^q(M,N)
+\longrightarrow\operatorname{Ext}_S^{q+1}(M'',N)\longrightarrow\cdots.
+\]

@@ -1,0 +1,51 @@
+% FAC-EN-U0020
+% French source: fac_body.tex lines 667--683 plus source footnote at line 693.
+% Authority: PDF physical p. 20; printed p. 215 (no. 22 complete).
+
+\medskip
+\phantomsection\label{fac:I:3:no:22}
+\textbf{22. Cohomology groups of $X$ with coefficients in the sheaf $\mathcal{F}$.}
+
+The relation ``$\mathfrak{U}$ is finer than $\mathfrak{V}$'' (which we shall henceforth write $\mathfrak{U}<\mathfrak{V}$) is a \textit{preorder} on the coverings of $X$. Moreover, this relation is \textit{directed}: if $\mathfrak{U}=\{U_i\}_{i\in I}$ and $\mathfrak{V}=\{V_j\}_{j\in J}$ are two coverings, then
+\[
+\mathfrak{W}=\{U_i\cap V_j\}_{(i,j)\in I\times J}
+\]
+is a covering finer than both $\mathfrak{U}$ and $\mathfrak{V}$.
+
+We shall say that two coverings $\mathfrak{U}$ and $\mathfrak{V}$ are equivalent if $\mathfrak{U}<\mathfrak{V}$ and $\mathfrak{V}<\mathfrak{U}$. Every covering $\mathfrak{U}$ is equivalent to a covering $\mathfrak{U}'$ whose index set is a subset of $\mathfrak{P}(X)$: indeed, one may take for $\mathfrak{U}'$ the \textit{set} of open subsets of $X$ belonging to the \textit{family} $\mathfrak{U}$. Thus one may speak of the set of equivalence classes of coverings; it is a directed ordered set.\footnote{By contrast, one could not speak of ``the set'' of all coverings, since a covering is a family whose index set is arbitrary.}
+
+If $\mathfrak{U}<\mathfrak{V}$, the end of the \hyperref[fac:I:3:no:21]{preceding number} defined a well-determined homomorphism
+\[
+\sigma(\mathfrak{U},\mathfrak{V}):
+H^q(\mathfrak{V},\mathcal{F})\longrightarrow
+H^q(\mathfrak{U},\mathcal{F})
+\]
+for every integer $q\geq0$ and every sheaf $\mathcal{F}$ on $X$. Clearly $\sigma(\mathfrak{U},\mathfrak{U})$ is the identity, and
+\[
+\sigma(\mathfrak{U},\mathfrak{V})\circ
+\sigma(\mathfrak{V},\mathfrak{W})
+=\sigma(\mathfrak{U},\mathfrak{W})
+\]
+if $\mathfrak{U}<\mathfrak{V}<\mathfrak{W}$. It follows that if $\mathfrak{U}$ and $\mathfrak{V}$ are equivalent, then $\sigma(\mathfrak{U},\mathfrak{V})$ and $\sigma(\mathfrak{V},\mathfrak{U})$ are inverse isomorphisms; in other words, $H^q(\mathfrak{U},\mathcal{F})$ depends only on the equivalence class of the covering $\mathfrak{U}$.
+
+\phantomsection\label{fac:I:3:no:22:def:1}
+\textsc{Definition.} \textit{The $q$th cohomology group of $X$ with coefficients in the sheaf $\mathcal{F}$, denoted $H^q(X,\mathcal{F})$, is the direct limit of the groups $H^q(\mathfrak{U},\mathcal{F})$, taken over the directed ordered set of equivalence classes of coverings of $X$ by means of the homomorphisms $\sigma(\mathfrak{U},\mathfrak{V})$.}
+
+In other words, an element of $H^q(X,\mathcal{F})$ is a pair $(\mathfrak{U},x)$ with $x\in H^q(\mathfrak{U},\mathcal{F})$, where two pairs $(\mathfrak{U},x)$ and $(\mathfrak{V},y)$ are identified if there is a covering $\mathfrak{W}$ such that $\mathfrak{W}<\mathfrak{U}$, $\mathfrak{W}<\mathfrak{V}$, and
+\[
+\sigma(\mathfrak{W},\mathfrak{U})(x)
+=\sigma(\mathfrak{W},\mathfrak{V})(y)
+\quad\text{in }H^q(\mathfrak{W},\mathcal{F}).
+\]
+Thus every covering $\mathfrak{U}$ of $X$ has an associated canonical homomorphism
+\[
+\sigma(\mathfrak{U}):
+H^q(\mathfrak{U},\mathcal{F})\longrightarrow H^q(X,\mathcal{F}).
+\]
+
+One may also define $H^q(X,\mathcal{F})$ as the direct limit of the $H^q(\mathfrak{U},\mathcal{F})$ over any cofinal family of coverings $\mathfrak{U}$. Thus, if $X$ is quasi-compact (respectively, quasi-paracompact), it is enough to consider finite coverings (respectively, locally finite coverings).
+
+For $q=0$, \hyperref[fac:I:3:no:20:prop:1]{Proposition~1} gives:
+
+\phantomsection\label{fac:I:3:no:22:prop:4}
+\textsc{Proposition 4.} $H^0(X,\mathcal{F})=\Gamma(X,\mathcal{F})$.

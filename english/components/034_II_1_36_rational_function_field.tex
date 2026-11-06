@@ -1,0 +1,73 @@
+% FAC-EN-U0034
+% French source: fac_body.tex lines 1287--1318.
+% Authority: PDF physical pp. 33--35; printed pp. 228--230 (no. 36 complete).
+% Transcription repair: FAC-FR-T0022. Printed-source repairs: FAC-FR-C0025--FAC-FR-C0026.
+
+\medskip
+\phantomsection\label{fac:II:1:no:36}
+\textbf{36. Field of rational functions on an irreducible variety.}
+
+We shall first prove two lemmas of a purely topological nature.
+
+\phantomsection\label{fac:II:1:no:36:lemma:1}
+\textsc{Lemma 1.} \textit{Let $X$ be a connected space, let $G$ be an abelian group, and let $\mathcal{G}$ be the constant sheaf on $X$ isomorphic to $G$. The canonical map
+\[
+G\longrightarrow\Gamma(X,\mathcal{G})
+\]
+is bijective.}
+
+An element of $\Gamma(X,\mathcal{G})$ is nothing other than a continuous map from $X$ to $G$ endowed with the discrete topology. Since $X$ is connected, such a map is constant, which proves the lemma.
+
+We shall say that a sheaf $\mathcal{F}$ on a space $X$ is \textit{locally constant} if every point $x$ has a neighborhood $U$ such that the restriction of $\mathcal{F}$ to $U$ is constant.
+
+\phantomsection\label{fac:II:1:no:36:lemma:2}
+\textsc{Lemma 2.} \textit{Every locally constant sheaf on an irreducible space is constant.}
+
+Let $\mathcal{F}$ be the sheaf and $X$ the space, and put
+\[
+F=\Gamma(X,\mathcal{F}).
+\]
+It is enough to show that the canonical homomorphism
+\[
+\rho_x:F\longrightarrow\mathcal{F}_x
+\]
+is bijective for every $x\in X$, for we shall then obtain an isomorphism from the constant sheaf isomorphic to $F$ onto the given sheaf $\mathcal{F}$.
+
+If $f\in F$, the set of points $x\in X$ such that $f(x)=0$ is open, by the general properties of sheaves, and closed, because $\mathcal{F}$ is locally constant. Since an irreducible space is connected, this set is therefore either $\emptyset$ or $X$, which already proves that $\rho_x$ is injective.
+
+Now let $m\in\mathcal{F}_x$, and let $s$ be a section of $\mathcal{F}$ over a neighborhood $U$ of $x$ such that $s(x)=m$. Cover $X$ by nonempty open sets $U_i$ on each of which $\mathcal{F}$ is constant. Since $X$ is irreducible, $U\cap U_i\neq\emptyset$; choose a point $x_i\in U\cap U_i$. There is a section $s_i$ of $\mathcal{F}$ over $U_i$ such that $s_i(x_i)=s(x_i)$. Since $s$ and $s_i$ agree at $x_i$, they agree throughout $U\cap U_i$, because $U\cap U_i$ is irreducible and hence connected. Likewise, $s_i$ and $s_j$ agree on $U_i\cap U_j$, since they agree on the nonempty set $U\cap U_i\cap U_j$. Thus the sections $s_i$ define a unique section $s$ of $\mathcal{F}$ over $X$, and $\rho_x(s)=m$. This completes the proof.
+
+Now let $X$ be an irreducible algebraic variety. If $U$ is a nonempty open subset of $X$, put
+\[
+\mathcal{A}_U=\Gamma(U,\mathcal{O}_X).
+\]
+The ring $\mathcal{A}_U$ is an \textit{integral domain}. Indeed, suppose that $f\,g=0$, where $f$ and $g$ are regular maps from $U$ to $K$. If $F$ (respectively $G$) is the set of points $x\in U$ such that $f(x)=0$ (respectively $g(x)=0$), then $U=F\cup G$, and $F$ and $G$ are closed in $U$ because $f$ and $g$ are continuous. Since $U$ is irreducible, it follows that $F=U$ or $G=U$; hence $f$ or $g$ is zero on $U$.
+
+We may therefore form the field of fractions of $\mathcal{A}_U$, which we denote by $\mathcal{K}_U$. If $U\subset V$, the homomorphism
+\[
+\rho_U^V:\mathcal{A}_V\longrightarrow\mathcal{A}_U
+\]
+is injective because $U$ is dense in $V$, and it induces a well-defined embedding
+\[
+\varphi_U^V:\mathcal{K}_V\longrightarrow\mathcal{K}_U.
+\]
+The system $\{\mathcal{K}_U,\varphi_U^V\}$ defines a \textit{sheaf of fields} $\mathcal{K}$. Moreover, $\mathcal{K}_x$ is canonically isomorphic to the field of fractions of $\mathcal{O}_{x,X}$.
+
+\phantomsection\label{fac:II:1:no:36:prop:9}
+\textsc{Proposition 9.} \textit{For every irreducible algebraic variety $X$, the sheaf $\mathcal{K}$ defined above is a constant sheaf.}
+
+By \hyperref[fac:II:1:no:36:lemma:2]{Lemma~2}, it is enough to prove the proposition when $X$ is a locally closed subvariety of affine space $K^r$. Let $F$ be the closure of $X$ in $K^r$, and let $I(F)$ be the ideal of $K[X_1,\ldots,X_r]$ consisting of the polynomials which vanish on $F$ (or on $X$, which is equivalent). Put
+\[
+A=K[X_1,\ldots,X_r]/I(F).
+\]
+The ring $A$ is an integral domain because $X$ is irreducible; let $K(A)$ be its field of fractions. By the \hyperref[fac:II:1:no:31:cor:prop:4]{corollary to Proposition~4}, $\mathcal{O}_{x,X}$ may be identified with the ring of fractions of $A$ with respect to the maximal ideal defined by $x$. This gives an isomorphism from the field $K(A)$ onto the field of fractions of $\mathcal{O}_{x,X}$, and it is easy to verify that these isomorphisms define an isomorphism from the constant sheaf equal to $K(A)$ onto the sheaf $\mathcal{K}$. This proves the proposition.
+
+By \hyperref[fac:II:1:no:36:lemma:1]{Lemma~1}, the sections of the sheaf $\mathcal{K}$ form a field, isomorphic to $\mathcal{K}_x$ for every $x\in X$, which we denote by $K(X)$. It is called the \textit{field of rational functions} on $X$. It is a finitely generated extension of the field $K$, and its transcendence degree over $K$ is the \textit{dimension} of $X$. We extend this definition to reducible algebraic varieties by putting
+\[
+\dim X=\sup_i\dim Y_i
+\]
+when $X$ is the union of the closed irreducible subvarieties $Y_i$.
+
+In general we identify the field $K(X)$ with the fields $\mathcal{K}_x$. Since $\mathcal{O}_{x,X}\subset\mathcal{K}_x$, this identifies $\mathcal{O}_{x,X}$ with a \textit{subring} of $K(X)$; it is the specialization ring of the point $x$ in $K(X)$, in the sense of Weil [16], p.~77. If $U$ is open in $X$, then $\Gamma(U,\mathcal{O}_X)$ is the intersection, inside $K(X)$, of the rings $\mathcal{O}_{x,X}$ as $x$ ranges over $U$.
+
+If $Y$ is a subvariety of $X$, then $\dim Y\leq\dim X$. If, moreover, $Y$ is closed and contains no irreducible component of $X$, then $\dim Y<\dim X$, as one sees by reducing to the case of subvarieties of $K^r$ (cf., for example, [8], Chap.~X, \S5, Th.~II).

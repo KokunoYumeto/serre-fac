@@ -1,0 +1,80 @@
+% FAC-EN-U0018
+% French source: fac_body.tex lines 571--629.
+% Authority: PDF physical pp. 18--19; printed pp. 213--214 (no. 20 complete).
+% Transcription repair FAC-FR-T0017 restores two membership signs i\in I.
+
+\medskip
+\phantomsection\label{fac:I:3:no:20}
+\textbf{20. The cochain complexes.}
+
+Apply the \hyperref[fac:I:3:no:19]{preceding construction} to the simplicial endomorphism
+\[
+\partial:K_{p+1}(I)\longrightarrow K_p(I)
+\]
+defined by the usual formula
+\[
+\partial(i_0,\ldots,i_{p+1})
+=\sum_{j=0}^{p+1}(-1)^j
+(i_0,\ldots,\widehat{\imath}_j,\ldots,i_{p+1}),
+\]
+where, as usual, the hat means that the symbol beneath it is to be omitted.
+
+We thereby obtain a homomorphism ${}^{t}\partial:C^p(\mathfrak{U},\mathcal{F})\to C^{p+1}(\mathfrak{U},\mathcal{F})$, which we denote by $d$; thus, by definition,
+\[
+(df)_{i_0\cdots i_{p+1}}
+=\sum_{j=0}^{p+1}(-1)^j\rho_j
+(f_{i_0\cdots\widehat{\imath}_j\cdots i_{p+1}}),
+\]
+where $\rho_j$ denotes the restriction homomorphism
+\[
+\rho_j:\Gamma(U_{i_0\cdots\widehat{\imath}_j\cdots i_{p+1}},\mathcal{F})
+\longrightarrow
+\Gamma(U_{i_0\cdots i_{p+1}},\mathcal{F}).
+\]
+Since $\partial\circ\partial=0$, we have $d\circ d=0$. Thus $C(\mathfrak{U},\mathcal{F})$ is equipped with a coboundary operator which makes it a complex. The $q$th cohomology group of the complex $C(\mathfrak{U},\mathcal{F})$ is denoted $H^q(\mathfrak{U},\mathcal{F})$. We have:
+
+\phantomsection\label{fac:I:3:no:20:prop:1}
+\textsc{Proposition 1.} $H^0(\mathfrak{U},\mathcal{F})=\Gamma(X,\mathcal{F})$.
+
+A $0$-cochain is a system $(f_i)_{i\in I}$, each $f_i$ being a section of $\mathcal{F}$ over $U_i$. Such a cochain is a cocycle if and only if $f_i-f_j=0$ over $U_i\cap U_j$; equivalently, there is a section $f$ of $\mathcal{F}$ over all of $X$ which agrees with $f_i$ on $U_i$ for every $i\in I$. This proves the \hyperref[fac:I:3:no:20:prop:1]{proposition}.
+
+(Thus $H^0(\mathfrak{U},\mathcal{F})$ is independent of $\mathfrak{U}$; of course, in general the same is not true of $H^q(\mathfrak{U},\mathcal{F})$.)
+
+It follows immediately that $df$ is alternating whenever $f$ is alternating; in other words, $d$ leaves $C'(\mathfrak{U},\mathcal{F})$ stable, and this is a subcomplex of $C(\mathfrak{U},\mathcal{F})$. The cohomology groups of $C'(\mathfrak{U},\mathcal{F})$ are denoted $H'^{q}(\mathfrak{U},\mathcal{F})$.
+
+\phantomsection\label{fac:I:3:no:20:prop:2}
+\textsc{Proposition 2.} \textit{For every $q\geq0$, the injection of $C'(\mathfrak{U},\mathcal{F})$ into $C(\mathfrak{U},\mathcal{F})$ induces an isomorphism from $H'^{q}(\mathfrak{U},\mathcal{F})$ onto $H^q(\mathfrak{U},\mathcal{F})$.}
+
+Endow $I$ with a total ordering, and let $h$ be the simplicial endomorphism of $K(I)$ defined as follows:
+
+\[
+h(i_0,\ldots,i_q)=0
+\quad\text{if two of the indices }i_0,\ldots,i_q\text{ are equal},
+\]
+and
+\[
+h(i_0,\ldots,i_q)
+=\varepsilon_\sigma(i_{\sigma0},\ldots,i_{\sigma q})
+\]
+if all the indices are distinct, where $\sigma$ is the permutation of $\{0,\ldots,q\}$ such that
+\[
+i_{\sigma0}<i_{\sigma1}<\cdots<i_{\sigma q}.
+\]
+One immediately verifies that $h$ commutes with $\partial$ and that $h(s)=s$ if $\dim(s)=0$. It follows (cf. [7], Chap.~VI, \S5) that there is a simplicial endomorphism $k$, raising dimension by one, such that
+\[
+1-h=\partial\circ k+k\circ\partial.
+\]
+Passing to $C(\mathfrak{U},\mathcal{F})$ gives
+\phantomsection\label{fac:I:3:no:20:formula:homotopy}
+\[
+1-{}^{t}h={}^{t}k\circ d+d\circ{}^{t}k.
+\]
+But ${}^{t}h$ is immediately seen to be a \textit{projection} of $C(\mathfrak{U},\mathcal{F})$ onto $C'(\mathfrak{U},\mathcal{F})$; since the \hyperref[fac:I:3:no:20:formula:homotopy]{preceding formula} shows that it is a homotopy operator, the \hyperref[fac:I:3:no:20:prop:2]{proposition} follows. (Compare [7], Chap.~VI, Th.~6.10.)
+
+\phantomsection\label{fac:I:3:no:20:prop:2:cor}
+\textsc{Corollary.} $H^q(\mathfrak{U},\mathcal{F})=0$ \textit{for $q>\dim(\mathfrak{U})$.}
+
+By the definition of $\dim(\mathfrak{U})$, one has $U_{i_0\cdots i_q}=\varnothing$ for $q>\dim(\mathfrak{U})$ whenever the indices $i_0,\ldots,i_q$ are distinct. Hence $C'^{q}(\mathfrak{U},\mathcal{F})=0$, and therefore
+\[
+H^q(\mathfrak{U},\mathcal{F})=H'^{q}(\mathfrak{U},\mathcal{F})=0.
+\]

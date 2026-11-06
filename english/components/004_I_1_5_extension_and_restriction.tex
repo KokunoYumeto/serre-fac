@@ -1,0 +1,29 @@
+% FAC-EN-U0004
+% French source: fac_body.tex lines 180--201.
+% Authority: PDF physical p. 7; printed p. 202 (no. 5 complete).
+
+\medskip
+\phantomsection\label{fac:I:1:no:5}
+\textbf{5. Extension and restriction of a sheaf.}
+
+Let $X$ be a topological space, let $Y$ be a \textit{closed} subspace of $X$, and let $\mathfrak{F}$ be a sheaf on $X$. We shall say that $\mathfrak{F}$ \textit{is concentrated on $Y$}, or \textit{is zero outside $Y$}, if $\mathfrak{F}_x=0$ for every $x\in X-Y$.
+
+\medskip
+\phantomsection\label{fac:I:1:no:5:prop:5}
+\textsc{Proposition 5.} \textit{If the sheaf $\mathfrak{F}$ is concentrated on $Y$, the homomorphism}
+\begin{equation*}
+\rho_Y^X:\Gamma(X,\mathfrak{F})\longrightarrow\Gamma(Y,\mathfrak{F}(Y))
+\end{equation*}
+\textit{is bijective.}
+
+If a section of $\mathfrak{F}$ over $X$ is zero over $Y$, it is zero everywhere, since $\mathfrak{F}_x=0$ when $x\notin Y$. This shows that $\rho_Y^X$ is injective. Conversely, let $s$ be a section of $\mathfrak{F}(Y)$ over $Y$, and extend $s$ to $X$ by setting $s(x)=0$ when $x\notin Y$. The map $x\mapsto s(x)$ is plainly continuous on $X-Y$. On the other hand, if $x\in Y$, there exists a section $s'$ of $\mathfrak{F}$ over a neighborhood $U$ of $x$ such that $s'(x)=s(x)$. Since $s$ is continuous on $Y$ by hypothesis, there is a neighborhood $V$ of $x$, contained in $U$, such that $s'(y)=s(y)$ for every $y\in V\cap Y$. Since $\mathfrak{F}_y=0$ when $y\notin Y$, we also have $s'(y)=s(y)$ for $y\in V-(V\cap Y)$. Thus $s$ and $s'$ agree on $V$, proving that $s$ is continuous near $Y$, and hence everywhere. It follows that $\rho_Y^X$ is surjective, completing the proof.
+
+We shall now show that the sheaf $\mathfrak{F}(Y)$ determines the sheaf $\mathfrak{F}$ unambiguously.
+
+\medskip
+\phantomsection\label{fac:I:1:no:5:prop:6}
+\textsc{Proposition 6.} \textit{Let $Y$ be a closed subspace of a space $X$, and let $\mathfrak{G}$ be a sheaf on $Y$. Put $\mathfrak{F}_x=\mathfrak{G}_x$ if $x\in Y$ and $\mathfrak{F}_x=0$ if $x\notin Y$, and let $\mathfrak{F}$ be the disjoint union of the $\mathfrak{F}_x$. Then $\mathfrak{F}$ can be endowed with a unique sheaf structure on $X$ such that $\mathfrak{F}(Y)=\mathfrak{G}$.}
+
+Let $U$ be open in $X$. If $s$ is a section of $\mathfrak{G}$ over $U\cap Y$, extend $s$ by zero on $U-(U\cap Y)$. As $s$ ranges over $\Gamma(U\cap Y,\mathfrak{G})$, this gives a group $\mathfrak{F}_U$ of maps from $U$ to $\mathfrak{F}$. \hyperref[fac:I:1:no:5:prop:5]{Proposition 5} shows that, if $\mathfrak{F}$ is endowed with a sheaf structure such that $\mathfrak{F}(Y)=\mathfrak{G}$, then $\mathfrak{F}_U=\Gamma(U,\mathfrak{F})$, proving the uniqueness of the structure in question. Existence follows from the procedure of no.~\hyperref[fac:I:1:no:3]{3}, applied to the $\mathfrak{F}_U$ and to the restriction homomorphisms $\varphi_U^V:\mathfrak{F}_V\to\mathfrak{F}_U$.\footnote{The printed French reverses the source and target here, writing $\mathfrak{F}_U\to\mathfrak{F}_V$. The maps are restrictions for $U\subset V$, so their direction is necessarily $\mathfrak{F}_V\to\mathfrak{F}_U$, as in no.~\hyperref[fac:I:1:no:3]{3}.}
+
+The sheaf $\mathfrak{F}$ is said to be obtained by \textit{extending the sheaf $\mathfrak{G}$ by zero outside $Y$}; it is denoted by $\mathfrak{G}^Y$, or simply by $\mathfrak{G}$ if no confusion can result.

@@ -1,0 +1,136 @@
+% FAC-EN-U0072
+% Source: fac_body.tex lines 2887--2957.
+% Authority: PDF physical pp. 73--74; printed pp. 268--269
+% (Chapter III no. 74 complete; hard stop before no. 75).
+% French control: C0040 corrects the printed unquantified repeated index
+% L_p to L_i in the definition of module dimension.
+
+\medskip
+\phantomsection\label{fac:III:5:no:74}
+\textbf{74. Vanishing of the cohomology groups
+$H^q(X,\mathfrak F(-n))$ as $n\longrightarrow+\infty$.}
+
+\phantomsection\label{fac:III:5:no:74:thm:1}
+\textsc{Theorem 1.} \textit{Let $\mathfrak F$ be a coherent algebraic
+sheaf on $X$, and let $q$ be an integer $\geq0$. The following two
+conditions are equivalent:}
+
+\phantomsection\label{fac:III:5:no:74:thm:1:a}
+\textit{(a) $H^q(X,\mathfrak F(-n))=0$ for all sufficiently large $n$.}
+
+\phantomsection\label{fac:III:5:no:74:thm:1:b}
+\textit{(b) $\operatorname{Ext}_{\mathcal O_x}^{r-q}
+(\mathfrak F_x,\mathcal O_x)=0$ for every $x\in X$.}
+
+By \hyperref[fac:III:2:no:60:theorem:2]{Theorem~2 of no.~60}, we may
+suppose that $\mathfrak F=\mathfrak A(M)$, where $M$ is a finitely
+generated graded $S$-module; and by
+\hyperref[fac:III:3:no:64:cor]{no.~64},
+$H^q(X,\mathfrak F(-n))$ is isomorphic to
+$H^q(M(-n))=B^q(M)_{-n}$. Thus
+\hyperref[fac:III:5:no:74:thm:1:a]{condition (a)} is equivalent to
+\phantomsection\label{fac:III:5:no:74:formula:T-vanishing}
+\[
+T^q(M)_n=0
+\]
+for all sufficiently large $n$, that is, to
+\phantomsection\label{fac:III:5:no:74:condition:T-in-C}
+$T^q(M)\in\mathfrak C$.
+By \hyperref[fac:III:4:no:72:thm:1]{Theorem~1 of no.~72} and the fact
+that $M^*\in\mathfrak C$, since $M$ is finitely generated, this last
+\hyperref[fac:III:5:no:74:condition:T-in-C]{condition} is equivalent to
+$\operatorname{Ext}_S^{r-q}(M,\Omega)\in\mathfrak C$. Since
+$\operatorname{Ext}_S^{r-q}(M,\Omega)$ is a finitely generated
+$S$-module,
+\phantomsection\label{fac:III:5:no:74:formula:Ext-in-C}
+\[
+\operatorname{Ext}_S^{r-q}(M,\Omega)\in\mathfrak C
+\]
+is equivalent, by
+\hyperref[fac:III:2:no:58:prop:5]{Proposition~5 of no.~58}, to
+$\operatorname{Ext}_S^{r-q}(M,\Omega)_x=0$ for every $x\in X$.
+Finally, \hyperref[fac:III:5:no:73:prop:1]{Proposition~1} shows that
+\[
+\operatorname{Ext}_S^{r-q}(M,\Omega)_x
+=\operatorname{Ext}_{\mathcal O_x}^{r-q}(M_x,\Omega_x).
+\]
+Since $M_x$ is isomorphic to $\mathfrak F_x$, and $\Omega_x$ is
+isomorphic to $\mathcal O(-r-1)_x$, hence to $\mathcal O_x$, this
+completes the proof.
+
+To state \hyperref[fac:III:5:no:74:thm:2]{Theorem~2}, we shall need the notion of the \textit{dimension}
+of an $\mathcal O_x$-module. Recall ([6], Chapter~VI, \S2) that a
+finitely generated $\mathcal O_x$-module $P$ is said to have dimension
+$\leq p$ if there is an exact sequence of $\mathcal O_x$-modules
+\phantomsection\label{fac:III:5:no:74:def:dimension}
+\[
+0\longrightarrow L_p\longrightarrow L_{p-1}\longrightarrow\cdots
+\longrightarrow L_0\longrightarrow P\longrightarrow0,
+\]
+where each $L_i$ is free.\footnote{The printed French says ``where each
+$L_p$ is free.'' The displayed resolution contains
+$L_p,L_{p-1},\ldots,L_0$, so the definition requires every term $L_i$
+to be free. Diplomatic French preserves $L_p$; corrected French and
+English restore the quantified index $i$.} This definition is
+equivalent to that of [6], loc.~cit., because every finitely generated
+projective $\mathcal O_x$-module is free (cf. [6], Chapter~VIII,
+Theorem~6.1$'$).
+
+\phantomsection\label{fac:III:5:no:74:syzygy-bound}
+Every finitely generated $\mathcal O_x$-module has dimension $\leq r$,
+by the syzygy theorem (cf. [6], Chapter~VIII, Theorem~6.2$'$).
+
+\phantomsection\label{fac:III:5:no:74:lemma:1}
+\textsc{Lemma 1.} \textit{Let $P$ be a finitely generated
+$\mathcal O_x$-module, and let $p$ be an integer $\geq0$. The following
+two conditions are equivalent:}
+
+\phantomsection\label{fac:III:5:no:74:lemma:1:i}
+\textit{(i) $P$ has dimension $\leq p$.}
+
+\phantomsection\label{fac:III:5:no:74:lemma:1:ii}
+\textit{(ii) $\operatorname{Ext}_{\mathcal O_x}^m(P,\mathcal O_x)=0$
+for every $m>p$.}
+
+It is clear that \hyperref[fac:III:5:no:74:lemma:1:i]{(i)} implies
+\hyperref[fac:III:5:no:74:lemma:1:ii]{(ii)}. We prove that
+\hyperref[fac:III:5:no:74:lemma:1:ii]{(ii)} implies
+\hyperref[fac:III:5:no:74:lemma:1:i]{(i)} by
+descending induction on $p$. For $p\geq r$, the lemma is trivial,
+since \hyperref[fac:III:5:no:74:lemma:1:i]{(i)} always holds. Now pass from $p+1$ to $p$, and let $N$ be an
+arbitrary finitely generated $\mathcal O_x$-module. There is an exact
+sequence
+\[
+0\longrightarrow R\longrightarrow L\longrightarrow N\longrightarrow0
+\]
+in which $L$ is finitely generated and free (because $\mathcal O_x$ is
+noetherian). The exact sequence
+\phantomsection\label{fac:III:5:no:74:formula:Ext-segment}
+\[
+\operatorname{Ext}_{\mathcal O_x}^{p+1}(P,L)
+\longrightarrow\operatorname{Ext}_{\mathcal O_x}^{p+1}(P,N)
+\longrightarrow\operatorname{Ext}_{\mathcal O_x}^{p+2}(P,R)
+\]
+shows that $\operatorname{Ext}_{\mathcal O_x}^{p+1}(P,N)=0$.
+Indeed, $\operatorname{Ext}_{\mathcal O_x}^{p+1}(P,L)=0$ by
+\hyperref[fac:III:5:no:74:lemma:1:ii]{condition (ii)}, and
+$\operatorname{Ext}_{\mathcal O_x}^{p+2}(P,R)=0$ because
+$\dim P\leq p+1$ by the induction hypothesis. Since this property
+characterizes the modules of dimension $\leq p$,
+\hyperref[fac:III:5:no:74:lemma:1]{the lemma} is proved.
+
+Combining \hyperref[fac:III:5:no:74:lemma:1]{the lemma} with
+\hyperref[fac:III:5:no:74:thm:1]{Theorem~1} gives:
+
+\phantomsection\label{fac:III:5:no:74:thm:2}
+\textsc{Theorem 2.} \textit{Let $\mathfrak F$ be a coherent algebraic
+sheaf on $X$, and let $p$ be an integer $\geq0$. The following two
+conditions are equivalent:}
+
+\phantomsection\label{fac:III:5:no:74:thm:2:a}
+\textit{(a) $H^q(X,\mathfrak F(-n))=0$ for all sufficiently large $n$
+and $0\leq q<p$.}
+
+\phantomsection\label{fac:III:5:no:74:thm:2:b}
+\textit{(b) For every $x\in X$, the $\mathcal O_x$-module
+$\mathfrak F_x$ has dimension $\leq r-p$.}

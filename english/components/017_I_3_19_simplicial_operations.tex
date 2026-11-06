@@ -1,0 +1,46 @@
+% FAC-EN-U0017
+% French source: fac_body.tex lines 536--568.
+% Authority: PDF physical pp. 17--18; printed pp. 212--213 (no. 19 complete).
+% Transcription repair FAC-FR-T0016 restores the subscript in rho_s^{s'}.
+
+\medskip
+\phantomsection\label{fac:I:3:no:19}
+\textbf{19. Simplicial operations.}
+
+Let $S(I)$ be the simplex whose vertex set is $I$. An (ordered) simplex of $S(I)$ is a sequence $s=(i_0,\ldots,i_p)$ of elements of $I$; $p$ is called the dimension of $s$. Let
+\[
+K(I)=\sum_{p=0}^{\infty}K_p(I)
+\]
+be the complex defined by $S(I)$: by definition, $K_p(I)$ is the free group with the set of simplices of dimension $p$ in $S(I)$ as basis.
+
+If $s$ is a simplex of $S(I)$, we denote its set of vertices by $|s|$.
+
+A map $h:K_p(I)\to K_q(I)$ is called a \textit{simplicial endomorphism} if
+
+\phantomsection\label{fac:I:3:no:19:simplicial-endomorphism:item:i}(i) $h$ is a homomorphism;
+
+\phantomsection\label{fac:I:3:no:19:simplicial-endomorphism:item:ii}(ii) for every simplex $s$ of dimension $p$ in $S(I)$,
+\[
+h(s)=\sum_{s'}c_s^{s'}s',\qquad c_s^{s'}\in\mathbf{Z},
+\]
+where the sum ranges over the simplices $s'$ of dimension $q$ such that $|s'|\subset|s|$.
+
+Let $h$ be a simplicial endomorphism and let $f\in C^q(\mathfrak{U},\mathcal{F})$ be a cochain of degree $q$. For every simplex $s$ of dimension $p$, put
+\[
+({}^{t}hf)_s=\sum_{s'}c_s^{s'}\rho_s^{s'}(f_{s'}),
+\]
+where $\rho_s^{s'}$ denotes the restriction homomorphism
+\[
+\Gamma(U_{s'},\mathcal{F})\longrightarrow\Gamma(U_s,\mathcal{F}),
+\]
+which is defined because $|s'|\subset|s|$. The map $s\mapsto({}^{t}hf)_s$ is a $p$-cochain, denoted ${}^{t}hf$. The map $f\mapsto{}^{t}hf$ is a homomorphism
+\[
+{}^{t}h:C^q(\mathfrak{U},\mathcal{F})\longrightarrow C^p(\mathfrak{U},\mathcal{F}),
+\]
+and one immediately verifies the formulas
+\[
+{}^{t}(h_1+h_2)={}^{t}h_1+{}^{t}h_2,\qquad
+{}^{t}(h_1\circ h_2)={}^{t}h_2\circ{}^{t}h_1,\qquad
+{}^{t}1=1.
+\]
+\textit{Note.} In practice, the restriction homomorphism $\rho_s^{s'}$ is often left unwritten.

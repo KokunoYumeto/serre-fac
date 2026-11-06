@@ -1,0 +1,70 @@
+% FAC-EN-U0025
+% French source: fac_body.tex lines 895--935.
+% Authority: PDF physical pp. 24--25; printed pp. 219--220 (section 4 opening and no. 27 complete).
+% Printed-source repairs: FAC-FR-C0011 and FAC-FR-C0012.
+
+\medskip
+\phantomsection\label{fac:I:4}
+\textbf{\S4. Comparison of the cohomology groups of different coverings.}
+
+In this section, $X$ denotes a topological space and $\mathcal{F}$ a sheaf on $X$. We propose to give conditions on a covering $\mathfrak{U}$ of $X$ under which
+\[
+H^n(\mathfrak{U},\mathcal{F})=H^n(X,\mathcal{F})
+\qquad\text{for every }n\geq0.
+\]
+
+\medskip
+\phantomsection\label{fac:I:4:no:27}
+\textbf{27. Double complexes.}
+A double complex (cf. [6], Chap.~IV, \S4) is a bigraded abelian group
+\[
+K=\sum_{p,q}K^{p,q},
+\qquad p\geq0,\quad q\geq0,
+\]
+equipped with two endomorphisms $d'$ and $d''$ satisfying
+\[
+\begin{cases}
+d'\text{ maps }K^{p,q}\text{ into }K^{p+1,q},
+  \text{ and }d''\text{ maps }K^{p,q}\text{ into }K^{p,q+1},\\
+d'\circ d'=0,\qquad d'\circ d''+d''\circ d'=0,
+  \qquad d''\circ d''=0.
+\end{cases}
+\]
+An element of $K^{p,q}$ is called bihomogeneous, of bidegree $(p,q)$ and total degree $p+q$. The endomorphism $d=d'+d''$ satisfies $d\circ d=0$, and the cohomology groups of $K$, equipped with this coboundary operator, will be denoted by $H^n(K)$, where $n$ denotes the total degree.
+
+We may also equip $K$ with the coboundary operator $d'$. Since $d'$ is compatible with the bigrading of $K$, this gives cohomology groups denoted by $H_I^{p,q}(K)$; with $d''$ we obtain the groups $H_{II}^{p,q}(K)$.
+
+We shall denote by $K_{II}^q$ the subgroup of $K^{0,q}$ consisting of the elements $x$ such that $d'(x)=0$, and by $K_{II}$ the direct sum of the $K_{II}^q$ ($q=0,1,\ldots$). There is an analogous definition for
+\[
+K_I=\sum_{p=0}^{\infty}K_I^p.
+\]
+Notice that
+\[
+K_{II}^q=H_I^{0,q}(K)
+\qquad\text{and}\qquad
+K_I^p=H_{II}^{p,0}(K).
+\]
+The group $K_{II}$ is a subcomplex of $K$, and on $K_{II}$ the operator $d$ coincides with $d''$.
+
+\phantomsection\label{fac:I:4:no:27:prop:1}
+\textsc{Proposition 1.} \textit{If $H_I^{p,q}(K)=0$ for $p>0$ and $q\geq0$, the injection $K_{II}\to K$ induces a bijection}
+\[
+H^n(K_{II})\longrightarrow H^n(K)
+\]
+\textit{for every $n\geq0$.}
+
+(Cf. [4], Exposé~XVII-6, whose proof we reproduce below.)
+
+Replacing $K$ by $K/K_{II}$, we are reduced to proving that, if $H_I^{p,q}(K)=0$ for $p\geq0$ and $q\geq0$, then $H^n(K)=0$ for every $n\geq0$. Set\footnote{The printed definition sums only over $q\geq h$ while leaving $p$ free. Since $K_h$ is a subgroup of the whole double complex and $K_h/K_{h+1}$ is the full row $\sum_{p=0}^{\infty}K^{p,h}$, the corrected definition sums over $p\geq0$ as well.}
+\[
+K_h=\sum_{\substack{p\geq0,\,q\geq h}}K^{p,q}.
+\]
+The $K_h$ ($h=0,1,\ldots$) are nested subcomplexes of $K$, and $K_h/K_{h+1}$ is isomorphic to
+\[
+\sum_{p=0}^{\infty}K^{p,h},
+\]
+equipped with the coboundary operator $d'$. Consequently,\footnote{The printed source has $H_I^{h,n-h}(K)$. In the row $q=h$, an element of total degree $n$ has horizontal degree $p=n-h$, so the correct term is $H_I^{n-h,h}(K)$.}
+\[
+H^n(K_h/K_{h+1})=H_I^{n-h,h}(K)=0
+\]
+for all $n$ and $h$, and hence $H^n(K_h)=H^n(K_{h+1})$. Since $H^n(K_h)=0$ when $h>n$, descending induction on $h$ gives $H^n(K_h)=0$ for all $n$ and $h$. Finally $K_0=K$, and the \hyperref[fac:I:4:no:27:prop:1]{proposition} is proved.

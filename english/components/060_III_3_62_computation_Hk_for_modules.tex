@@ -1,0 +1,162 @@
+% FAC-EN-U0060
+% Source: fac_body.tex lines 2195--2267.
+% Authority: PDF physical pp. 59--61; printed pp. 254--256
+% (Chapter III, no. 62 complete).
+% French control T0035 restores four authority-visible membership signs.
+
+\phantomsection\label{fac:III:3:no:62}
+\textbf{62. Computation of $H^q_k(M)$ for certain modules $M$.}
+Let $M$ be a graded $S$-module, and let $m\in M$ be a homogeneous
+element of degree $0$. The system $(t_i^k.m)$ is a $0$-cocycle of
+$C_k(M)$, which we shall denote by $\alpha^k(m)$ and identify with its
+cohomology class. This gives a $K$-linear homomorphism
+\phantomsection\label{fac:III:3:no:62:def:alpha-k}
+\[
+\alpha^k:M_0\longrightarrow H^0_k(M).
+\]
+Since $\alpha^h=\rho^h_k\circ\alpha^k$ when $h\geq k$, passage to the
+limit gives a homomorphism
+\phantomsection\label{fac:III:3:no:62:def:alpha}
+\[
+\alpha:M_0\longrightarrow H^0(M).
+\]
+
+We introduce two further notations.
+
+\phantomsection\label{fac:III:3:no:62:def:generated-submodule}
+If $P_0,\ldots,P_h$ are elements of $S$, we denote by
+$(P_0,\ldots,P_h)M$ the submodule of $M$ consisting of the elements
+\[
+\sum_{i=0}^{i=h}P_i.m_i,\qquad m_i\in M.
+\]
+If the $P_i$ are homogeneous, this submodule is homogeneous.
+
+\phantomsection\label{fac:III:3:no:62:def:colon-submodule}
+If $P$ is an element of $S$ and $N$ a submodule of $M$, we denote by
+$N:P$ the submodule of $M$ consisting of the elements $m\in M$ such
+that $P.m\in N$. Evidently $N:P\supset N$; if $N$ and $P$ are
+homogeneous, then $N:P$ is homogeneous.
+
+With these notations fixed, we have:
+
+\phantomsection\label{fac:III:3:no:62:prop:1}
+\textsc{Proposition 1.} \textit{Let $M$ be a graded $S$-module and let
+$k$ be an integer $\geq0$. Suppose that, for every $i\in I$,}
+\phantomsection\label{fac:III:3:no:62:prop:1:hypothesis}
+\[
+(t_0^k,\ldots,t_{i-1}^k)M:t_i^k
+=(t_0^k,\ldots,t_{i-1}^k)M.
+\]
+\textit{Then:}
+
+\phantomsection\label{fac:III:3:no:62:prop:1:item:a}
+\textit{(a) $\alpha^k:M_0\to H_k^0(M)$ is bijective if $r\geq1$.}
+
+\phantomsection\label{fac:III:3:no:62:prop:1:item:b}
+\textit{(b) $H_k^q(M)=0$ for $0<q<r$.}
+
+(For $i=0$, the hypothesis means that $t_0^k.m=0$ implies $m=0$.)
+
+This proposition is a special case of a result due to de Rham [11]
+(de Rham's result remains valid even when the
+$m\langle i_0\cdots i_q\rangle$ are not assumed homogeneous). See also
+[6], Chapter VIII, \S4, where a special case sufficient for our
+applications is treated.
+
+We apply \hyperref[fac:III:3:no:62:prop:1]{Proposition~1} to the graded
+$S$-module $S(n)$.
+
+\phantomsection\label{fac:III:3:no:62:prop:2}
+\textsc{Proposition 2.} \textit{Let $k$ be an integer $\geq0$, and let
+$n$ be any integer. Then:}
+
+\phantomsection\label{fac:III:3:no:62:prop:2:item:a}
+\textit{(a) $\alpha^k:S_n\to H_k^0(S(n))$ is bijective if $r\geq1$.}
+
+\phantomsection\label{fac:III:3:no:62:prop:2:item:b}
+\textit{(b) $H_k^q(S(n))=0$ for $0<q<r$.}
+
+\phantomsection\label{fac:III:3:no:62:prop:2:item:c}
+\textit{(c) $H_k^r(S(n))$ has as a basis over $K$ the cohomology
+classes of the monomials $t_0^{\alpha_0}\cdots t_r^{\alpha_r}$ such
+that $0\leq\alpha_i<k$ and
+$\sum_{i=0}^{i=r}\alpha_i=k(r+1)+n$.}
+
+It is clear that the graded $S$-module $S(n)$ satisfies the hypotheses
+of \hyperref[fac:III:3:no:62:prop:1]{Proposition~1}; this proves
+\hyperref[fac:III:3:no:62:prop:2:item:a]{(a)}
+\hyperref[fac:III:3:no:62:prop:2:item:b]{and (b)}. On the other hand, for
+every graded $S$-module $M$,
+\phantomsection\label{fac:III:3:no:62:formula:top-cohomology-quotient}
+\[
+H_k^r(M)=
+M_{k(r+1)}/(t_0^k,\ldots,t_r^k)M_{kr}.
+\]
+Now the monomials
+\[
+t_0^{\alpha_0}\cdots t_r^{\alpha_r},\qquad
+\alpha_i\geq0,\qquad
+\sum_{i=0}^{i=r}\alpha_i=k(r+1)+n,
+\]
+form a basis of $S(n)_{k(r+1)}$, and those among them for which at
+least one $\alpha_i$ is $\geq k$ form a basis of
+$(t_0^k,\ldots,t_r^k)S(n)_{kr}$. This proves
+\hyperref[fac:III:3:no:62:prop:2:item:c]{(c)}.
+
+It is convenient to write the exponents $\alpha_i$ in the form
+$\alpha_i=k-\beta_i$. The conditions in
+\hyperref[fac:III:3:no:62:prop:2:item:c]{(c)} then become
+\phantomsection\label{fac:III:3:no:62:formula:beta-conditions}
+\[
+0<\beta_i\leq k
+\qquad\text{and}\qquad
+\sum_{i=0}^{i=r}\beta_i=-n.
+\]
+The second condition, together with $\beta_i>0$, implies
+$\beta_i\leq -n-r$. Hence, if $k\geq -n-r$, the condition
+$\beta_i\leq k$ follows from the preceding two. Thus:
+
+\phantomsection\label{fac:III:3:no:62:cor:1}
+\textsc{Corollary 1.} \textit{For $k\geq-n-r$, $H_k^r(S(n))$ has as
+a basis the cohomology classes of the monomials}
+\[
+\frac{(t_0\cdots t_r)^k}
+{t_0^{\beta_0}\cdots t_r^{\beta_r}},
+\qquad \beta_i>0,\qquad
+\sum_{i=0}^{i=r}\beta_i=-n.
+\]
+
+We also have:
+
+\phantomsection\label{fac:III:3:no:62:cor:2}
+\textsc{Corollary 2.} \textit{If $h\geq k\geq-n-r$, the homomorphism}
+\[
+\rho_k^h:H_k^q(S(n))\longrightarrow H_h^q(S(n))
+\]
+\textit{is bijective for every $q\geq0$.}
+
+For $q\neq r$, this follows from
+\hyperref[fac:III:3:no:62:prop:2:item:a]{assertions (a)}
+\hyperref[fac:III:3:no:62:prop:2:item:b]{and (b)} of
+\hyperref[fac:III:3:no:62:prop:2]{Proposition~2}. For $q=r$, it follows
+from \hyperref[fac:III:3:no:62:cor:1]{Corollary~1}, since $\rho_k^h$
+sends
+\[
+\frac{(t_0\cdots t_r)^k}{t_0^{\beta_0}\cdots t_r^{\beta_r}}
+\quad\text{to}\quad
+\frac{(t_0\cdots t_r)^h}{t_0^{\beta_0}\cdots t_r^{\beta_r}}.
+\]
+
+\phantomsection\label{fac:III:3:no:62:cor:3}
+\textsc{Corollary 3.} \textit{The homomorphism
+$\alpha:S_n\to H^0(S(n))$ is bijective if $r\geq1$ or if $n\geq0$.
+We have $H^q(S(n))=0$ for $0<q<r$, and $H^r(S(n))$ is a vector space
+of dimension $\binom{-n-1}{r}$ over $K$.}
+
+The assertion concerning $\alpha$ follows from
+\hyperref[fac:III:3:no:62:prop:2:item:a]{Proposition~2(a)} when
+$r\geq1$; it is immediate when $r=0$ and $n\geq0$. The rest of the
+corollary follows at once from
+\hyperref[fac:III:3:no:62:cor:1]{Corollaries~1} and
+\hyperref[fac:III:3:no:62:cor:2]{2}, with the convention that the
+binomial coefficient $\binom{a}{r}$ is zero when $a<r$.
