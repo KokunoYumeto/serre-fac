@@ -18,7 +18,7 @@ Build each with pdfLaTeX: `fac.tex` in `french-diplomatic/` or `french-corrected
 ## How it was made
 
 AI-transcribed and AI-translated, July–August 2026, from the scan of the *Annals* article
-([10.2307/1969915](https://doi.org/10.2307/1969915)). A first-pass French transcription (Claude Opus 5 (effort not recorded), according to
+([10.2307/1969915](https://doi.org/10.2307/1969915)). A first-pass French transcription (Claude Opus 5 at effort max, the user's default then, according to
 the project records) was checked against the scan and corrected by OpenAI Codex (GPT-5.6, Ultra effort), which also
 made the English translation.
 
